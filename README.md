@@ -1,280 +1,202 @@
-# Retrieval Depth, Reranking, and Evidence-Aware RAG
+# Adaptive Retrieval and Evidence-Grounded Scientific Claim Verification
 
-A controlled research project studying how retrieval depth, cross-encoder reranking, and sentence-level evidence representation affect scientific claim verification with retrieval-augmented generation (RAG).
+A CPU-compatible research project evaluating retrieval, reranking, adaptive candidate depth, and document-level evidence grounding on BEIR SciFact.
 
-The detailed final report is [FINAL_REPORT.md](FINAL_REPORT.md). It contains the complete methods, results, case studies, limitations, and threats to validity.
+[Research paper](docs/RESEARCH_PAPER.md) · [Phase 5 report](docs/PHASE5_CONTROLLED_EXPERIMENTS_REPORT.md) · [Reproducibility](docs/REPRODUCIBILITY.md) · [Dataset protocol](docs/DATASET_AND_EXPERIMENTAL_PROTOCOL.md) · [Demo script](docs/PROJECT_DEMONSTRATION_SCRIPT.md)
 
-## Overview
+## Research problem
 
-RAG systems depend on which documents reach the language model. This project varies retrieval depth `K`, tests whether a cross-encoder improves the ordering of FAISS candidates, and examines whether replacing full documents with extracted evidence sentences changes Gemini verdicts. The goal is to separate retrieval behavior from downstream generation behavior using stored, reproducible experiment outputs.
+Document retrieval answers “which documents are relevant?” Scientific claim verification asks a stricter question: “which exact evidence supports or refutes this claim, and when should the system abstain?”
 
-## Research Questions
+This project separates:
 
-- **RQ1:** How does retrieval depth affect retrieval recall and final verdict accuracy?
-- **RQ2:** Does cross-encoder reranking improve retrieval ranking?
-- **RQ3:** Does improved retrieval ranking correspond to improved final RAG verdict accuracy?
-- **RQ4:** Does sentence-level evidence extraction improve or change evidence-grounded verification?
+- document retrieval relevance,
+- claim-to-sentence relevance,
+- support/refutation relationship signals,
+- citation validation,
+- final claim-verdict correctness.
 
-## System Architecture
+The project does not present lexical overlap or rule-based relationship classification as validated scientific entailment.
 
-### Baseline RAG
+## Objectives
 
-```text
-Claim
-	↓
-all-MiniLM-L6-v2
-	↓
-FAISS IndexFlatIP
-	↓
-Top-K documents
-	↓
-Gemini
-	↓
-SUPPORT / CONTRADICT / INSUFFICIENT_EVIDENCE
+- Compare BM25, Dense, and Hybrid retrieval.
+- Compare fixed and adaptive candidate pools.
+- Measure cross-encoder reranking and evidence-aware reranking.
+- Implement exact source-traceable sentence extraction.
+- Validate citations against original corpus text.
+- Abstain for weak, conflicting, or invalid evidence.
+- Freeze and execute a final CPU-only controlled protocol.
+- Preserve every result and historical experiment artifact.
+
+## Architecture
+
+```mermaid
+flowchart LR
+    A[Scientific claim] --> B[BM25 / Dense / Hybrid retrieval]
+    B --> C[Adaptive candidate selection]
+    C --> D[Cross-encoder reranking]
+    D --> E[Relevant sentence selection]
+    E --> F[Claim-evidence mapping]
+    F --> G[Citation validation]
+    G --> H[Support / Refute / Not Enough Info]
 ```
 
-### Cross-Encoder Reranking
+The implementation uses FAISS `IndexFlatIP`, a normalized MiniLM embedding model, BM25, reciprocal-rank fusion, a MiniLM cross-encoder, and local rule-based evidence components.
+
+## Key results
+
+### Phase 2 — 300 official development claims
+
+| Approach | Hit@10 | Recall@10 | MRR@10 | MAP@10 | nDCG@10 |
+|---|---:|---:|---:|---:|---:|
+| BM25 | 0.7367 | 0.7229 | 0.5169 | 0.5015 | 0.5585 |
+| Dense | 0.7967 | 0.7867 | 0.5979 | 0.5887 | 0.6402 |
+| Hybrid | 0.8167 | 0.8011 | 0.5988 | 0.5893 | 0.6442 |
+
+RRF sensitivity reached Hit@10=0.840 at c=10.
+
+### Phase 3 — reranking and adaptation
+
+- Cross-encoder reranking produced numerical development improvements, but broad corrected significance was not established.
+- Dense score-gap adaptive retrieval processed 16.93 candidates/query with nDCG@10=0.690694, versus 50 candidates with nDCG@10=0.690648 for Dense fixed Top-50.
+- Dense confidence adaptive retrieval processed 10 candidates/query with nDCG@10=0.683095.
+- Hybrid evidence-aware Pool-50 achieved the highest observed Experiment C development nDCG@10 of 0.704115.
+- The +0.010249 nDCG@10 advantage over cross-encoder reranking was not statistically significant after the declared correction.
+
+### Phase 4 — evidence grounding
+
+The pipeline provides:
+
+- exact sentence extraction and source traceability,
+- SUPPORTS, REFUTES, NEUTRAL, and INSUFFICIENT relationship classes,
+- duplicate-citation handling,
+- exact document/sentence/text validation,
+- configurable abstention for weak, conflicting, or invalid evidence,
+- Python integration through `EvidenceGroundingPipeline`.
+
+The relationship mapper is a lexical/rule-based baseline, not a validated entailment model.
+
+### Phase 5 — held-out execution
+
+The frozen run `run_0010` processed 300 official held-out claim texts.
+
+- Evidence-grounded abstention rate: 46.67%
+- Mean end-to-end latency: approximately 23.50 seconds/query
+- Evidence selection latency: approximately 12.51 seconds/query
+- Citation validity/traceability: 100% among source-matched mappings
+
+The official held-out `claims_test.jsonl` contains claim text only. It provides no relevance judgments, evidence annotations, or verdict labels. Held-out retrieval accuracy, verdict accuracy, F1, evidence coverage, and statistical superiority therefore cannot be calculated or claimed.
+
+## Figures
+
+| Figure | Preview |
+|---|---|
+| [System architecture](docs/figures/evidence_grounding_architecture.png) | End-to-end verification pipeline |
+| [Retrieval comparison](docs/figures/retrieval_performance_comparison.png) | BM25, Dense, Hybrid at K=10 |
+| [RRF sensitivity](docs/figures/rrf_sensitivity.png) | Hit rates across RRF constants |
+| [Reranking findings](docs/figures/reranking_findings.png) | Experiment A pool-size comparison |
+| [Adaptive efficiency](docs/figures/adaptive_retrieval_efficiency.png) | nDCG versus candidate processing |
+| [Evidence workflow](docs/figures/evidence_grounding_workflow.png) | Sentence selection through abstention |
+| [Evidence-aware findings](docs/figures/evidence_aware_findings.png) | Dense/Hybrid development nDCG |
+| [Phase 5 latency](docs/figures/phase5_latency.png) | Controlled execution latency |
+
+## Repository structure
 
 ```text
-Claim
-	↓
-FAISS Top-10
-	↓
-CrossEncoder reranking
-	↓
-Top-K
-	↓
-Gemini
-	↓
-Verdict
-```
-
-### Evidence-Aware RAG
-
-```text
-Claim
-	↓
-FAISS Top-K
-	↓
-Sentence-level evidence extraction
-	↓
-Gemini
-	↓
-Verdict
-```
-
-## Dataset
-
-The project uses the SciFact dataset with a controlled 50-query development evaluation. Ground truth consists of `SUPPORT` and `CONTRADICT` labels with associated relevant document IDs. Day 3 is a smaller exploratory evaluation using five queries and K values 3 and 5.
-
-## Models and Technologies
-
-- Python
-- Hugging Face Datasets
-- Sentence Transformers
-- `sentence-transformers/all-MiniLM-L6-v2`
-- FAISS `IndexFlatIP`
-- `cross-encoder/ms-marco-MiniLM-L-6-v2`
-- Google Gemini API
-- `gemini-3.5-flash-lite`
-- NumPy, Pandas, and Matplotlib where applicable
-
-## Experiments
-
-### Baseline RAG
-
-Day 1 evaluated retrieval depths `K = 1, 3, 5, 10` using FAISS retrieval and the baseline Gemini generator.
-
-### Cross-Encoder Reranking
-
-Day 2 retrieved FAISS top-10 candidates, reranked those candidates with the cross-encoder, and passed the top K documents to Gemini.
-
-### Evidence-Aware RAG
-
-Day 3 compared full-document input with original similarity-based evidence extraction and a diversity-aware extractor.
-
-### Final Analysis
-
-Day 4 consolidated the stored Day 1, Day 2, and Day 3 outputs offline. No new model calls are required for the final analysis.
-
-## Main Results
-
-### Day 1 Baseline
-
-| K | Retrieval Hit@K | Verdict Accuracy | SUPPORT Accuracy | CONTRADICT Accuracy |
-|---:|---:|---:|---:|---:|
-| 1 | 0.540 | 0.620 | 0.640 | 0.600 |
-| 3 | 0.700 | 0.720 | 0.720 | 0.720 |
-| 5 | 0.760 | 0.740 | 0.840 | 0.640 |
-| 10 | 0.900 | 0.800 | 0.840 | 0.760 |
-
-### Day 2 Reranking
-
-| K | Baseline Hit@K | Reranked Hit@K | Retrieval Delta | Baseline Accuracy | Reranked Accuracy | Verdict Delta |
-|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 0.540 | 0.620 | +0.080 | 0.619 | 0.707 | +0.088 |
-| 3 | 0.700 | 0.840 | +0.140 | 0.738 | 0.780 | +0.042 |
-| 5 | 0.760 | 0.880 | +0.120 | 0.732 | 0.756 | +0.024 |
-| 10 | 0.900 | 0.900 | +0.000 | 0.805 | 0.800 | -0.005 |
-
-Reranking improved observed retrieval at K=1, 3, and 5 and was associated with higher observed verdict accuracy at those K values. At K=10, retrieval was unchanged and reranked verdict accuracy was slightly lower. These are descriptive results, not causal claims.
-
-### Day 3 Evidence Representation
-
-| K | Full Document Accuracy | Original Evidence Accuracy | Diverse Evidence Accuracy |
-|---:|---:|---:|---:|
-| 3 | 0.200 | 0.200 | 0.200 |
-| 5 | 0.400 | 0.400 | 0.400 |
-
-All three representations produced identical predictions in the tested five-query comparison. This small exploratory result does not establish general superiority or ineffectiveness.
-
-## Key Findings
-
-- Increasing K improved observed baseline retrieval Hit@K and verdict accuracy in the 50-query evaluation.
-- Cross-encoder reranking produced the largest observed retrieval gain at K=3: `+0.140`.
-- Reranking was associated with higher observed verdict accuracy at K=1, 3, and 5.
-- At K=10, retrieval was identical for baseline and reranked conditions.
-- Better retrieval ranking did not guarantee a better final verdict.
-- Day 3 evidence representations produced no prediction changes in the tested sample.
-
-## Case Studies
-
-The final analysis includes detailed case studies for queries `1320`, `1019`, `1370`, `1185`, and `314`. See [FINAL_REPORT.md](FINAL_REPORT.md), [final_case_studies.json](results/final_case_studies.json), and [final_case_study_analysis.json](results/final_case_study_analysis.json).
-
-## Repository Structure
-
-```text
-data/
-	processed/                 Prepared SciFact corpus and development queries
-	index/                     Local FAISS index and ID map
-experiments/
-	run_rag_experiment.py      Day 1 baseline RAG
-	test_retrieval.py          Retrieval checks
-	analyze_ranking.py         Saved ranking analysis
-	run_reranked_rag_experiment.py
-															Day 2 reranked RAG
-	test_reranking.py          Reranking checks
-	test_evidence_extractor.py Day 3 extractor sanity test
-	compare_evidence_extractors.py
-															Original/diverse extractor comparison
-	run_evidence_comparison.py
-															Three-condition evidence comparison
-	final_analysis.py          Offline cross-day consolidation
 src/
-	data/                      Dataset preparation
-	retrieval/                 Embedding and FAISS retrieval
-	rag/                       Generators and evidence extractors
-results/                     Ignored generated outputs and reports
-notebooks/                   Notebook workspace
-docs/
-	DAY2_REPORT.md
-	DAY3_REPORT.md
+  data/             split and corpus utilities
+  retrieval/        BM25, Dense, Hybrid, rerankers, adaptive retrieval
+  evidence/         selection, mapping, citations, verdict, pipeline
+  evaluation/       retrieval, classification, and statistical utilities
+  experiments/      run, artifact, and configuration management
+experiments/        phase and controlled experiment runners
+configs/            frozen and component configurations
+manifests/          dataset and experiment manifests
+tests/              focused unit and integrity tests
+docs/               research reports, paper, protocol, and diagrams
+docs/figures/       publication-style portfolio visualizations
+results/runs/       historical and frozen experiment outputs
 ```
 
 ## Installation
 
 ```powershell
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
+py -3.13 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
 ```
 
-## Environment Variables
+For full setup and command verification, see [Reproducibility Guide](docs/REPRODUCIBILITY.md).
 
-Gemini generation requires the environment variable `GEMINI_API_KEY`. Never place the actual key in source code or commit it. Keep `.env` untracked.
+## Testing
 
-## Reproducing the Research
+Run the core suite:
 
-The recommended high-level order is:
-
-1. Prepare the dataset with `src/data/prepare_dataset.py`.
-2. Inspect retrieval with `experiments/test_retrieval.py`.
-3. Run the baseline retrieval/RAG experiment with `experiments/run_rag_experiment.py`.
-4. Analyze saved ranks with `experiments/analyze_ranking.py`.
-5. Run cross-encoder reranking with `experiments/run_reranked_rag_experiment.py`.
-6. Run local evidence extraction and comparison with the Day 3 evidence scripts.
-7. Run `experiments/final_analysis.py` for offline consolidation.
-
-The RAG and reranking scripts consume Gemini API quota. Review their resume behavior, configuration, and expected call count before running them. The final reports and offline analyses do not require API calls.
-
-## Phase 2 retrieval comparison
-
-The project now includes a CPU-based BM25 retriever, standardized dense retrieval interface, and reciprocal-rank fusion hybrid retrieval. The Phase 2 development-set comparison uses the official SciFact dev claims and BEIR qrels, without touching the official SciFact test split.
-
-Measured development-set highlights (official 300-query dev split):
-
-- BM25 Hit@10: 0.737
-- Dense Hit@10: 0.797
-- Hybrid Hit@10: 0.817
-- Hybrid Recall@10: 0.801
-- Hybrid MRR@10: 0.599
-
-The canonical run artifacts are under `results/runs/run_0003/`, and the full summary is in [docs/PHASE2_REPORT.md](docs/PHASE2_REPORT.md).
-
-## Results and Reports
-
-- [FINAL_REPORT.md](FINAL_REPORT.md): complete project report
-- [docs/PHASE2_REPORT.md](docs/PHASE2_REPORT.md): Phase 2 BM25/dense/hybrid retrieval comparison
-- [DAY2_REPORT.md](docs/DAY2_REPORT.md): reranking report
-- [DAY3_REPORT.md](docs/DAY3_REPORT.md): evidence-aware report
-- `results/`: detailed generated metrics, tables, case studies, and plots
-
-## Phase 4 evidence grounding
-
-Phase 4 adds a local, CPU-compatible evidence-grounding layer:
-
-- `src/evidence/evidence_selector.py`: claim-relevant sentence extraction with corpus traceability.
-- `src/evidence/claim_evidence_mapper.py`: transparent SUPPORTS/REFUTES/NEUTRAL/INSUFFICIENT baseline mapping.
-- `src/evidence/citation_validator.py`: exact document ID, sentence index, text, and metadata validation.
-- `src/evidence/verdict_classifier.py`: configurable abstaining verdict classification.
-- `src/evidence/evidence_grounding_pipeline.py`: public end-to-end retrieval, reranking, evidence mapping, citation, and verdict API.
-
-The relationship mapper is a rule-based baseline, not a validated scientific entailment or citation-verification model. It does not use gold labels at inference time.
-
-```python
-from src.evidence import EvidenceGroundingPipeline
-
-pipeline = EvidenceGroundingPipeline(
-    corpus,
-    retriever=dense_retriever,
-    cross_encoder_reranker=cross_encoder,
-    evidence_aware_reranker=evidence_aware,
-    adaptive_retriever=None,
-)
-result = pipeline.process("A scientific claim", claim_id="claim-1", top_k=50)
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q
 ```
 
-Configuration: [configs/phase4_evidence_grounding.yaml](configs/phase4_evidence_grounding.yaml).
-Coverage audit: [docs/PHASE3_COVERAGE_AUDIT.md](docs/PHASE3_COVERAGE_AUDIT.md).
-Implementation report: [docs/PHASE4_EVIDENCE_GROUNDING_REPORT.md](docs/PHASE4_EVIDENCE_GROUNDING_REPORT.md).
+Run focused Phase 4/5 tests:
 
-## Phase 5 controlled held-out evaluation
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q tests/test_evidence_grounding.py tests/test_phase5_controlled.py
+```
 
-`run_0010` freezes six controlled systems and evaluates the official SciFact held-out claim texts on CPU. The frozen configuration hash is `05c8c0bf3fddebcb3b43e739760d14770a10eb0c021fd07c6b323d1387511c3e`.
+`tests/test_dataset_validation.py` is excluded from held-out execution because its split loader can inspect every official claim split.
 
-The official held-out claims file contains only claim text; it provides no relevance judgments, verdict labels, evidence annotations, or cited document IDs. Retrieval metrics, claim-verification accuracy, evidence coverage, and paired significance comparisons are therefore **unavailable** rather than zero or inferable. The run still preserves 300 per-query predictions, 1,800 retrieval records, 1,800 performance records, abstention behavior, and citation validity observations.
+## Reproduction
 
-- Report: [docs/PHASE5_CONTROLLED_EXPERIMENTS_REPORT.md](docs/PHASE5_CONTROLLED_EXPERIMENTS_REPORT.md)
-- Run: [results/runs/run_0010/](results/runs/run_0010/)
+Phase 2:
 
-The controlled evidence-grounded system abstained for 46.67% of the held-out claims. Its measured mean end-to-end latency was 23.50 seconds/query. Citation validity/traceability was 100% within the rule-based, document-sentence mappings produced for this run.
+```powershell
+.\.venv\Scripts\python.exe experiments\run_retrieval_comparison.py
+.\.venv\Scripts\python.exe scripts\generate_phase2_figures.py
+```
 
-## Limitations
+Phase 3:
 
-The Phase 2 evaluation uses the official SciFact dev claim split (300 queries) and keeps the historical 50-query sample as a separate exploratory artifact. Day 3 uses only five queries. Day 2 contains Gemini free-tier quota failures and 401 raw records versus 400 unique combinations because of one duplicate record. The evaluation is descriptive, with paired statistical testing reported where appropriate, but no final test-set conclusions are inferred beyond the dev split used here. Results depend on the selected models, reranker, prompt, and retrieval corpus.
+```powershell
+.\.venv\Scripts\python.exe experiments\run_experiment_a.py --resume run_0006
+.\.venv\Scripts\python.exe experiments\run_experiment_b.py --resume run_0008
+.\.venv\Scripts\python.exe experiments\run_experiment_c.py --resume run_0009
+```
 
-## Reproducibility and Safety
+Phase 5:
 
-- API keys and other secrets are not included.
-- `.env` should remain untracked.
-- Virtual environments and model caches should remain untracked.
-- Generated experiment outputs should not be accidentally overwritten.
-- Baseline, reranked, and evidence experiment outputs should be preserved before reruns.
+```powershell
+.\.venv\Scripts\python.exe experiments\run_phase5_controlled.py --freeze-only
+.\.venv\Scripts\python.exe experiments\run_phase5_controlled.py --resume run_0010
+```
 
-## Research Conclusion
+Phase 6 figures:
 
-In this controlled evaluation, increasing retrieval depth improved observed baseline retrieval and verdict performance. Reranking was associated with stronger observed retrieval ranking and higher observed verdict accuracy at K=1, 3, and 5, while the K=10 retrieval result was unchanged. The small Day 3 comparison found identical predictions across full-document and extracted-evidence representations. These findings are descriptive and do not prove causality or universal improvement.
+```powershell
+.\.venv\Scripts\python.exe scripts\generate_phase6_figures.py
+```
 
-## Future Work
+## Documentation
 
-Potential extensions include larger evaluation sets, repeated runs, statistical testing, stronger rerankers, passage-level retrieval, improved evidence extraction, alternative LLMs, and latency/cost analysis. These were not implemented in this project.
+- [Complete research paper](docs/RESEARCH_PAPER.md)
+- [Dataset and experimental protocol](docs/DATASET_AND_EXPERIMENTAL_PROTOCOL.md)
+- [Reproducibility guide](docs/REPRODUCIBILITY.md)
+- [Project demonstration script](docs/PROJECT_DEMONSTRATION_SCRIPT.md)
+- [Phase 1 report](docs/PHASE1_REPORT.md)
+- [Phase 2 report](docs/PHASE2_REPORT.md)
+- [Experiment A report](docs/PHASE3_REPORT.md)
+- [Experiment B report](docs/PHASE3_EXPERIMENT_B_REPORT.md)
+- [Experiment C report](docs/PHASE3_EXPERIMENT_C_REPORT.md)
+- [Phase 3 final summary](docs/PHASE3_FINAL_SUMMARY.md)
+- [Phase 3 coverage audit](docs/PHASE3_COVERAGE_AUDIT.md)
+- [Phase 4 report](docs/PHASE4_EVIDENCE_GROUNDING_REPORT.md)
+- [Phase 5 report](docs/PHASE5_CONTROLLED_EXPERIMENTS_REPORT.md)
+
+## Limitations and future work
+
+- Development findings do not establish held-out superiority.
+- Document-level evidence mapping is not validated entailment.
+- Confidence values are heuristics, not calibrated probabilities.
+- CPU latency is environment-dependent.
+- The held-out claims file cannot support gold-standard accuracy evaluation.
+
+Future work should include validated entailment models, calibrated uncertainty, formal citation verification, repeated latency measurement, and a labeled held-out benchmark with relevance judgments and claim verdicts.
