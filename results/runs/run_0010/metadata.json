@@ -1,0 +1,14 @@
+{
+  "configuration_hash": "05c8c0bf3fddebcb3b43e739760d14770a10eb0c021fd07c6b323d1387511c3e",
+  "created_at": "2026-11-23T16:40:32.408772+00:00",
+  "experiment": "Phase 5 Controlled Experiments",
+  "gold_loaded_after_predictions": true,
+  "heldout_test_opened": true,
+  "historical_runs_unchanged": true,
+  "official_test_query_count": 300,
+  "protocol_frozen_at": "2026-11-23T12:58:22.714796+00:00",
+  "run_id": "run_0010",
+  "status": "completed",
+  "system_count": 6,
+  "wall_seconds": 1.021974900002533
+}

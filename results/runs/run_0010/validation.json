@@ -1,0 +1,18 @@
+{
+  "aggregate_metrics_match_per_query": true,
+  "candidate_ids_unique": true,
+  "duplicate_query_system_records": false,
+  "gold_prediction_separation_verified": true,
+  "missing_or_extra_systems": false,
+  "official_test_claim_file_opened_after_freeze": true,
+  "performance_record_count": 1800,
+  "query_count": 300,
+  "retrieval_record_count": 1800,
+  "runtime_measurements_non_negative": true,
+  "statistical_correction_valid": true,
+  "status": "passed",
+  "system_count": 6,
+  "test_output": "....                                                                     [100%]\n4 passed in 40.80s",
+  "test_status": "passed",
+  "verification_record_count": 300
+}

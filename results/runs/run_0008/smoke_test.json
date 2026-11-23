@@ -1,0 +1,312 @@
+{
+  "batch_size": 16,
+  "configuration_count": 10,
+  "estimate_method": "sum of each configuration's measured smoke mean latency multiplied by 300 queries",
+  "estimated_full_end_to_end_minutes": 247.28978199999952,
+  "measurements": [
+    {
+      "candidate_count": 10,
+      "configuration": "dense_fixed_top_10",
+      "cross_encoder_inference_seconds": 1.7969089000000622,
+      "final_candidate_depth": 10,
+      "method": "dense",
+      "query_id": "1",
+      "reranking_seconds": 1.7973676999999952,
+      "retrieval_seconds": 0.6311121999999614
+    },
+    {
+      "candidate_count": 20,
+      "configuration": "dense_fixed_top_20",
+      "cross_encoder_inference_seconds": 4.339515299999903,
+      "final_candidate_depth": 20,
+      "method": "dense",
+      "query_id": "1",
+      "reranking_seconds": 4.340162700000064,
+      "retrieval_seconds": 0.021970499999952153
+    },
+    {
+      "candidate_count": 50,
+      "configuration": "dense_fixed_top_50",
+      "cross_encoder_inference_seconds": 10.785730999999942,
+      "final_candidate_depth": 50,
+      "method": "dense",
+      "query_id": "1",
+      "reranking_seconds": 10.786581899999874,
+      "retrieval_seconds": 0.030203099999880578
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "dense_score_gap_adaptive",
+      "cross_encoder_inference_seconds": 1.6047934999999143,
+      "final_candidate_depth": 10,
+      "method": "dense",
+      "query_id": "1",
+      "reranking_seconds": 1.605070299999852,
+      "retrieval_seconds": 0.023909499999945183
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "dense_confidence_adaptive",
+      "cross_encoder_inference_seconds": 1.4437462000000778,
+      "final_candidate_depth": 10,
+      "method": "dense",
+      "query_id": "1",
+      "reranking_seconds": 1.4439136999999391,
+      "retrieval_seconds": 0.02534379999997327
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "hybrid_fixed_top_10",
+      "cross_encoder_inference_seconds": 2.3300070000000233,
+      "final_candidate_depth": 10,
+      "method": "hybrid",
+      "query_id": "1",
+      "reranking_seconds": 2.330230799999981,
+      "retrieval_seconds": 0.2544046000000435
+    },
+    {
+      "candidate_count": 20,
+      "configuration": "hybrid_fixed_top_20",
+      "cross_encoder_inference_seconds": 4.137540199999876,
+      "final_candidate_depth": 20,
+      "method": "hybrid",
+      "query_id": "1",
+      "reranking_seconds": 4.137871300000143,
+      "retrieval_seconds": 0.18867690000001858
+    },
+    {
+      "candidate_count": 50,
+      "configuration": "hybrid_fixed_top_50",
+      "cross_encoder_inference_seconds": 7.806872299999895,
+      "final_candidate_depth": 50,
+      "method": "hybrid",
+      "query_id": "1",
+      "reranking_seconds": 7.808216599999923,
+      "retrieval_seconds": 0.18028099999992264
+    },
+    {
+      "candidate_count": 20,
+      "configuration": "hybrid_score_gap_adaptive",
+      "cross_encoder_inference_seconds": 4.1119761999998445,
+      "final_candidate_depth": 20,
+      "method": "hybrid",
+      "query_id": "1",
+      "reranking_seconds": 4.1123170000000755,
+      "retrieval_seconds": 0.46133000000008906
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "hybrid_confidence_adaptive",
+      "cross_encoder_inference_seconds": 2.307275299999901,
+      "final_candidate_depth": 10,
+      "method": "hybrid",
+      "query_id": "1",
+      "reranking_seconds": 2.3077491000001373,
+      "retrieval_seconds": 0.19256450000011682
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "dense_fixed_top_10",
+      "cross_encoder_inference_seconds": 2.104107600000134,
+      "final_candidate_depth": 10,
+      "method": "dense",
+      "query_id": "3",
+      "reranking_seconds": 2.1043778000000657,
+      "retrieval_seconds": 0.04523660000018026
+    },
+    {
+      "candidate_count": 20,
+      "configuration": "dense_fixed_top_20",
+      "cross_encoder_inference_seconds": 3.9591603000001214,
+      "final_candidate_depth": 20,
+      "method": "dense",
+      "query_id": "3",
+      "reranking_seconds": 3.95955529999992,
+      "retrieval_seconds": 0.043464399999948
+    },
+    {
+      "candidate_count": 50,
+      "configuration": "dense_fixed_top_50",
+      "cross_encoder_inference_seconds": 8.88709689999996,
+      "final_candidate_depth": 50,
+      "method": "dense",
+      "query_id": "3",
+      "reranking_seconds": 8.8876008000002,
+      "retrieval_seconds": 0.022843299999976807
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "dense_score_gap_adaptive",
+      "cross_encoder_inference_seconds": 2.3131094999998822,
+      "final_candidate_depth": 10,
+      "method": "dense",
+      "query_id": "3",
+      "reranking_seconds": 2.3134157999998024,
+      "retrieval_seconds": 0.0300220999999965
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "dense_confidence_adaptive",
+      "cross_encoder_inference_seconds": 2.003107499999942,
+      "final_candidate_depth": 10,
+      "method": "dense",
+      "query_id": "3",
+      "reranking_seconds": 2.003429899999901,
+      "retrieval_seconds": 0.02583849999996346
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "hybrid_fixed_top_10",
+      "cross_encoder_inference_seconds": 2.481698099999903,
+      "final_candidate_depth": 10,
+      "method": "hybrid",
+      "query_id": "3",
+      "reranking_seconds": 2.4820757999998477,
+      "retrieval_seconds": 0.6941362999998546
+    },
+    {
+      "candidate_count": 20,
+      "configuration": "hybrid_fixed_top_20",
+      "cross_encoder_inference_seconds": 4.637841000000208,
+      "final_candidate_depth": 20,
+      "method": "hybrid",
+      "query_id": "3",
+      "reranking_seconds": 4.638481899999988,
+      "retrieval_seconds": 0.642033900000115
+    },
+    {
+      "candidate_count": 50,
+      "configuration": "hybrid_fixed_top_50",
+      "cross_encoder_inference_seconds": 9.090169099999912,
+      "final_candidate_depth": 50,
+      "method": "hybrid",
+      "query_id": "3",
+      "reranking_seconds": 9.091653599999972,
+      "retrieval_seconds": 0.7681740000000445
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "hybrid_score_gap_adaptive",
+      "cross_encoder_inference_seconds": 2.7464144000000488,
+      "final_candidate_depth": 10,
+      "method": "hybrid",
+      "query_id": "3",
+      "reranking_seconds": 2.746625700000095,
+      "retrieval_seconds": 0.8078653000000031
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "hybrid_confidence_adaptive",
+      "cross_encoder_inference_seconds": 2.516792599999917,
+      "final_candidate_depth": 10,
+      "method": "hybrid",
+      "query_id": "3",
+      "reranking_seconds": 2.5170172999999068,
+      "retrieval_seconds": 0.8468224000000646
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "dense_fixed_top_10",
+      "cross_encoder_inference_seconds": 2.6787303000000975,
+      "final_candidate_depth": 10,
+      "method": "dense",
+      "query_id": "5",
+      "reranking_seconds": 2.6789279999998143,
+      "retrieval_seconds": 0.028655700000172146
+    },
+    {
+      "candidate_count": 20,
+      "configuration": "dense_fixed_top_20",
+      "cross_encoder_inference_seconds": 4.420445200000131,
+      "final_candidate_depth": 20,
+      "method": "dense",
+      "query_id": "5",
+      "reranking_seconds": 4.420850900000005,
+      "retrieval_seconds": 0.028261700000030032
+    },
+    {
+      "candidate_count": 50,
+      "configuration": "dense_fixed_top_50",
+      "cross_encoder_inference_seconds": 10.79548890000001,
+      "final_candidate_depth": 50,
+      "method": "dense",
+      "query_id": "5",
+      "reranking_seconds": 10.796901800000114,
+      "retrieval_seconds": 0.021416600000065955
+    },
+    {
+      "candidate_count": 50,
+      "configuration": "dense_score_gap_adaptive",
+      "cross_encoder_inference_seconds": 10.636351399999967,
+      "final_candidate_depth": 50,
+      "method": "dense",
+      "query_id": "5",
+      "reranking_seconds": 10.637047400000029,
+      "retrieval_seconds": 0.07164349999993647
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "dense_confidence_adaptive",
+      "cross_encoder_inference_seconds": 2.44256079999991,
+      "final_candidate_depth": 10,
+      "method": "dense",
+      "query_id": "5",
+      "reranking_seconds": 2.4428361000000223,
+      "retrieval_seconds": 0.021954899999855115
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "hybrid_fixed_top_10",
+      "cross_encoder_inference_seconds": 2.5527007999999114,
+      "final_candidate_depth": 10,
+      "method": "hybrid",
+      "query_id": "5",
+      "reranking_seconds": 2.552937499999871,
+      "retrieval_seconds": 0.19724780000001374
+    },
+    {
+      "candidate_count": 20,
+      "configuration": "hybrid_fixed_top_20",
+      "cross_encoder_inference_seconds": 4.6730433000000176,
+      "final_candidate_depth": 20,
+      "method": "hybrid",
+      "query_id": "5",
+      "reranking_seconds": 4.673450499999944,
+      "retrieval_seconds": 0.21089529999994738
+    },
+    {
+      "candidate_count": 50,
+      "configuration": "hybrid_fixed_top_50",
+      "cross_encoder_inference_seconds": 16.597353399999974,
+      "final_candidate_depth": 50,
+      "method": "hybrid",
+      "query_id": "5",
+      "reranking_seconds": 16.598481900000024,
+      "retrieval_seconds": 0.17691089999993892
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "hybrid_score_gap_adaptive",
+      "cross_encoder_inference_seconds": 2.457949299999882,
+      "final_candidate_depth": 10,
+      "method": "hybrid",
+      "query_id": "5",
+      "reranking_seconds": 2.4582182000001467,
+      "retrieval_seconds": 0.4020674999999301
+    },
+    {
+      "candidate_count": 10,
+      "configuration": "hybrid_confidence_adaptive",
+      "cross_encoder_inference_seconds": 2.387390200000027,
+      "final_candidate_depth": 10,
+      "method": "hybrid",
+      "query_id": "5",
+      "reranking_seconds": 2.3876233000000866,
+      "retrieval_seconds": 0.21759180000003653
+    }
+  ],
+  "model_name": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "query_count": 3,
+  "status": "passed",
+  "system_query_count": 30
+}

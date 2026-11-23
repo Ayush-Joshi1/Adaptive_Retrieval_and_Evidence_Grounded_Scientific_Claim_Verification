@@ -1,0 +1,336 @@
+{
+  "confidence_intervals": [
+    {
+      "candidate_pool_size": 10,
+      "ci95": [
+        0.019521097605222935,
+        0.06713286299268187
+      ],
+      "comparison": "cross_encoder_minus_original",
+      "mean_difference": 0.04289512126595829,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 10,
+      "ci95": [
+        0.021221551934126115,
+        0.06802664483386248
+      ],
+      "comparison": "evidence_full_minus_original",
+      "mean_difference": 0.04421138916356332,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 10,
+      "ci95": [
+        -0.0034285878519651203,
+        0.0061284811432330425
+      ],
+      "comparison": "evidence_full_minus_cross_encoder",
+      "mean_difference": 0.0013162678976050303,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 10,
+      "ci95": [
+        -0.0030502247547763133,
+        0.005033621718375649
+      ],
+      "comparison": "lexical_minus_cross_encoder",
+      "mean_difference": 0.0009980729749371644,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 10,
+      "ci95": [
+        -7.544507223067758e-05,
+        0.005201549977345346
+      ],
+      "comparison": "scientific_minus_cross_encoder",
+      "mean_difference": 0.0020096925879158553,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 20,
+      "ci95": [
+        0.017424722503367743,
+        0.07345087340007918
+      ],
+      "comparison": "cross_encoder_minus_original",
+      "mean_difference": 0.04520181691243753,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 20,
+      "ci95": [
+        0.021326731815010734,
+        0.07493219821932774
+      ],
+      "comparison": "evidence_full_minus_original",
+      "mean_difference": 0.04776351108240247,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 20,
+      "ci95": [
+        -0.005742218127995337,
+        0.010708456035586698
+      ],
+      "comparison": "evidence_full_minus_cross_encoder",
+      "mean_difference": 0.0025616941699649403,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 20,
+      "ci95": [
+        -0.004241818302285038,
+        0.00808897895995876
+      ],
+      "comparison": "lexical_minus_cross_encoder",
+      "mean_difference": 0.001930918658294349,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 20,
+      "ci95": [
+        -0.007203598122319209,
+        0.0025400606820975987
+      ],
+      "comparison": "scientific_minus_cross_encoder",
+      "mean_difference": -0.0020500913303325686,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 50,
+      "ci95": [
+        0.018130200910098794,
+        0.08272405402988763
+      ],
+      "comparison": "cross_encoder_minus_original",
+      "mean_difference": 0.05044795472082385,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 50,
+      "ci95": [
+        0.02894945169736272,
+        0.09008602365436533
+      ],
+      "comparison": "evidence_full_minus_original",
+      "mean_difference": 0.059228119583638016,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 50,
+      "ci95": [
+        -0.0009888046606530095,
+        0.018927221592291776
+      ],
+      "comparison": "evidence_full_minus_cross_encoder",
+      "mean_difference": 0.008780164862814169,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 50,
+      "ci95": [
+        -0.004408023570042787,
+        0.011115516703886176
+      ],
+      "comparison": "lexical_minus_cross_encoder",
+      "mean_difference": 0.0032506302893758328,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 50,
+      "ci95": [
+        -0.01463659728303365,
+        -5.180678974807e-05
+      ],
+      "comparison": "scientific_minus_cross_encoder",
+      "mean_difference": -0.0070740528681616415,
+      "metric": "ndcg@10",
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 10,
+      "ci95": [
+        0.01345798228723643,
+        0.06320815230421252
+      ],
+      "comparison": "cross_encoder_minus_original",
+      "mean_difference": 0.038241133080558105,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 10,
+      "ci95": [
+        0.02242949059128905,
+        0.06837018187449477
+      ],
+      "comparison": "evidence_full_minus_original",
+      "mean_difference": 0.045299557824886136,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 10,
+      "ci95": [
+        0.00040621492278035745,
+        0.014369616171442388
+      ],
+      "comparison": "evidence_full_minus_cross_encoder",
+      "mean_difference": 0.007058424744328032,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 10,
+      "ci95": [
+        -0.002054892575490973,
+        0.007238370536972639
+      ],
+      "comparison": "lexical_minus_cross_encoder",
+      "mean_difference": 0.002488227833959074,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 10,
+      "ci95": [
+        -0.001461805781894307,
+        0.0015755532846485748
+      ],
+      "comparison": "scientific_minus_cross_encoder",
+      "mean_difference": 3.5359728722146324e-05,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 20,
+      "ci95": [
+        0.018648272104168202,
+        0.07769460987118544
+      ],
+      "comparison": "cross_encoder_minus_original",
+      "mean_difference": 0.048226153294336424,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 20,
+      "ci95": [
+        0.025455101230572753,
+        0.07774048561758626
+      ],
+      "comparison": "evidence_full_minus_original",
+      "mean_difference": 0.051871119457237616,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 20,
+      "ci95": [
+        -0.006654029108140857,
+        0.014272740812476549
+      ],
+      "comparison": "evidence_full_minus_cross_encoder",
+      "mean_difference": 0.0036449661629011972,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 20,
+      "ci95": [
+        -0.004139074271744645,
+        0.007901170924038695
+      ],
+      "comparison": "lexical_minus_cross_encoder",
+      "mean_difference": 0.0018525357715815107,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 20,
+      "ci95": [
+        -0.009084263358617119,
+        0.001619320229342404
+      ],
+      "comparison": "scientific_minus_cross_encoder",
+      "mean_difference": -0.003498934670260101,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 50,
+      "ci95": [
+        0.015658196188506876,
+        0.08283716701296305
+      ],
+      "comparison": "cross_encoder_minus_original",
+      "mean_difference": 0.049672650528382954,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 50,
+      "ci95": [
+        0.029683755185190383,
+        0.08954030664321834
+      ],
+      "comparison": "evidence_full_minus_original",
+      "mean_difference": 0.05992132238645344,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 50,
+      "ci95": [
+        -0.0014316813421899803,
+        0.02218533602101872
+      ],
+      "comparison": "evidence_full_minus_cross_encoder",
+      "mean_difference": 0.010248671858070484,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 50,
+      "ci95": [
+        -0.004182802530620649,
+        0.014520893770806731
+      ],
+      "comparison": "lexical_minus_cross_encoder",
+      "mean_difference": 0.005177964564717117,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 50,
+      "ci95": [
+        -0.017491040764982247,
+        -0.001630391134310109
+      ],
+      "comparison": "scientific_minus_cross_encoder",
+      "mean_difference": -0.009331826977368583,
+      "metric": "ndcg@10",
+      "retrieval_method": "hybrid"
+    }
+  ],
+  "confidence_level": 0.95,
+  "resamples": 10000
+}

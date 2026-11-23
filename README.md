@@ -197,16 +197,71 @@ The recommended high-level order is:
 
 The RAG and reranking scripts consume Gemini API quota. Review their resume behavior, configuration, and expected call count before running them. The final reports and offline analyses do not require API calls.
 
+## Phase 2 retrieval comparison
+
+The project now includes a CPU-based BM25 retriever, standardized dense retrieval interface, and reciprocal-rank fusion hybrid retrieval. The Phase 2 development-set comparison uses the official SciFact dev claims and BEIR qrels, without touching the official SciFact test split.
+
+Measured development-set highlights (official 300-query dev split):
+
+- BM25 Hit@10: 0.737
+- Dense Hit@10: 0.797
+- Hybrid Hit@10: 0.817
+- Hybrid Recall@10: 0.801
+- Hybrid MRR@10: 0.599
+
+The canonical run artifacts are under `results/runs/run_0003/`, and the full summary is in [docs/PHASE2_REPORT.md](docs/PHASE2_REPORT.md).
+
 ## Results and Reports
 
 - [FINAL_REPORT.md](FINAL_REPORT.md): complete project report
+- [docs/PHASE2_REPORT.md](docs/PHASE2_REPORT.md): Phase 2 BM25/dense/hybrid retrieval comparison
 - [DAY2_REPORT.md](docs/DAY2_REPORT.md): reranking report
 - [DAY3_REPORT.md](docs/DAY3_REPORT.md): evidence-aware report
 - `results/`: detailed generated metrics, tables, case studies, and plots
 
+## Phase 4 evidence grounding
+
+Phase 4 adds a local, CPU-compatible evidence-grounding layer:
+
+- `src/evidence/evidence_selector.py`: claim-relevant sentence extraction with corpus traceability.
+- `src/evidence/claim_evidence_mapper.py`: transparent SUPPORTS/REFUTES/NEUTRAL/INSUFFICIENT baseline mapping.
+- `src/evidence/citation_validator.py`: exact document ID, sentence index, text, and metadata validation.
+- `src/evidence/verdict_classifier.py`: configurable abstaining verdict classification.
+- `src/evidence/evidence_grounding_pipeline.py`: public end-to-end retrieval, reranking, evidence mapping, citation, and verdict API.
+
+The relationship mapper is a rule-based baseline, not a validated scientific entailment or citation-verification model. It does not use gold labels at inference time.
+
+```python
+from src.evidence import EvidenceGroundingPipeline
+
+pipeline = EvidenceGroundingPipeline(
+    corpus,
+    retriever=dense_retriever,
+    cross_encoder_reranker=cross_encoder,
+    evidence_aware_reranker=evidence_aware,
+    adaptive_retriever=None,
+)
+result = pipeline.process("A scientific claim", claim_id="claim-1", top_k=50)
+```
+
+Configuration: [configs/phase4_evidence_grounding.yaml](configs/phase4_evidence_grounding.yaml).
+Coverage audit: [docs/PHASE3_COVERAGE_AUDIT.md](docs/PHASE3_COVERAGE_AUDIT.md).
+Implementation report: [docs/PHASE4_EVIDENCE_GROUNDING_REPORT.md](docs/PHASE4_EVIDENCE_GROUNDING_REPORT.md).
+
+## Phase 5 controlled held-out evaluation
+
+`run_0010` freezes six controlled systems and evaluates the official SciFact held-out claim texts on CPU. The frozen configuration hash is `05c8c0bf3fddebcb3b43e739760d14770a10eb0c021fd07c6b323d1387511c3e`.
+
+The official held-out claims file contains only claim text; it provides no relevance judgments, verdict labels, evidence annotations, or cited document IDs. Retrieval metrics, claim-verification accuracy, evidence coverage, and paired significance comparisons are therefore **unavailable** rather than zero or inferable. The run still preserves 300 per-query predictions, 1,800 retrieval records, 1,800 performance records, abstention behavior, and citation validity observations.
+
+- Report: [docs/PHASE5_CONTROLLED_EXPERIMENTS_REPORT.md](docs/PHASE5_CONTROLLED_EXPERIMENTS_REPORT.md)
+- Run: [results/runs/run_0010/](results/runs/run_0010/)
+
+The controlled evidence-grounded system abstained for 46.67% of the held-out claims. Its measured mean end-to-end latency was 23.50 seconds/query. Citation validity/traceability was 100% within the rule-based, document-sentence mappings produced for this run.
+
 ## Limitations
 
-The main evaluation is a controlled 50-query study. Day 3 uses only five queries. Day 2 contains Gemini free-tier quota failures and 401 raw records versus 400 unique combinations because of one duplicate record. The evaluation is descriptive, with no statistical significance testing or causal inference. Results depend on the selected models, reranker, prompt, and retrieval corpus.
+The Phase 2 evaluation uses the official SciFact dev claim split (300 queries) and keeps the historical 50-query sample as a separate exploratory artifact. Day 3 uses only five queries. Day 2 contains Gemini free-tier quota failures and 401 raw records versus 400 unique combinations because of one duplicate record. The evaluation is descriptive, with paired statistical testing reported where appropriate, but no final test-set conclusions are inferred beyond the dev split used here. Results depend on the selected models, reranker, prompt, and retrieval corpus.
 
 ## Reproducibility and Safety
 

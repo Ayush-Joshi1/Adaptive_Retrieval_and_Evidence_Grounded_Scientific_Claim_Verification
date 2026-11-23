@@ -1,0 +1,19 @@
+day,condition,representation,K,retrieval_hit,verdict_accuracy,retrieval_delta_vs_day1,verdict_delta_vs_day1
+Day 1,baseline,full_documents,1,0.54,0.62,0.0,0.0
+Day 1,baseline,full_documents,3,0.7,0.72,0.0,0.0
+Day 1,baseline,full_documents,5,0.76,0.74,0.0,0.0
+Day 1,baseline,full_documents,10,0.9,0.8,0.0,0.0
+Day 2,baseline,full_documents,1,0.54,0.6190476190476191,0.0,0.0
+Day 2,reranked,full_documents_reranked,1,0.62,0.7073170731707317,0.07999999999999996,0.0882694541231126
+Day 2,baseline,full_documents,3,0.7,0.7380952380952381,0.0,0.0
+Day 2,reranked,full_documents_reranked,3,0.84,0.7804878048780488,0.14,0.04239256678281067
+Day 2,baseline,full_documents,5,0.76,0.7317073170731707,0.0,0.0
+Day 2,reranked,full_documents_reranked,5,0.88,0.7560975609756098,0.12,0.024390243902439046
+Day 2,baseline,full_documents,10,0.9,0.8048780487804879,0.0,0.0
+Day 2,reranked,full_documents_reranked,10,0.9,0.8,0.0,-0.004878048780487809
+Day 3,full_documents,full_documents,3,,0.2,,-0.52
+Day 3,full_documents,full_documents,5,,0.4,,-0.33999999999999997
+Day 3,original_evidence,original_evidence,3,,0.2,,-0.52
+Day 3,original_evidence,original_evidence,5,,0.4,,-0.33999999999999997
+Day 3,diverse_evidence,diverse_evidence,3,,0.2,,-0.52
+Day 3,diverse_evidence,diverse_evidence,5,,0.4,,-0.33999999999999997

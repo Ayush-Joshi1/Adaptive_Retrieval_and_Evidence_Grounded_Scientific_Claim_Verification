@@ -1,0 +1,13 @@
+{
+  "code_sha256": "be1045584519a1c481ca89c05a3f3142ac9d263c836974f60f78f957a7782a90",
+  "completed_at": "2026-11-23T11:57:44.935260+00:00",
+  "created_at": "2026-11-23T07:37:34.759879+00:00",
+  "experiment": "Phase 3 Experiment B",
+  "git_commit": "127c69b1e766632224fc569de2be724b48199546",
+  "official_test_claim_file_opened": false,
+  "protected_phase3_report_unchanged": true,
+  "protected_runs_unchanged": true,
+  "query_count": 300,
+  "run_id": "run_0008",
+  "status": "completed"
+}

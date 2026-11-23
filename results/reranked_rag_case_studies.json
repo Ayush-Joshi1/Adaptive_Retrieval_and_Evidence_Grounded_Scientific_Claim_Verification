@@ -1,0 +1,772 @@
+{
+  "1320": [
+    {
+      "query_id": "1320",
+      "K": 1,
+      "ground_truth": "CONTRADICT",
+      "baseline_prediction": "INSUFFICIENT_EVIDENCE",
+      "reranked_prediction": "INSUFFICIENT_EVIDENCE",
+      "baseline_retrieval_hit": false,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "14192687"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "16284655"
+      ],
+      "reranker_scores": [
+        2.692152976989746
+      ],
+      "original_faiss_ranks": [
+        2
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "changed"
+    },
+    {
+      "query_id": "1320",
+      "K": 3,
+      "ground_truth": "CONTRADICT",
+      "baseline_prediction": "INSUFFICIENT_EVIDENCE",
+      "reranked_prediction": "INSUFFICIENT_EVIDENCE",
+      "baseline_retrieval_hit": true,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "14192687",
+        "16284655",
+        "46193388"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "16284655",
+        "2437807",
+        "36637129"
+      ],
+      "reranker_scores": [
+        2.692152976989746,
+        -0.2341288924217224,
+        -0.4195115566253662
+      ],
+      "original_faiss_ranks": [
+        2,
+        5,
+        7
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "unchanged"
+    },
+    {
+      "query_id": "1320",
+      "K": 5,
+      "ground_truth": "CONTRADICT",
+      "baseline_prediction": "INSUFFICIENT_EVIDENCE",
+      "reranked_prediction": "INSUFFICIENT_EVIDENCE",
+      "baseline_retrieval_hit": true,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "14192687",
+        "16284655",
+        "46193388",
+        "803312",
+        "2437807"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "16284655",
+        "2437807",
+        "36637129",
+        "46193388",
+        "14192687"
+      ],
+      "reranker_scores": [
+        2.692152976989746,
+        -0.2341288924217224,
+        -0.4195115566253662,
+        -0.8468401432037354,
+        -1.1697659492492676
+      ],
+      "original_faiss_ranks": [
+        2,
+        5,
+        7,
+        3,
+        1
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "unchanged"
+    },
+    {
+      "query_id": "1320",
+      "K": 10,
+      "ground_truth": "CONTRADICT",
+      "baseline_prediction": "CONTRADICT",
+      "reranked_prediction": "CONTRADICT",
+      "baseline_retrieval_hit": true,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "14192687",
+        "16284655",
+        "46193388",
+        "803312",
+        "2437807",
+        "16939583",
+        "36637129",
+        "5395426",
+        "12742164",
+        "4405194"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "16284655",
+        "2437807",
+        "36637129",
+        "46193388",
+        "14192687",
+        "16939583",
+        "12742164",
+        "803312",
+        "5395426",
+        "4405194"
+      ],
+      "reranker_scores": [
+        2.692152976989746,
+        -0.2341288924217224,
+        -0.4195115566253662,
+        -0.8468401432037354,
+        -1.1697659492492676,
+        -1.8197259902954102,
+        -2.690547466278076,
+        -3.492872476577759,
+        -5.698634147644043,
+        -5.78495979309082
+      ],
+      "original_faiss_ranks": [
+        2,
+        5,
+        7,
+        3,
+        1,
+        6,
+        9,
+        4,
+        8,
+        10
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "unchanged"
+    }
+  ],
+  "1019": [
+    {
+      "query_id": "1019",
+      "K": 1,
+      "ground_truth": "SUPPORT",
+      "baseline_prediction": "INSUFFICIENT_EVIDENCE",
+      "reranked_prediction": "INSUFFICIENT_EVIDENCE",
+      "baseline_retrieval_hit": false,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "196664003"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "11603066"
+      ],
+      "reranker_scores": [
+        1.6337130069732666
+      ],
+      "original_faiss_ranks": [
+        6
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "changed"
+    },
+    {
+      "query_id": "1019",
+      "K": 3,
+      "ground_truth": "SUPPORT",
+      "baseline_prediction": "INSUFFICIENT_EVIDENCE",
+      "reranked_prediction": "INSUFFICIENT_EVIDENCE",
+      "baseline_retrieval_hit": false,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "196664003",
+        "12370190",
+        "21578627"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "11603066",
+        "12370190",
+        "196664003"
+      ],
+      "reranker_scores": [
+        1.6337130069732666,
+        -4.9497785568237305,
+        -7.8640618324279785
+      ],
+      "original_faiss_ranks": [
+        6,
+        2,
+        1
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "changed"
+    },
+    {
+      "query_id": "1019",
+      "K": 5,
+      "ground_truth": "SUPPORT",
+      "baseline_prediction": "INSUFFICIENT_EVIDENCE",
+      "reranked_prediction": "INSUFFICIENT_EVIDENCE",
+      "baseline_retrieval_hit": false,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "196664003",
+        "12370190",
+        "21578627",
+        "7421677",
+        "24742375"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "11603066",
+        "12370190",
+        "196664003",
+        "7116734",
+        "28707489"
+      ],
+      "reranker_scores": [
+        1.6337130069732666,
+        -4.9497785568237305,
+        -7.8640618324279785,
+        -8.748943328857422,
+        -10.478128433227539
+      ],
+      "original_faiss_ranks": [
+        6,
+        2,
+        1,
+        10,
+        9
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "changed"
+    },
+    {
+      "query_id": "1019",
+      "K": 10,
+      "ground_truth": "SUPPORT",
+      "baseline_prediction": "INSUFFICIENT_EVIDENCE",
+      "reranked_prediction": "INSUFFICIENT_EVIDENCE",
+      "baseline_retrieval_hit": true,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "196664003",
+        "12370190",
+        "21578627",
+        "7421677",
+        "24742375",
+        "11603066",
+        "39728826",
+        "20620012",
+        "28707489",
+        "7116734"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "11603066",
+        "12370190",
+        "196664003",
+        "7116734",
+        "28707489",
+        "20620012",
+        "24742375",
+        "21578627",
+        "39728826",
+        "7421677"
+      ],
+      "reranker_scores": [
+        1.6337130069732666,
+        -4.9497785568237305,
+        -7.8640618324279785,
+        -8.748943328857422,
+        -10.478128433227539,
+        -10.598644256591797,
+        -10.817556381225586,
+        -10.860508918762207,
+        -11.048200607299805,
+        -11.268295288085938
+      ],
+      "original_faiss_ranks": [
+        6,
+        2,
+        1,
+        10,
+        9,
+        8,
+        5,
+        3,
+        7,
+        4
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "unchanged"
+    }
+  ],
+  "1370": [
+    {
+      "query_id": "1370",
+      "K": 1,
+      "ground_truth": "CONTRADICT",
+      "baseline_prediction": "INSUFFICIENT_EVIDENCE",
+      "reranked_prediction": "INSUFFICIENT_EVIDENCE",
+      "baseline_retrieval_hit": false,
+      "reranked_retrieval_hit": false,
+      "baseline_retrieved_corpus_ids": [
+        "21553394"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "21553394"
+      ],
+      "reranker_scores": [
+        0.5361318588256836
+      ],
+      "original_faiss_ranks": [
+        1
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "unchanged"
+    },
+    {
+      "query_id": "1370",
+      "K": 3,
+      "ground_truth": "CONTRADICT",
+      "baseline_prediction": "INSUFFICIENT_EVIDENCE",
+      "reranked_prediction": "CONTRADICT",
+      "baseline_retrieval_hit": false,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "21553394",
+        "22023404",
+        "36960449"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "21553394",
+        "2425364",
+        "22023404"
+      ],
+      "reranker_scores": [
+        0.5361318588256836,
+        0.21144890785217285,
+        -0.35024672746658325
+      ],
+      "original_faiss_ranks": [
+        1,
+        9,
+        2
+      ],
+      "verdict_status": "improved",
+      "retrieval_status": "changed"
+    },
+    {
+      "query_id": "1370",
+      "K": 5,
+      "ground_truth": "CONTRADICT",
+      "baseline_prediction": "INSUFFICIENT_EVIDENCE",
+      "reranked_prediction": "CONTRADICT",
+      "baseline_retrieval_hit": false,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "21553394",
+        "22023404",
+        "36960449",
+        "3150030",
+        "30720103"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "21553394",
+        "2425364",
+        "22023404",
+        "23267371",
+        "30720103"
+      ],
+      "reranker_scores": [
+        0.5361318588256836,
+        0.21144890785217285,
+        -0.35024672746658325,
+        -1.9371956586837769,
+        -2.1677632331848145
+      ],
+      "original_faiss_ranks": [
+        1,
+        9,
+        2,
+        10,
+        5
+      ],
+      "verdict_status": "improved",
+      "retrieval_status": "changed"
+    },
+    {
+      "query_id": "1370",
+      "K": 10,
+      "ground_truth": "CONTRADICT",
+      "baseline_prediction": "CONTRADICT",
+      "reranked_prediction": "CONTRADICT",
+      "baseline_retrieval_hit": true,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "21553394",
+        "22023404",
+        "36960449",
+        "3150030",
+        "30720103",
+        "9555784",
+        "33740844",
+        "3222187",
+        "2425364",
+        "23267371"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "21553394",
+        "2425364",
+        "22023404",
+        "23267371",
+        "30720103",
+        "9555784",
+        "3150030",
+        "36960449",
+        "33740844",
+        "3222187"
+      ],
+      "reranker_scores": [
+        0.5361318588256836,
+        0.21144890785217285,
+        -0.35024672746658325,
+        -1.9371956586837769,
+        -2.1677632331848145,
+        -3.029937744140625,
+        -3.037935733795166,
+        -5.253853797912598,
+        -5.9595136642456055,
+        -6.460242748260498
+      ],
+      "original_faiss_ranks": [
+        1,
+        9,
+        2,
+        10,
+        5,
+        6,
+        4,
+        3,
+        7,
+        8
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "unchanged"
+    }
+  ],
+  "1185": [
+    {
+      "query_id": "1185",
+      "K": 1,
+      "ground_truth": "SUPPORT",
+      "baseline_prediction": null,
+      "reranked_prediction": null,
+      "baseline_retrieval_hit": false,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "21203899"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "16737210"
+      ],
+      "reranker_scores": [
+        3.743211507797241
+      ],
+      "original_faiss_ranks": [
+        4
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "changed"
+    },
+    {
+      "query_id": "1185",
+      "K": 3,
+      "ground_truth": "SUPPORT",
+      "baseline_prediction": null,
+      "reranked_prediction": null,
+      "baseline_retrieval_hit": false,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "21203899",
+        "21859699",
+        "41774099"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "16737210",
+        "21859699",
+        "41774099"
+      ],
+      "reranker_scores": [
+        3.743211507797241,
+        -1.2325785160064697,
+        -3.4787158966064453
+      ],
+      "original_faiss_ranks": [
+        4,
+        2,
+        3
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "changed"
+    },
+    {
+      "query_id": "1185",
+      "K": 5,
+      "ground_truth": "SUPPORT",
+      "baseline_prediction": null,
+      "reranked_prediction": null,
+      "baseline_retrieval_hit": true,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "21203899",
+        "21859699",
+        "41774099",
+        "16737210",
+        "7034001"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "16737210",
+        "21859699",
+        "41774099",
+        "21203899",
+        "10582939"
+      ],
+      "reranker_scores": [
+        3.743211507797241,
+        -1.2325785160064697,
+        -3.4787158966064453,
+        -4.502006530761719,
+        -5.146322727203369
+      ],
+      "original_faiss_ranks": [
+        4,
+        2,
+        3,
+        1,
+        7
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "unchanged"
+    },
+    {
+      "query_id": "1185",
+      "K": 10,
+      "ground_truth": "SUPPORT",
+      "baseline_prediction": null,
+      "reranked_prediction": null,
+      "baseline_retrieval_hit": true,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "21203899",
+        "21859699",
+        "41774099",
+        "16737210",
+        "7034001",
+        "21616324",
+        "10582939",
+        "202259",
+        "10072941",
+        "31942055"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "16737210",
+        "21859699",
+        "41774099",
+        "21203899",
+        "10582939",
+        "21616324",
+        "31942055",
+        "7034001",
+        "10072941",
+        "202259"
+      ],
+      "reranker_scores": [
+        3.743211507797241,
+        -1.2325785160064697,
+        -3.4787158966064453,
+        -4.502006530761719,
+        -5.146322727203369,
+        -5.867190361022949,
+        -6.966371536254883,
+        -7.673821449279785,
+        -8.70025634765625,
+        -9.407691955566406
+      ],
+      "original_faiss_ranks": [
+        4,
+        2,
+        3,
+        1,
+        7,
+        6,
+        10,
+        5,
+        9,
+        8
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "unchanged"
+    }
+  ],
+  "314": [
+    {
+      "query_id": "314",
+      "K": 1,
+      "ground_truth": "SUPPORT",
+      "baseline_prediction": "SUPPORT",
+      "reranked_prediction": null,
+      "baseline_retrieval_hit": false,
+      "reranked_retrieval_hit": false,
+      "baseline_retrieved_corpus_ids": [
+        "544971"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "544971"
+      ],
+      "reranker_scores": [
+        0.2832013964653015
+      ],
+      "original_faiss_ranks": [
+        1
+      ],
+      "verdict_status": "worsened",
+      "retrieval_status": "unchanged"
+    },
+    {
+      "query_id": "314",
+      "K": 3,
+      "ground_truth": "SUPPORT",
+      "baseline_prediction": "SUPPORT",
+      "reranked_prediction": null,
+      "baseline_retrieval_hit": false,
+      "reranked_retrieval_hit": false,
+      "baseline_retrieved_corpus_ids": [
+        "544971",
+        "2638387",
+        "25014337"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "544971",
+        "2638387",
+        "25014337"
+      ],
+      "reranker_scores": [
+        0.2832013964653015,
+        -2.567490577697754,
+        -5.489074230194092
+      ],
+      "original_faiss_ranks": [
+        1,
+        2,
+        3
+      ],
+      "verdict_status": "worsened",
+      "retrieval_status": "unchanged"
+    },
+    {
+      "query_id": "314",
+      "K": 5,
+      "ground_truth": "SUPPORT",
+      "baseline_prediction": null,
+      "reranked_prediction": null,
+      "baseline_retrieval_hit": false,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "544971",
+        "2638387",
+        "25014337",
+        "20996244",
+        "28904104"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "544971",
+        "2638387",
+        "25014337",
+        "4347374",
+        "2319305"
+      ],
+      "reranker_scores": [
+        0.2832013964653015,
+        -2.567490577697754,
+        -5.489074230194092,
+        -5.598978519439697,
+        -6.736983299255371
+      ],
+      "original_faiss_ranks": [
+        1,
+        2,
+        3,
+        9,
+        7
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "changed"
+    },
+    {
+      "query_id": "314",
+      "K": 10,
+      "ground_truth": "SUPPORT",
+      "baseline_prediction": null,
+      "reranked_prediction": null,
+      "baseline_retrieval_hit": true,
+      "reranked_retrieval_hit": true,
+      "baseline_retrieved_corpus_ids": [
+        "544971",
+        "2638387",
+        "25014337",
+        "20996244",
+        "28904104",
+        "41314611",
+        "2319305",
+        "37768883",
+        "4347374",
+        "2762601"
+      ],
+      "reranked_retrieved_corpus_ids": [
+        "544971",
+        "2638387",
+        "25014337",
+        "4347374",
+        "2319305",
+        "41314611",
+        "20996244",
+        "28904104",
+        "37768883",
+        "2762601"
+      ],
+      "reranker_scores": [
+        0.2832013964653015,
+        -2.567490577697754,
+        -5.489074230194092,
+        -5.598978519439697,
+        -6.736983299255371,
+        -7.3048787117004395,
+        -7.73675012588501,
+        -7.818849563598633,
+        -9.022342681884766,
+        -9.898859024047852
+      ],
+      "original_faiss_ranks": [
+        1,
+        2,
+        3,
+        9,
+        7,
+        6,
+        4,
+        5,
+        8,
+        10
+      ],
+      "verdict_status": "unchanged",
+      "retrieval_status": "unchanged"
+    }
+  ]
+}

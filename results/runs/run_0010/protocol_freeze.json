@@ -1,0 +1,13 @@
+{
+  "development_experiments_verified": [
+    "run_0006",
+    "run_0008",
+    "run_0009"
+  ],
+  "development_query_count": 300,
+  "heldout_test_opened": false,
+  "no_post_freeze_tuning": true,
+  "official_test_claim_file": "data/processed/raw_scifact/data/claims_test.jsonl",
+  "status": "frozen",
+  "timestamp": "2026-11-23T12:58:22.714796+00:00"
+}

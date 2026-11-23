@@ -1,0 +1,19 @@
+{
+  "configuration_count": 30,
+  "figures": [
+    "baseline_vs_cross_encoder_vs_evidence_aware_ndcg10.png",
+    "performance_across_candidate_pool_sizes.png",
+    "individual_evidence_signal_contribution.png",
+    "quality_vs_latency.png",
+    "principal_confidence_intervals.png"
+  ],
+  "final_summary": "docs/PHASE3_FINAL_SUMMARY.md",
+  "historical_runs_unchanged": true,
+  "official_test_claim_file_opened": false,
+  "query_count": 300,
+  "record_count": 9000,
+  "report": "docs/PHASE3_EXPERIMENT_C_REPORT.md",
+  "run_id": "run_0009",
+  "status": "completed",
+  "test_status": "passed"
+}

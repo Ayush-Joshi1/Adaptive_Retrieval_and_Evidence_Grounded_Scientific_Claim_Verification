@@ -1,0 +1,21 @@
+{
+  "configuration_count": 10,
+  "figures": [
+    "fixed_vs_adaptive_quality.png",
+    "candidate_processing_comparison.png",
+    "adaptive_stopping_depth_distribution.png",
+    "quality_vs_end_to_end_latency.png",
+    "quality_vs_inference_time.png",
+    "quality_efficiency_tradeoff.png",
+    "principal_confidence_intervals.png"
+  ],
+  "historical_runs_unchanged": true,
+  "official_test_claim_file_opened": false,
+  "query_count": 300,
+  "record_count": 3000,
+  "report": "docs/PHASE3_EXPERIMENT_B_REPORT.md",
+  "run_id": "run_0008",
+  "run_wall_time_seconds": 185.42007920000106,
+  "status": "completed",
+  "test_status": "passed"
+}

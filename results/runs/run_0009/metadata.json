@@ -1,0 +1,17 @@
+{
+  "code_sha256": "a93ad78237ad6c396a434f946ce4c579dadf98924095c883c8950f1ca707988b",
+  "configuration_count": 30,
+  "created_at": "2026-11-23T12:35:08.483633+00:00",
+  "experiment": "Phase 3 Experiment C",
+  "git_commit": "127c69b1e766632224fc569de2be724b48199546",
+  "official_test_claim_file_opened": false,
+  "platform": "Windows-10-10.0.19045-SP0",
+  "protected_phase3_report_unchanged": true,
+  "protected_runs_unchanged": true,
+  "python_version": "3.13.7",
+  "query_count": 300,
+  "record_count": 9000,
+  "run_id": "run_0009",
+  "run_wall_time_seconds": 31.403004700001475,
+  "status": "completed"
+}

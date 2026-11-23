@@ -1,0 +1,9 @@
+{
+  "total_combinations": 400,
+  "attempted_combinations": 400,
+  "successful_combinations": 329,
+  "failed_combinations": 71,
+  "next_unattempted_combination": null,
+  "timestamp": "2026-08-25T09:21:47.935753+00:00",
+  "current_condition_query_k": null
+}

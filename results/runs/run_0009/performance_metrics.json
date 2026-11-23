@@ -1,0 +1,605 @@
+{
+  "cross_encoder_inference_rerun_count": 0,
+  "dense_pool_10_cross_encoder_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_10_cross_encoder_end_to_end_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_10_cross_encoder_lexical_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_10_cross_encoder_lexical_end_to_end_latency": {
+    "mean_seconds": 0.045923237999832056,
+    "median_seconds": 0.03886950000014622,
+    "p95_seconds": 0.07431519999772718
+  },
+  "dense_pool_10_cross_encoder_lexical_reranking_latency": {
+    "mean_seconds": 0.002409444333194794,
+    "median_seconds": 0.002154300000256626,
+    "p95_seconds": 0.004406200001540128
+  },
+  "dense_pool_10_cross_encoder_lexical_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_10_cross_encoder_reranking_latency": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_10_cross_encoder_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_10_cross_encoder_scientific_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_10_cross_encoder_scientific_end_to_end_latency": {
+    "mean_seconds": 0.04565305633330354,
+    "median_seconds": 0.0385464500004673,
+    "p95_seconds": 0.07421989999966172
+  },
+  "dense_pool_10_cross_encoder_scientific_reranking_latency": {
+    "mean_seconds": 0.002139262666666279,
+    "median_seconds": 0.0018715000005613547,
+    "p95_seconds": 0.0037144000016269274
+  },
+  "dense_pool_10_cross_encoder_scientific_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_10_evidence_aware_full_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_10_evidence_aware_full_end_to_end_latency": {
+    "mean_seconds": 0.04568764966652452,
+    "median_seconds": 0.038330499999574386,
+    "p95_seconds": 0.07407789999888337
+  },
+  "dense_pool_10_evidence_aware_full_reranking_latency": {
+    "mean_seconds": 0.0021738559998872612,
+    "median_seconds": 0.0019024000011995668,
+    "p95_seconds": 0.0035812999994959682
+  },
+  "dense_pool_10_evidence_aware_full_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_10_original_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_10_original_end_to_end_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_10_original_reranking_latency": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_10_original_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_20_cross_encoder_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_20_cross_encoder_end_to_end_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_20_cross_encoder_lexical_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_20_cross_encoder_lexical_end_to_end_latency": {
+    "mean_seconds": 0.04796038499997546,
+    "median_seconds": 0.0406603500014171,
+    "p95_seconds": 0.0798493000002054
+  },
+  "dense_pool_20_cross_encoder_lexical_reranking_latency": {
+    "mean_seconds": 0.004446591333338195,
+    "median_seconds": 0.003914399998393492,
+    "p95_seconds": 0.007560900001408299
+  },
+  "dense_pool_20_cross_encoder_lexical_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_20_cross_encoder_reranking_latency": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_20_cross_encoder_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_20_cross_encoder_scientific_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_20_cross_encoder_scientific_end_to_end_latency": {
+    "mean_seconds": 0.04797088333322487,
+    "median_seconds": 0.04085335000036139,
+    "p95_seconds": 0.07677009999861184
+  },
+  "dense_pool_20_cross_encoder_scientific_reranking_latency": {
+    "mean_seconds": 0.004457089666587611,
+    "median_seconds": 0.00392920000012964,
+    "p95_seconds": 0.0072559000000183005
+  },
+  "dense_pool_20_cross_encoder_scientific_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_20_evidence_aware_full_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_20_evidence_aware_full_end_to_end_latency": {
+    "mean_seconds": 0.0478226426666212,
+    "median_seconds": 0.04039105000174459,
+    "p95_seconds": 0.07653479999680712
+  },
+  "dense_pool_20_evidence_aware_full_reranking_latency": {
+    "mean_seconds": 0.004308848999983942,
+    "median_seconds": 0.0038135500017233426,
+    "p95_seconds": 0.007482600001821993
+  },
+  "dense_pool_20_evidence_aware_full_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_20_original_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_20_original_end_to_end_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_20_original_reranking_latency": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_20_original_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_50_cross_encoder_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_50_cross_encoder_end_to_end_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_50_cross_encoder_lexical_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_50_cross_encoder_lexical_end_to_end_latency": {
+    "mean_seconds": 0.05441200100010974,
+    "median_seconds": 0.04683410000234289,
+    "p95_seconds": 0.08600259999730042
+  },
+  "dense_pool_50_cross_encoder_lexical_reranking_latency": {
+    "mean_seconds": 0.01089820733347248,
+    "median_seconds": 0.010169999999561696,
+    "p95_seconds": 0.017990299998928094
+  },
+  "dense_pool_50_cross_encoder_lexical_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_50_cross_encoder_reranking_latency": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_50_cross_encoder_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_50_cross_encoder_scientific_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_50_cross_encoder_scientific_end_to_end_latency": {
+    "mean_seconds": 0.05442233966667724,
+    "median_seconds": 0.04731474999971397,
+    "p95_seconds": 0.08617489999960526
+  },
+  "dense_pool_50_cross_encoder_scientific_reranking_latency": {
+    "mean_seconds": 0.010908546000039982,
+    "median_seconds": 0.0101919499993528,
+    "p95_seconds": 0.01772479999999632
+  },
+  "dense_pool_50_cross_encoder_scientific_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_50_evidence_aware_full_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_50_evidence_aware_full_end_to_end_latency": {
+    "mean_seconds": 0.05429752066652024,
+    "median_seconds": 0.04689355000118667,
+    "p95_seconds": 0.08233569999902102
+  },
+  "dense_pool_50_evidence_aware_full_reranking_latency": {
+    "mean_seconds": 0.010783726999882977,
+    "median_seconds": 0.010105699999257922,
+    "p95_seconds": 0.015603099996951642
+  },
+  "dense_pool_50_evidence_aware_full_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_50_original_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_50_original_end_to_end_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "dense_pool_50_original_reranking_latency": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "dense_pool_50_original_retrieval_latency": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189
+  },
+  "evaluation_wall_time_seconds": 13.84366140000202,
+  "hybrid_pool_10_cross_encoder_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_10_cross_encoder_end_to_end_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_10_cross_encoder_lexical_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_10_cross_encoder_lexical_end_to_end_latency": {
+    "mean_seconds": 0.45284303666663617,
+    "median_seconds": 0.3965636499997345,
+    "p95_seconds": 0.9754251000013028
+  },
+  "hybrid_pool_10_cross_encoder_lexical_reranking_latency": {
+    "mean_seconds": 0.002186760666615252,
+    "median_seconds": 0.0019064999996771803,
+    "p95_seconds": 0.004017099996417528
+  },
+  "hybrid_pool_10_cross_encoder_lexical_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_10_cross_encoder_reranking_latency": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_10_cross_encoder_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_10_cross_encoder_scientific_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_10_cross_encoder_scientific_end_to_end_latency": {
+    "mean_seconds": 0.45286764633355536,
+    "median_seconds": 0.3961723999982496,
+    "p95_seconds": 0.975308999997651
+  },
+  "hybrid_pool_10_cross_encoder_scientific_reranking_latency": {
+    "mean_seconds": 0.0022113703335344325,
+    "median_seconds": 0.0018861999997170642,
+    "p95_seconds": 0.0039121000008890405
+  },
+  "hybrid_pool_10_cross_encoder_scientific_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_10_evidence_aware_full_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_10_evidence_aware_full_end_to_end_latency": {
+    "mean_seconds": 0.45287465066663574,
+    "median_seconds": 0.3965193999993062,
+    "p95_seconds": 0.9754224000025715
+  },
+  "hybrid_pool_10_evidence_aware_full_reranking_latency": {
+    "mean_seconds": 0.0022183746666147876,
+    "median_seconds": 0.0019069499994657235,
+    "p95_seconds": 0.003736100003152387
+  },
+  "hybrid_pool_10_evidence_aware_full_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_10_original_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_10_original_end_to_end_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_10_original_reranking_latency": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_10_original_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_20_cross_encoder_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_20_cross_encoder_end_to_end_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_20_cross_encoder_lexical_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_20_cross_encoder_lexical_end_to_end_latency": {
+    "mean_seconds": 0.4548800406665881,
+    "median_seconds": 0.3982156499987468,
+    "p95_seconds": 0.9786734999979672
+  },
+  "hybrid_pool_20_cross_encoder_lexical_reranking_latency": {
+    "mean_seconds": 0.004223764666567149,
+    "median_seconds": 0.0038073499999882188,
+    "p95_seconds": 0.006499999999505235
+  },
+  "hybrid_pool_20_cross_encoder_lexical_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_20_cross_encoder_reranking_latency": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_20_cross_encoder_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_20_cross_encoder_scientific_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_20_cross_encoder_scientific_end_to_end_latency": {
+    "mean_seconds": 0.4549587116668772,
+    "median_seconds": 0.3979017500005284,
+    "p95_seconds": 0.9778344000005745
+  },
+  "hybrid_pool_20_cross_encoder_scientific_reranking_latency": {
+    "mean_seconds": 0.004302435666856278,
+    "median_seconds": 0.003964399998949375,
+    "p95_seconds": 0.0071237000011024065
+  },
+  "hybrid_pool_20_cross_encoder_scientific_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_20_evidence_aware_full_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_20_evidence_aware_full_end_to_end_latency": {
+    "mean_seconds": 0.45481489266666664,
+    "median_seconds": 0.39860214999862364,
+    "p95_seconds": 0.9769763000003877
+  },
+  "hybrid_pool_20_evidence_aware_full_reranking_latency": {
+    "mean_seconds": 0.004158616666645684,
+    "median_seconds": 0.00381290000223089,
+    "p95_seconds": 0.006551700000272831
+  },
+  "hybrid_pool_20_evidence_aware_full_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_20_original_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_20_original_end_to_end_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_20_original_reranking_latency": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_20_original_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_50_cross_encoder_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_50_cross_encoder_end_to_end_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_50_cross_encoder_lexical_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_50_cross_encoder_lexical_end_to_end_latency": {
+    "mean_seconds": 0.4610028699998535,
+    "median_seconds": 0.4055451499989431,
+    "p95_seconds": 0.983743200002209
+  },
+  "hybrid_pool_50_cross_encoder_lexical_reranking_latency": {
+    "mean_seconds": 0.010346593999832596,
+    "median_seconds": 0.009717399998407927,
+    "p95_seconds": 0.014485100000456441
+  },
+  "hybrid_pool_50_cross_encoder_lexical_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_50_cross_encoder_reranking_latency": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_50_cross_encoder_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_50_cross_encoder_scientific_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_50_cross_encoder_scientific_end_to_end_latency": {
+    "mean_seconds": 0.46102569166664276,
+    "median_seconds": 0.4078558499995779,
+    "p95_seconds": 0.9818010000017239
+  },
+  "hybrid_pool_50_cross_encoder_scientific_reranking_latency": {
+    "mean_seconds": 0.010369415666621837,
+    "median_seconds": 0.009729699999297736,
+    "p95_seconds": 0.015819799999007955
+  },
+  "hybrid_pool_50_cross_encoder_scientific_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_50_evidence_aware_full_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_50_evidence_aware_full_end_to_end_latency": {
+    "mean_seconds": 0.46191328066680093,
+    "median_seconds": 0.40709850000075676,
+    "p95_seconds": 0.984181300002092
+  },
+  "hybrid_pool_50_evidence_aware_full_reranking_latency": {
+    "mean_seconds": 0.011257004666780025,
+    "median_seconds": 0.009873000000879983,
+    "p95_seconds": 0.014559100000042235
+  },
+  "hybrid_pool_50_evidence_aware_full_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_50_original_cross_encoder_inference": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_50_original_end_to_end_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "hybrid_pool_50_original_reranking_latency": {
+    "mean_seconds": 0.0,
+    "median_seconds": 0.0,
+    "p95_seconds": 0.0
+  },
+  "hybrid_pool_50_original_retrieval_latency": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517
+  },
+  "query_count": 300
+}

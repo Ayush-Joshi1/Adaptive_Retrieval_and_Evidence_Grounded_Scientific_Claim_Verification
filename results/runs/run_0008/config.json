@@ -1,0 +1,54 @@
+{
+  "adaptive_strategies": {
+    "confidence": {
+      "rule": "stop when signal >= threshold; otherwise expand 10 -> 20 -> 50",
+      "signal": "z-like distance of top normalized retrieval score from score-distribution mean",
+      "threshold": 0.25
+    },
+    "score_gap": {
+      "rule": "stop when signal >= threshold; otherwise expand 10 -> 20 -> 50",
+      "signal": "min-max-normalized top-score minus second-score",
+      "threshold": 0.1
+    }
+  },
+  "bootstrap_resamples": 10000,
+  "code_sha256": "be1045584519a1c481ca89c05a3f3142ac9d263c836974f60f78f957a7782a90",
+  "comparison_family_size": 60,
+  "dataset": "BEIR SciFact",
+  "dataset_manifest": "manifests/dataset_manifest.json",
+  "dataset_manifest_sha256": "55913e5a6bae67a0a24223ec0e7d7cba2624c1dd45d4b5340239fe07f9b27c2b",
+  "dataset_split": "official SciFact development",
+  "dev_claims_path": "data/processed/raw_scifact/data/claims_dev.jsonl",
+  "dev_claims_sha256": "86f0435d08fdb65d1aa41d1472684f57e6e71930626497bdf4d7a9ec1a632217",
+  "evaluation_cutoff": 10,
+  "experiment": "Phase 3 Experiment B",
+  "fixed_depths": [
+    10,
+    20,
+    50
+  ],
+  "git_commit": "127c69b1e766632224fc569de2be724b48199546",
+  "hybrid_rrf_constant": 60,
+  "initial_depth": 10,
+  "maximum_depth": 50,
+  "official_test_claim_file_opened": false,
+  "qrels": "BeIR/scifact-qrels test split mapped to official development",
+  "qrels_selection": "development evaluation only; no qrels used for stopping decisions",
+  "query_count": 300,
+  "reranker": {
+    "batch_size": 16,
+    "device": "cpu",
+    "model_load_seconds": 7.242395900000702,
+    "model_name": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "strict_model_loading": true
+  },
+  "resumed": true,
+  "retrieval_methods": [
+    "dense",
+    "hybrid"
+  ],
+  "run_id": "run_0008",
+  "run_wall_time_seconds": 185.42007920000106,
+  "seed": 42,
+  "status": "completed"
+}

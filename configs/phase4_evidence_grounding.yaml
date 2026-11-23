@@ -1,0 +1,36 @@
+phase: 4
+experiment: "Evidence Grounding"
+
+evidence_selection:
+  max_sentences_per_document: 2
+  max_total_sentences: 6
+  relevance_threshold: 0.25
+  embedding_batch_size: 64
+
+claim_evidence_mapping:
+  relevance_threshold: 0.25
+  overlap_threshold: 0.08
+  contradiction_marker_threshold: 1
+
+evidence_aware_reranking:
+  weights:
+    cross_encoder: 0.55
+    lexical_overlap: 0.20
+    scientific_overlap: 0.15
+    retrieval_rank: 0.10
+    retrieval_score: 0.0
+    evidence_support: 0.05
+    evidence_refutation: 0.05
+
+verdict:
+  confidence_threshold: 0.60
+  relevance_threshold: 0.25
+  unresolved_conflict_margin: 0.15
+
+citation_validation:
+  reject_invalid_decisive_citations: true
+
+retrieval:
+  default_top_k: 50
+  methods: ["dense", "hybrid"]
+  adaptive_enabled: true

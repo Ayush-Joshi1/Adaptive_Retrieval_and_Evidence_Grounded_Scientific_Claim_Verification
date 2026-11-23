@@ -1,0 +1,66 @@
+{
+  "batch_size": 16,
+  "estimated_full_end_to_end_minutes": 31.822149833308988,
+  "mean_smoke_reranking_seconds_per_query_system": 2.9574469333322972,
+  "mean_smoke_retrieval_seconds_per_query_system": 0.22476804999860178,
+  "measurements": [
+    {
+      "candidate_count": 10,
+      "cross_encoder_inference_seconds": 1.3116675999990548,
+      "final_candidate_depth": 10,
+      "method": "dense",
+      "query_id": "1",
+      "reranking_seconds": 1.311790399999154,
+      "retrieval_seconds": 0.4711098000007041
+    },
+    {
+      "candidate_count": 20,
+      "cross_encoder_inference_seconds": 3.019342100000358,
+      "final_candidate_depth": 20,
+      "method": "hybrid",
+      "query_id": "1",
+      "reranking_seconds": 3.0196008999992046,
+      "retrieval_seconds": 0.27569889999722363
+    },
+    {
+      "candidate_count": 10,
+      "cross_encoder_inference_seconds": 1.4816977000009501,
+      "final_candidate_depth": 10,
+      "method": "dense",
+      "query_id": "3",
+      "reranking_seconds": 1.481857899998431,
+      "retrieval_seconds": 0.02525669999886304
+    },
+    {
+      "candidate_count": 10,
+      "cross_encoder_inference_seconds": 1.7591583000030369,
+      "final_candidate_depth": 10,
+      "method": "hybrid",
+      "query_id": "3",
+      "reranking_seconds": 1.7592711999968742,
+      "retrieval_seconds": 0.35863719999906607
+    },
+    {
+      "candidate_count": 50,
+      "cross_encoder_inference_seconds": 8.08064849999937,
+      "final_candidate_depth": 50,
+      "method": "dense",
+      "query_id": "5",
+      "reranking_seconds": 8.081237700000202,
+      "retrieval_seconds": 0.05386459999863291
+    },
+    {
+      "candidate_count": 10,
+      "cross_encoder_inference_seconds": 2.0907832000011695,
+      "final_candidate_depth": 10,
+      "method": "hybrid",
+      "query_id": "5",
+      "reranking_seconds": 2.090923499999917,
+      "retrieval_seconds": 0.1640410999971209
+    }
+  ],
+  "model_name": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "query_count": 3,
+  "status": "passed",
+  "system_query_count": 6
+}

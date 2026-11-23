@@ -1,0 +1,390 @@
+{
+  "configuration_runs": 54,
+  "estimated_full_evidence_reranking_minutes": 0.14817794443741958,
+  "mean_evidence_reranking_seconds": 0.0049392648145806526,
+  "measurements": [
+    {
+      "candidate_pool_size": 10,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "1",
+      "reranking_seconds": 0.0012181999991298653,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "1",
+      "reranking_seconds": 0.0010241000018140767,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "evidence_aware_full",
+      "query_id": "1",
+      "reranking_seconds": 0.0020507999979599845,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "1",
+      "reranking_seconds": 0.002968400000099791,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "1",
+      "reranking_seconds": 0.0023322999986703508,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "evidence_aware_full",
+      "query_id": "1",
+      "reranking_seconds": 0.002345900000364054,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "1",
+      "reranking_seconds": 0.006676000000879867,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "1",
+      "reranking_seconds": 0.008600499997555744,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "evidence_aware_full",
+      "query_id": "1",
+      "reranking_seconds": 0.006748399999196408,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "1",
+      "reranking_seconds": 0.0017092000016418751,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "1",
+      "reranking_seconds": 0.0021212999999988824,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "evidence_aware_full",
+      "query_id": "1",
+      "reranking_seconds": 0.0013597999968624208,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "1",
+      "reranking_seconds": 0.0029337999985727947,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "1",
+      "reranking_seconds": 0.00286229999983334,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "evidence_aware_full",
+      "query_id": "1",
+      "reranking_seconds": 0.003009200001542922,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "1",
+      "reranking_seconds": 0.008762499997828854,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "1",
+      "reranking_seconds": 0.007162199999584118,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "evidence_aware_full",
+      "query_id": "1",
+      "reranking_seconds": 0.008370899999135872,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "3",
+      "reranking_seconds": 0.0013537000013457146,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "3",
+      "reranking_seconds": 0.0013666000013472512,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "evidence_aware_full",
+      "query_id": "3",
+      "reranking_seconds": 0.0013760999972873833,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "3",
+      "reranking_seconds": 0.003049200000532437,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "3",
+      "reranking_seconds": 0.0033578000002307817,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "evidence_aware_full",
+      "query_id": "3",
+      "reranking_seconds": 0.005594399997789878,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "3",
+      "reranking_seconds": 0.007218399998237146,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "3",
+      "reranking_seconds": 0.008861600003001513,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "evidence_aware_full",
+      "query_id": "3",
+      "reranking_seconds": 0.007209100000181934,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "3",
+      "reranking_seconds": 0.0015332999973907135,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "3",
+      "reranking_seconds": 0.0015958000003593042,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "evidence_aware_full",
+      "query_id": "3",
+      "reranking_seconds": 0.002358300000196323,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "3",
+      "reranking_seconds": 0.003991599998698803,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "3",
+      "reranking_seconds": 0.002910100000008242,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "evidence_aware_full",
+      "query_id": "3",
+      "reranking_seconds": 0.002968900000269059,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "3",
+      "reranking_seconds": 0.009549099999276223,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "3",
+      "reranking_seconds": 0.008455700000922661,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "evidence_aware_full",
+      "query_id": "3",
+      "reranking_seconds": 0.009928100000252016,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "5",
+      "reranking_seconds": 0.002293400000780821,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "5",
+      "reranking_seconds": 0.0019051000017498154,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "evidence_aware_full",
+      "query_id": "5",
+      "reranking_seconds": 0.002085899999656249,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "5",
+      "reranking_seconds": 0.005055600002378924,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "5",
+      "reranking_seconds": 0.0042127999986405484,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "evidence_aware_full",
+      "query_id": "5",
+      "reranking_seconds": 0.0036422999983187765,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "5",
+      "reranking_seconds": 0.012851600000431063,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "5",
+      "reranking_seconds": 0.011825199999293545,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "evidence_aware_full",
+      "query_id": "5",
+      "reranking_seconds": 0.011082400000304915,
+      "retrieval_method": "dense"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "5",
+      "reranking_seconds": 0.0021827999989909586,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "5",
+      "reranking_seconds": 0.0031894999992800876,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 10,
+      "configuration": "evidence_aware_full",
+      "query_id": "5",
+      "reranking_seconds": 0.003050499999517342,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "5",
+      "reranking_seconds": 0.0038383999999496154,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "5",
+      "reranking_seconds": 0.00366790000043693,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 20,
+      "configuration": "evidence_aware_full",
+      "query_id": "5",
+      "reranking_seconds": 0.0039133999998739455,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "cross_encoder_lexical",
+      "query_id": "5",
+      "reranking_seconds": 0.011994299999059876,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "cross_encoder_scientific",
+      "query_id": "5",
+      "reranking_seconds": 0.013071199999103555,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "candidate_pool_size": 50,
+      "configuration": "evidence_aware_full",
+      "query_id": "5",
+      "reranking_seconds": 0.011924400001589675,
+      "retrieval_method": "hybrid"
+    }
+  ],
+  "model_inference_rerun": false,
+  "purpose": "reuse-only technical smoke test; no smoke metrics included in final evaluation",
+  "query_count": 3,
+  "status": "passed",
+  "wall_seconds": 0.27358860000094865
+}

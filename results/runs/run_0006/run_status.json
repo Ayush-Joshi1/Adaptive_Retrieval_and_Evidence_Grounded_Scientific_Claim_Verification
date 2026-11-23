@@ -1,0 +1,68 @@
+{
+  "documentation_report": "docs/PHASE3_REPORT.md",
+  "generated_figures": [
+    "dense_vs_reranking.png",
+    "hybrid_vs_reranking.png",
+    "candidate_pool_comparison.png",
+    "quality_vs_latency.png",
+    "statistical_confidence_intervals.png"
+  ],
+  "historical_runs_unchanged": true,
+  "phase2_baseline_reproduction": "passed",
+  "protected_phase2_hashes_after": {
+    "run_0001": {
+      "aggregate_metrics.json": "97c421153749dcf010ae1f986c5798733fa539a382aae0c265238b6f811a060f",
+      "figures/hit_10_comparison.png": "b0442e33a73a750deff3698fd585c45c53c19494b15a80811d4ac91ac9896b4d",
+      "figures/hit_1_comparison.png": "1a9b13cd5596b3b137f91315d7658904aca6f0a7e6b9a9bf342a1c23b2f91a4d",
+      "figures/hit_20_comparison.png": "90415e20fdaca52bb2a1fa0deccda4b86bc3b4b35579986d706d27bfdb006731",
+      "figures/hit_3_comparison.png": "6b80532a03fba50d4c101db1d78894feaaa5d9fce71bcd1d156f3f7504e159a3",
+      "figures/hit_5_comparison.png": "b84aac04e3f7f168bc537985a8bd9783a4e297fdefc1b88a7b65949c70e29f3d",
+      "figures/latency_comparison.png": "c26b56f38b55b28f72d1f470663ada2d27b99a75787c9bee444ca0e141d574d7",
+      "figures/mrr_10_comparison.png": "b081bd2a4fb1bb3afdff95b19ec435c53899dcaa43c4e59064cf142ac1947418",
+      "figures/ndcg_10_comparison.png": "05dc0110f0362c1eb93f744b294ec43cffcdbe6d9f123f05790630a218867ca5",
+      "figures/rrf_sensitivity.png": "6e96efa78ca735d7ce881077e642648c3415125615d49f6eb6c30a0a10f7b469",
+      "metadata.json": "b9b69636185e44c1604bcae82de9f9488d2d1db9eeaeb8068b1c2f04a78de692",
+      "per_query_metrics.csv": "67ed753e39ab058127685f406deb5ab700ff7102c30d780cd988cafa83f0af3a",
+      "performance_metrics.json": "b0ea5cb7175beda927373ed6099abba20dcaeefa4de98e806f89713d63d44fdb",
+      "rrf_sensitivity.csv": "baa8db41db3655c24be367adc5d1b298d864f3eb02da3b910342ca62b51b394a"
+    },
+    "run_0002": {
+      "aggregate_metrics.json": "97c421153749dcf010ae1f986c5798733fa539a382aae0c265238b6f811a060f",
+      "figures/hit_10_comparison.png": "b0442e33a73a750deff3698fd585c45c53c19494b15a80811d4ac91ac9896b4d",
+      "figures/hit_1_comparison.png": "1a9b13cd5596b3b137f91315d7658904aca6f0a7e6b9a9bf342a1c23b2f91a4d",
+      "figures/hit_20_comparison.png": "90415e20fdaca52bb2a1fa0deccda4b86bc3b4b35579986d706d27bfdb006731",
+      "figures/hit_3_comparison.png": "6b80532a03fba50d4c101db1d78894feaaa5d9fce71bcd1d156f3f7504e159a3",
+      "figures/hit_5_comparison.png": "b84aac04e3f7f168bc537985a8bd9783a4e297fdefc1b88a7b65949c70e29f3d",
+      "figures/latency_comparison.png": "d931f0690a67dad0ca72e0a241fc9dd1faf605d96ce2b169637d7474fc0d121d",
+      "figures/mrr_comparison.png": "b081bd2a4fb1bb3afdff95b19ec435c53899dcaa43c4e59064cf142ac1947418",
+      "figures/ndcg_comparison.png": "2bf89648adc06cfda9470371f9a64382f76ba300fdbe8b805aa61567837015fa",
+      "figures/rrf_sensitivity.png": "6e96efa78ca735d7ce881077e642648c3415125615d49f6eb6c30a0a10f7b469",
+      "metadata.json": "fcf92edc1e914dc0f63e7a5a96f39ea9fbb30de378cb0f59e710128594af92c1",
+      "per_query_metrics.csv": "67ed753e39ab058127685f406deb5ab700ff7102c30d780cd988cafa83f0af3a",
+      "performance_metrics.json": "74967809aacca603827efb6c14b29ceb58f435203167e238f53ebf7dbd2780bd",
+      "rrf_sensitivity.csv": "baa8db41db3655c24be367adc5d1b298d864f3eb02da3b910342ca62b51b394a"
+    },
+    "run_0003": {
+      "aggregate_metrics.json": "cb8c9d190dd51a33e8041e34a69d8cbd75f5921a7a887f2ca566720e3f478ce8",
+      "figures/hit_10_comparison.png": "e7e28d18d50a4f925175d9e982561e965b060abb8529f73b0b010bb3c10ce258",
+      "figures/hit_1_comparison.png": "c736d5e5bb1d206755eb9a475f5c8ca9c0080923eeef1037c072be45e2f4549a",
+      "figures/hit_20_comparison.png": "c6748e39cb93f381290a09b7524d095361927899928d0494b71b1d0734aaee95",
+      "figures/hit_3_comparison.png": "875e831a5c403d058cc764f0065714729a547b0513b7b12bdd9c933d0082ffb3",
+      "figures/hit_5_comparison.png": "363e1140cc260d9c00cbaa133c6f60cda7d3a4dbc2ddc7e25258e8e23c80d663",
+      "figures/latency_comparison.png": "40fce01efb78c275689c70432a51d849e1dc95de33370ca98c355c0e23d5f4d6",
+      "figures/mrr_10_comparison.png": "517a3eae89c2b5906243b2a2bb038fdf1e3c3a71123940559a3b03a44806fa22",
+      "figures/ndcg_10_comparison.png": "115ae16ca24c521880566d0eb96d90c5b31e1a0172cd678a62da949c45bbb230",
+      "figures/rrf_sensitivity.png": "6b0d0665f0300c3b554a72eb6b56d523ec794c7415b993f6ee0fcd3c68a79dc6",
+      "metadata.json": "8a20f4c55fbc52e7f41df85c20b1d955696db528ba12507abf655fc59d6e3276",
+      "per_query_metrics.csv": "d4585d9dd55bc63bf0c16d36038448d45e5edb31cf74f0cd0d899251dcc37298",
+      "performance_metrics.json": "c2b4694c1d06587fa86117adfda91be8fbc6b049f4581fc14b74da998d23a379",
+      "rrf_sensitivity.csv": "1ebddc7203dc3d9301db59eb523c77d0abffb0b5820ed0116b90c04a51b39a44",
+      "statistical_tests.json": "375422f351f229cd3bfa3ab9af451c11497029f4f17455e74dda76a40d8b57d0"
+    }
+  },
+  "run_id": "run_0006",
+  "run_wall_time_seconds": 7600.2358642,
+  "status": "completed",
+  "test_suite_scope": "All repository tests except tests/test_dataset_validation.py",
+  "test_suite_status": "passed"
+}

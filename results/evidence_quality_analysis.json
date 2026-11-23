@@ -1,0 +1,1228 @@
+{
+  "generated_at": "2026-08-25T10:14:50.489017+00:00",
+  "source_files": [
+    "C:\\Users\\admin\\Desktop\\rag-retrieval-research\\results\\evidence_rag_sanity.jsonl",
+    "C:\\Users\\admin\\Desktop\\rag-retrieval-research\\data\\processed\\dev_queries.jsonl"
+  ],
+  "interpretation_note": "evidence_contains_relevant_doc checks document-level representation only; it does not establish that any selected sentence is correct evidence.",
+  "aggregate": {
+    "record_count": 10,
+    "average_evidence_sentences_per_record": 6.0,
+    "average_maximum_similarity": 0.7171514928340912,
+    "records_where_evidence_contains_known_relevant_document": 5,
+    "proportion_where_evidence_contains_known_relevant_document": 0.5
+  },
+  "by_K": {
+    "3": {
+      "record_count": 5,
+      "average_evidence_sentences_per_record": 6.0,
+      "average_maximum_similarity": 0.7013285994529724,
+      "records_where_evidence_contains_known_relevant_document": 2,
+      "proportion_where_evidence_contains_known_relevant_document": 0.4
+    },
+    "5": {
+      "record_count": 5,
+      "average_evidence_sentences_per_record": 6.0,
+      "average_maximum_similarity": 0.7329743862152099,
+      "records_where_evidence_contains_known_relevant_document": 3,
+      "proportion_where_evidence_contains_known_relevant_document": 0.6
+    }
+  },
+  "records": [
+    {
+      "query_id": "118",
+      "k": 3,
+      "ground_truth": "SUPPORT",
+      "retrieved_corpus_ids": [
+        "4465735",
+        "6372244",
+        "21956124"
+      ],
+      "number_of_retrieved_documents": 3,
+      "number_of_extracted_evidence_sentences": 6,
+      "average_sentence_similarity": 0.6881386935710907,
+      "maximum_sentence_similarity": 0.8752776384353638,
+      "minimum_sentence_similarity": 0.5480003356933594,
+      "number_of_unique_documents_represented": 3,
+      "evidence_sentences_per_document": {
+        "6372244": 2,
+        "4465735": 2,
+        "21956124": 2
+      },
+      "relevant_corpus_ids": [
+        "6372244"
+      ],
+      "relevant_document_retrieved": true,
+      "evidence_contains_relevant_doc": true,
+      "relevant_documents_retrieved_but_no_sentence_selected": false,
+      "relevant_document_represented": true,
+      "highest_non_relevant_sentence_outranks_all_relevant_sentences": false,
+      "evidence_from_only_one_document": false,
+      "selected_evidence": [
+        {
+          "corpus_id": "6372244",
+          "sentence": "Antibiotics can have significant and long-lasting effects on the gastrointestinal tract microbiota, reducing colonization resistance against pathogens including Clostridium difficile.",
+          "document_rank": 2,
+          "similarity": 0.8752776384353638
+        },
+        {
+          "corpus_id": "4465735",
+          "sentence": "Among these, Clostridium difficile, a major cause of antibiotic-induced diarrhoea, greatly increases morbidity and mortality in hospitalized patients.",
+          "document_rank": 1,
+          "similarity": 0.78904128074646
+        },
+        {
+          "corpus_id": "4465735",
+          "sentence": "Many antibiotics destroy intestinal microbial communities and increase susceptibility to intestinal pathogens.",
+          "document_rank": 1,
+          "similarity": 0.6833868026733398
+        },
+        {
+          "corpus_id": "6372244",
+          "sentence": "Here we show that antibiotic treatment induces substantial changes in the gut microbial community and in the metabolome of mice susceptible to C.",
+          "document_rank": 2,
+          "similarity": 0.6819196939468384
+        },
+        {
+          "corpus_id": "21956124",
+          "sentence": "RESULTS Three prebiotics, oligofructose, galacto-oligosaccharides and lactulose, clearly alter the balance of the large bowel microbiota by increasing bifidobacteria and Lactobacillus numbers.",
+          "document_rank": 3,
+          "similarity": 0.5512064099311829
+        },
+        {
+          "corpus_id": "21956124",
+          "sentence": "AIM To review published evidence for prebiotic effects on gut function and human health.",
+          "document_rank": 3,
+          "similarity": 0.5480003356933594
+        }
+      ]
+    },
+    {
+      "query_id": "118",
+      "k": 5,
+      "ground_truth": "SUPPORT",
+      "retrieved_corpus_ids": [
+        "4465735",
+        "6372244",
+        "21956124",
+        "32454714",
+        "2604063"
+      ],
+      "number_of_retrieved_documents": 5,
+      "number_of_extracted_evidence_sentences": 6,
+      "average_sentence_similarity": 0.702996701002121,
+      "maximum_sentence_similarity": 0.8752776384353638,
+      "minimum_sentence_similarity": 0.5743798017501831,
+      "number_of_unique_documents_represented": 3,
+      "evidence_sentences_per_document": {
+        "6372244": 2,
+        "4465735": 2,
+        "32454714": 2
+      },
+      "relevant_corpus_ids": [
+        "6372244"
+      ],
+      "relevant_document_retrieved": true,
+      "evidence_contains_relevant_doc": true,
+      "relevant_documents_retrieved_but_no_sentence_selected": false,
+      "relevant_document_represented": true,
+      "highest_non_relevant_sentence_outranks_all_relevant_sentences": false,
+      "evidence_from_only_one_document": false,
+      "selected_evidence": [
+        {
+          "corpus_id": "6372244",
+          "sentence": "Antibiotics can have significant and long-lasting effects on the gastrointestinal tract microbiota, reducing colonization resistance against pathogens including Clostridium difficile.",
+          "document_rank": 2,
+          "similarity": 0.8752776384353638
+        },
+        {
+          "corpus_id": "4465735",
+          "sentence": "Among these, Clostridium difficile, a major cause of antibiotic-induced diarrhoea, greatly increases morbidity and mortality in hospitalized patients.",
+          "document_rank": 1,
+          "similarity": 0.78904128074646
+        },
+        {
+          "corpus_id": "4465735",
+          "sentence": "Many antibiotics destroy intestinal microbial communities and increase susceptibility to intestinal pathogens.",
+          "document_rank": 1,
+          "similarity": 0.6833868026733398
+        },
+        {
+          "corpus_id": "6372244",
+          "sentence": "Here we show that antibiotic treatment induces substantial changes in the gut microbial community and in the metabolome of mice susceptible to C.",
+          "document_rank": 2,
+          "similarity": 0.6819196939468384
+        },
+        {
+          "corpus_id": "32454714",
+          "sentence": "Our data demonstrate that antibiotic modification of gut commensal bacteria can modulate peripheral immune tolerance that can protect against EAE.",
+          "document_rank": 4,
+          "similarity": 0.6139749884605408
+        },
+        {
+          "corpus_id": "32454714",
+          "sentence": "Intraperitoneal antibiotic-treated mice showed no significant decline in the gut microflora and developed EAE similar to untreated mice, suggesting that reduction in disease activity was related to alterations in the gut bacterial population.",
+          "document_rank": 4,
+          "similarity": 0.5743798017501831
+        }
+      ]
+    },
+    {
+      "query_id": "1019",
+      "k": 3,
+      "ground_truth": "SUPPORT",
+      "retrieved_corpus_ids": [
+        "196664003",
+        "12370190",
+        "21578627"
+      ],
+      "number_of_retrieved_documents": 3,
+      "number_of_extracted_evidence_sentences": 6,
+      "average_sentence_similarity": 0.4657331456740697,
+      "maximum_sentence_similarity": 0.5982259511947632,
+      "minimum_sentence_similarity": 0.33877405524253845,
+      "number_of_unique_documents_represented": 3,
+      "evidence_sentences_per_document": {
+        "196664003": 2,
+        "12370190": 2,
+        "21578627": 2
+      },
+      "relevant_corpus_ids": [
+        "11603066"
+      ],
+      "relevant_document_retrieved": false,
+      "evidence_contains_relevant_doc": false,
+      "relevant_documents_retrieved_but_no_sentence_selected": false,
+      "relevant_document_represented": false,
+      "highest_non_relevant_sentence_outranks_all_relevant_sentences": false,
+      "evidence_from_only_one_document": false,
+      "selected_evidence": [
+        {
+          "corpus_id": "196664003",
+          "sentence": "By contrast, phosphotransfer systems, and single and double phosphorylation cycles that transmit signals from a substrate are unable to mitigate retroactivity effects, even when cascaded, and hence are not well suited for unidirectional information transmission.",
+          "document_rank": 1,
+          "similarity": 0.5982259511947632
+        },
+        {
+          "corpus_id": "12370190",
+          "sentence": "The load driver implements the design principle of timescale separation: inclusion of the load driver's fast phosphotransfer processes restores the capability of a slower transcriptional circuit to respond to time-varying input signals even in the presence of substantial load.",
+          "document_rank": 2,
+          "similarity": 0.574494481086731
+        },
+        {
+          "corpus_id": "196664003",
+          "sentence": "We find that single stage phosphorylation and phosphotransfer systems that transmit signals from a kinase show a stringent design trade-off that hampers their ability to overcome retroactivity.",
+          "document_rank": 1,
+          "similarity": 0.4881185293197632
+        },
+        {
+          "corpus_id": "21578627",
+          "sentence": "We find that the dynamics of various incoherent FFLs can be further classified into two types: time-dependent biphasic responses and dose-dependent biphasic responses.",
+          "document_rank": 3,
+          "similarity": 0.42150574922561646
+        },
+        {
+          "corpus_id": "21578627",
+          "sentence": "Following from further computational results and experimental observations, we hypothesize that incoherent FFLs have been optimally designed to achieve distinct biological function arising from different cellular contexts.",
+          "document_rank": 3,
+          "similarity": 0.3732801079750061
+        },
+        {
+          "corpus_id": "12370190",
+          "sentence": "After joining modules to create a circuit, downstream elements (such as binding sites for a regulatory protein) apply a load to upstream modules that can negatively affect circuit function.",
+          "document_rank": 2,
+          "similarity": 0.33877405524253845
+        }
+      ]
+    },
+    {
+      "query_id": "1019",
+      "k": 5,
+      "ground_truth": "SUPPORT",
+      "retrieved_corpus_ids": [
+        "196664003",
+        "12370190",
+        "21578627",
+        "7421677",
+        "24742375"
+      ],
+      "number_of_retrieved_documents": 5,
+      "number_of_extracted_evidence_sentences": 6,
+      "average_sentence_similarity": 0.48317370812098187,
+      "maximum_sentence_similarity": 0.5982259511947632,
+      "minimum_sentence_similarity": 0.38385361433029175,
+      "number_of_unique_documents_represented": 5,
+      "evidence_sentences_per_document": {
+        "196664003": 2,
+        "12370190": 1,
+        "24742375": 1,
+        "21578627": 1,
+        "7421677": 1
+      },
+      "relevant_corpus_ids": [
+        "11603066"
+      ],
+      "relevant_document_retrieved": false,
+      "evidence_contains_relevant_doc": false,
+      "relevant_documents_retrieved_but_no_sentence_selected": false,
+      "relevant_document_represented": false,
+      "highest_non_relevant_sentence_outranks_all_relevant_sentences": false,
+      "evidence_from_only_one_document": false,
+      "selected_evidence": [
+        {
+          "corpus_id": "196664003",
+          "sentence": "By contrast, phosphotransfer systems, and single and double phosphorylation cycles that transmit signals from a substrate are unable to mitigate retroactivity effects, even when cascaded, and hence are not well suited for unidirectional information transmission.",
+          "document_rank": 1,
+          "similarity": 0.5982259511947632
+        },
+        {
+          "corpus_id": "12370190",
+          "sentence": "The load driver implements the design principle of timescale separation: inclusion of the load driver's fast phosphotransfer processes restores the capability of a slower transcriptional circuit to respond to time-varying input signals even in the presence of substantial load.",
+          "document_rank": 2,
+          "similarity": 0.574494481086731
+        },
+        {
+          "corpus_id": "196664003",
+          "sentence": "We find that single stage phosphorylation and phosphotransfer systems that transmit signals from a kinase show a stringent design trade-off that hampers their ability to overcome retroactivity.",
+          "document_rank": 1,
+          "similarity": 0.4881185293197632
+        },
+        {
+          "corpus_id": "24742375",
+          "sentence": "This tunable signal processing appears to originate from dual regulation of both nuclear import and export by phosphorylation, as mutants with one form of regulation sustained only one signal-processing function.",
+          "document_rank": 5,
+          "similarity": 0.4328439235687256
+        },
+        {
+          "corpus_id": "21578627",
+          "sentence": "We find that the dynamics of various incoherent FFLs can be further classified into two types: time-dependent biphasic responses and dose-dependent biphasic responses.",
+          "document_rank": 3,
+          "similarity": 0.42150574922561646
+        },
+        {
+          "corpus_id": "7421677",
+          "sentence": "We further illustrate the implications of enzymatic queueing using a synthetic biology application, in which two independent synthetic networks demonstrate synchronized behavior when common ClpXP machinery is overburdened.",
+          "document_rank": 4,
+          "similarity": 0.38385361433029175
+        }
+      ]
+    },
+    {
+      "query_id": "1185",
+      "k": 3,
+      "ground_truth": "SUPPORT",
+      "retrieved_corpus_ids": [
+        "21203899",
+        "21859699",
+        "41774099"
+      ],
+      "number_of_retrieved_documents": 3,
+      "number_of_extracted_evidence_sentences": 6,
+      "average_sentence_similarity": 0.5881188114484152,
+      "maximum_sentence_similarity": 0.6638852953910828,
+      "minimum_sentence_similarity": 0.5129247903823853,
+      "number_of_unique_documents_represented": 3,
+      "evidence_sentences_per_document": {
+        "41774099": 2,
+        "21203899": 2,
+        "21859699": 2
+      },
+      "relevant_corpus_ids": [
+        "16737210"
+      ],
+      "relevant_document_retrieved": false,
+      "evidence_contains_relevant_doc": false,
+      "relevant_documents_retrieved_but_no_sentence_selected": false,
+      "relevant_document_represented": false,
+      "highest_non_relevant_sentence_outranks_all_relevant_sentences": false,
+      "evidence_from_only_one_document": false,
+      "selected_evidence": [
+        {
+          "corpus_id": "41774099",
+          "sentence": "To expand access to kidney paired donation for more patients, we propose a model to reimburse paired donation expenses analogous to the proven strategy used for over 30 years to pay for deceased donor solid organ transplantation in America.",
+          "document_rank": 3,
+          "similarity": 0.6638852953910828
+        },
+        {
+          "corpus_id": "21203899",
+          "sentence": "Representatives from transplant centers that utilize the National Kidney Registry database to facilitate donor exchange transplants developed a financial model applicable to paired donor exchanges and donor chain transplants.",
+          "document_rank": 1,
+          "similarity": 0.6386206746101379
+        },
+        {
+          "corpus_id": "41774099",
+          "sentence": "We propose a Medicare Demonstration Project to develop a standard acquisition charge for kidney paired donation.",
+          "document_rank": 3,
+          "similarity": 0.6056737899780273
+        },
+        {
+          "corpus_id": "21859699",
+          "sentence": "Providing transplantation opportunities for patients with incompatible live donors through kidney paired donation (KPD) is seen as one of the important strategies for easing the crisis in organ availability.",
+          "document_rank": 2,
+          "similarity": 0.5786571502685547
+        },
+        {
+          "corpus_id": "21859699",
+          "sentence": "In this study, we describe how a triple KPD enabled a highly sensitized patient (PRA 96%) to receive a well-matched kidney from a live donor on the opposite coast.",
+          "document_rank": 2,
+          "similarity": 0.5289511680603027
+        },
+        {
+          "corpus_id": "21203899",
+          "sentence": "Kidney donor exchanges enable recipients with immunologically incompatible donors to receive compatible living donor grafts; however, the financial management of these exchanges, especially when an organ is shipped, is complex and thus has the potential to impede the broader implementation of donor exchange programs.",
+          "document_rank": 1,
+          "similarity": 0.5129247903823853
+        }
+      ]
+    },
+    {
+      "query_id": "1185",
+      "k": 5,
+      "ground_truth": "SUPPORT",
+      "retrieved_corpus_ids": [
+        "21203899",
+        "21859699",
+        "41774099",
+        "16737210",
+        "7034001"
+      ],
+      "number_of_retrieved_documents": 5,
+      "number_of_extracted_evidence_sentences": 6,
+      "average_sentence_similarity": 0.6521390676498413,
+      "maximum_sentence_similarity": 0.8221142292022705,
+      "minimum_sentence_similarity": 0.5786571502685547,
+      "number_of_unique_documents_represented": 5,
+      "evidence_sentences_per_document": {
+        "16737210": 1,
+        "41774099": 2,
+        "21203899": 1,
+        "7034001": 1,
+        "21859699": 1
+      },
+      "relevant_corpus_ids": [
+        "16737210"
+      ],
+      "relevant_document_retrieved": true,
+      "evidence_contains_relevant_doc": true,
+      "relevant_documents_retrieved_but_no_sentence_selected": false,
+      "relevant_document_represented": true,
+      "highest_non_relevant_sentence_outranks_all_relevant_sentences": false,
+      "evidence_from_only_one_document": false,
+      "selected_evidence": [
+        {
+          "corpus_id": "16737210",
+          "sentence": "Even if only 7% of patients awaiting kidney transplantation participated in an optimized national KPD program, the health care system could save as much as $750 million.",
+          "document_rank": 4,
+          "similarity": 0.8221142292022705
+        },
+        {
+          "corpus_id": "41774099",
+          "sentence": "To expand access to kidney paired donation for more patients, we propose a model to reimburse paired donation expenses analogous to the proven strategy used for over 30 years to pay for deceased donor solid organ transplantation in America.",
+          "document_rank": 3,
+          "similarity": 0.6638853549957275
+        },
+        {
+          "corpus_id": "21203899",
+          "sentence": "Representatives from transplant centers that utilize the National Kidney Registry database to facilitate donor exchange transplants developed a financial model applicable to paired donor exchanges and donor chain transplants.",
+          "document_rank": 1,
+          "similarity": 0.6386206746101379
+        },
+        {
+          "corpus_id": "41774099",
+          "sentence": "We propose a Medicare Demonstration Project to develop a standard acquisition charge for kidney paired donation.",
+          "document_rank": 3,
+          "similarity": 0.6056737899780273
+        },
+        {
+          "corpus_id": "7034001",
+          "sentence": "A computerized algorithm was devised to exchange donor kidney and was tested in a multicenter setting.",
+          "document_rank": 5,
+          "similarity": 0.6038832068443298
+        },
+        {
+          "corpus_id": "21859699",
+          "sentence": "Providing transplantation opportunities for patients with incompatible live donors through kidney paired donation (KPD) is seen as one of the important strategies for easing the crisis in organ availability.",
+          "document_rank": 2,
+          "similarity": 0.5786571502685547
+        }
+      ]
+    },
+    {
+      "query_id": "1370",
+      "k": 3,
+      "ground_truth": "CONTRADICT",
+      "retrieved_corpus_ids": [
+        "21553394",
+        "22023404",
+        "36960449"
+      ],
+      "number_of_retrieved_documents": 3,
+      "number_of_extracted_evidence_sentences": 6,
+      "average_sentence_similarity": 0.6056793630123138,
+      "maximum_sentence_similarity": 0.6807681322097778,
+      "minimum_sentence_similarity": 0.555229663848877,
+      "number_of_unique_documents_represented": 3,
+      "evidence_sentences_per_document": {
+        "21553394": 2,
+        "22023404": 2,
+        "36960449": 2
+      },
+      "relevant_corpus_ids": [
+        "2425364"
+      ],
+      "relevant_document_retrieved": false,
+      "evidence_contains_relevant_doc": false,
+      "relevant_documents_retrieved_but_no_sentence_selected": false,
+      "relevant_document_represented": false,
+      "highest_non_relevant_sentence_outranks_all_relevant_sentences": false,
+      "evidence_from_only_one_document": false,
+      "selected_evidence": [
+        {
+          "corpus_id": "21553394",
+          "sentence": "Moreover, in some but not all studies, BMI and adiposity have been negatively associated with the change in vitamin D status following vitamin D supplementation.",
+          "document_rank": 1,
+          "similarity": 0.6807681322097778
+        },
+        {
+          "corpus_id": "21553394",
+          "sentence": "Vitamin D deficiency (25-hydroxyvitamin D (25(OH)D) < 25-30 nmol/l) and sub-optimal status (25(OH)D < 50-100 nmol/l) are increasingly associated with unfavourable metabolic phenotypes, including insulin resistance, type 2 diabetes and CVD; conditions also commonly linked with overweight and obesity.",
+          "document_rank": 1,
+          "similarity": 0.674859344959259
+        },
+        {
+          "corpus_id": "22023404",
+          "sentence": "CONTEXT Vitamin D deficiency is associated with many adverse health outcomes, yet little is known about the genetic epidemiology of vitamin D or its metabolites.",
+          "document_rank": 2,
+          "similarity": 0.6033830642700195
+        },
+        {
+          "corpus_id": "36960449",
+          "sentence": "The slope of the relation between vitamin D intake and serum 25(OH)D was 1.96 nmol x L(-1) x microg(-1) intake.",
+          "document_rank": 3,
+          "similarity": 0.5616492033004761
+        },
+        {
+          "corpus_id": "36960449",
+          "sentence": "RESULTS There were clear dose-related increments (P < 0.0001) in serum 25(OH)D with increasing supplemental vitamin D(3).",
+          "document_rank": 3,
+          "similarity": 0.5581867694854736
+        },
+        {
+          "corpus_id": "22023404",
+          "sentence": "OBJECTIVE Our objective was to examine the relationship among three vitamin D-related genes and levels of 25-hydroxyvitamin D [25(OH)D] and 1,25-dihydroxyvitamin D [1,25(OH)2D] in Hispanics (HAs) and African Americans (AAs).",
+          "document_rank": 2,
+          "similarity": 0.555229663848877
+        }
+      ]
+    },
+    {
+      "query_id": "1370",
+      "k": 5,
+      "ground_truth": "CONTRADICT",
+      "retrieved_corpus_ids": [
+        "21553394",
+        "22023404",
+        "36960449",
+        "3150030",
+        "30720103"
+      ],
+      "number_of_retrieved_documents": 5,
+      "number_of_extracted_evidence_sentences": 6,
+      "average_sentence_similarity": 0.6334676941235861,
+      "maximum_sentence_similarity": 0.6807681322097778,
+      "minimum_sentence_similarity": 0.5865574479103088,
+      "number_of_unique_documents_represented": 4,
+      "evidence_sentences_per_document": {
+        "21553394": 2,
+        "3150030": 2,
+        "22023404": 1,
+        "30720103": 1
+      },
+      "relevant_corpus_ids": [
+        "2425364"
+      ],
+      "relevant_document_retrieved": false,
+      "evidence_contains_relevant_doc": false,
+      "relevant_documents_retrieved_but_no_sentence_selected": false,
+      "relevant_document_represented": false,
+      "highest_non_relevant_sentence_outranks_all_relevant_sentences": false,
+      "evidence_from_only_one_document": false,
+      "selected_evidence": [
+        {
+          "corpus_id": "21553394",
+          "sentence": "Moreover, in some but not all studies, BMI and adiposity have been negatively associated with the change in vitamin D status following vitamin D supplementation.",
+          "document_rank": 1,
+          "similarity": 0.6807681322097778
+        },
+        {
+          "corpus_id": "21553394",
+          "sentence": "Vitamin D deficiency (25-hydroxyvitamin D (25(OH)D) < 25-30 nmol/l) and sub-optimal status (25(OH)D < 50-100 nmol/l) are increasingly associated with unfavourable metabolic phenotypes, including insulin resistance, type 2 diabetes and CVD; conditions also commonly linked with overweight and obesity.",
+          "document_rank": 1,
+          "similarity": 0.674859344959259
+        },
+        {
+          "corpus_id": "3150030",
+          "sentence": "A widespread global vitamin D insufficiency was present compared with proposed threshold levels.",
+          "document_rank": 4,
+          "similarity": 0.6302847862243652
+        },
+        {
+          "corpus_id": "3150030",
+          "sentence": "Vitamin D deficiency was widespread.",
+          "document_rank": 4,
+          "similarity": 0.6249533891677856
+        },
+        {
+          "corpus_id": "22023404",
+          "sentence": "CONTEXT Vitamin D deficiency is associated with many adverse health outcomes, yet little is known about the genetic epidemiology of vitamin D or its metabolites.",
+          "document_rank": 2,
+          "similarity": 0.6033830642700195
+        },
+        {
+          "corpus_id": "30720103",
+          "sentence": "Most experts agree that 25(OH)D of <20 ng/mL is considered to be vitamin D deficiency, whereas a 25(OH)D of 21-29 ng/mL is considered to be insufficient.",
+          "document_rank": 5,
+          "similarity": 0.5865574479103088
+        }
+      ]
+    },
+    {
+      "query_id": "1320",
+      "k": 3,
+      "ground_truth": "CONTRADICT",
+      "retrieved_corpus_ids": [
+        "14192687",
+        "16284655",
+        "46193388"
+      ],
+      "number_of_retrieved_documents": 3,
+      "number_of_extracted_evidence_sentences": 6,
+      "average_sentence_similarity": 0.630486528078715,
+      "maximum_sentence_similarity": 0.6884859800338745,
+      "minimum_sentence_similarity": 0.5314830541610718,
+      "number_of_unique_documents_represented": 3,
+      "evidence_sentences_per_document": {
+        "14192687": 2,
+        "16284655": 2,
+        "46193388": 2
+      },
+      "relevant_corpus_ids": [
+        "16284655"
+      ],
+      "relevant_document_retrieved": true,
+      "evidence_contains_relevant_doc": true,
+      "relevant_documents_retrieved_but_no_sentence_selected": false,
+      "relevant_document_represented": true,
+      "highest_non_relevant_sentence_outranks_all_relevant_sentences": true,
+      "evidence_from_only_one_document": false,
+      "selected_evidence": [
+        {
+          "corpus_id": "14192687",
+          "sentence": "Upon transplantation into the fetal mouse brain, the cells migrate into various brain regions and differentiate into glia and neurons, including glutamatergic, GABAergic, and catecholaminergic subtypes.",
+          "document_rank": 1,
+          "similarity": 0.6884859800338745
+        },
+        {
+          "corpus_id": "16284655",
+          "sentence": "To assess the cell-autonomous and species-selective properties of human glia, we engrafted human glial progenitor cells (GPCs) into neonatal immunodeficient mice.",
+          "document_rank": 2,
+          "similarity": 0.6736169457435608
+        },
+        {
+          "corpus_id": "46193388",
+          "sentence": "We show that, in a strain of mice incapable of developing cells of the myeloid and lymphoid lineages, transplanted adult bone marrow cells migrated into the brain and differentiated into cells that expressed neuron-specific antigens.",
+          "document_rank": 3,
+          "similarity": 0.6415941715240479
+        },
+        {
+          "corpus_id": "16284655",
+          "sentence": "Upon maturation, the recipient brains exhibited large numbers and high proportions of both human glial progenitors and astrocytes.",
+          "document_rank": 2,
+          "similarity": 0.6312360167503357
+        },
+        {
+          "corpus_id": "14192687",
+          "sentence": "Here, we show that iPS cells can be efficiently differentiated into neural precursor cells, giving rise to neuronal and glial cell types in culture.",
+          "document_rank": 1,
+          "similarity": 0.6165030002593994
+        },
+        {
+          "corpus_id": "46193388",
+          "sentence": "These findings raise the possibility that bone marrow-derived cells may provide an alternative source of neurons in patients with neurodegenerative diseases or central nervous system injury.",
+          "document_rank": 3,
+          "similarity": 0.5314830541610718
+        }
+      ]
+    },
+    {
+      "query_id": "1320",
+      "k": 5,
+      "ground_truth": "CONTRADICT",
+      "retrieved_corpus_ids": [
+        "14192687",
+        "16284655",
+        "46193388",
+        "803312",
+        "2437807"
+      ],
+      "number_of_retrieved_documents": 5,
+      "number_of_extracted_evidence_sentences": 6,
+      "average_sentence_similarity": 0.6453918615976969,
+      "maximum_sentence_similarity": 0.6884859800338745,
+      "minimum_sentence_similarity": 0.6165030002593994,
+      "number_of_unique_documents_represented": 4,
+      "evidence_sentences_per_document": {
+        "14192687": 2,
+        "16284655": 2,
+        "46193388": 1,
+        "2437807": 1
+      },
+      "relevant_corpus_ids": [
+        "16284655"
+      ],
+      "relevant_document_retrieved": true,
+      "evidence_contains_relevant_doc": true,
+      "relevant_documents_retrieved_but_no_sentence_selected": false,
+      "relevant_document_represented": true,
+      "highest_non_relevant_sentence_outranks_all_relevant_sentences": true,
+      "evidence_from_only_one_document": false,
+      "selected_evidence": [
+        {
+          "corpus_id": "14192687",
+          "sentence": "Upon transplantation into the fetal mouse brain, the cells migrate into various brain regions and differentiate into glia and neurons, including glutamatergic, GABAergic, and catecholaminergic subtypes.",
+          "document_rank": 1,
+          "similarity": 0.6884859800338745
+        },
+        {
+          "corpus_id": "16284655",
+          "sentence": "To assess the cell-autonomous and species-selective properties of human glia, we engrafted human glial progenitor cells (GPCs) into neonatal immunodeficient mice.",
+          "document_rank": 2,
+          "similarity": 0.6736169457435608
+        },
+        {
+          "corpus_id": "46193388",
+          "sentence": "We show that, in a strain of mice incapable of developing cells of the myeloid and lymphoid lineages, transplanted adult bone marrow cells migrated into the brain and differentiated into cells that expressed neuron-specific antigens.",
+          "document_rank": 3,
+          "similarity": 0.6415941715240479
+        },
+        {
+          "corpus_id": "16284655",
+          "sentence": "Upon maturation, the recipient brains exhibited large numbers and high proportions of both human glial progenitors and astrocytes.",
+          "document_rank": 2,
+          "similarity": 0.6312360167503357
+        },
+        {
+          "corpus_id": "2437807",
+          "sentence": "These results depict human ES cells as a source of transplantable neural precursors for possible nervous system repair.",
+          "document_rank": 5,
+          "similarity": 0.6209150552749634
+        },
+        {
+          "corpus_id": "14192687",
+          "sentence": "Here, we show that iPS cells can be efficiently differentiated into neural precursor cells, giving rise to neuronal and glial cell types in culture.",
+          "document_rank": 1,
+          "similarity": 0.6165030002593994
+        }
+      ]
+    }
+  ],
+  "interesting_cases": {
+    "A_relevant_retrieved_but_no_sentence_selected": [],
+    "B_relevant_document_represented": [
+      {
+        "query_id": "118",
+        "k": 3,
+        "ground_truth": "SUPPORT",
+        "retrieved_corpus_ids": [
+          "4465735",
+          "6372244",
+          "21956124"
+        ],
+        "number_of_retrieved_documents": 3,
+        "number_of_extracted_evidence_sentences": 6,
+        "average_sentence_similarity": 0.6881386935710907,
+        "maximum_sentence_similarity": 0.8752776384353638,
+        "minimum_sentence_similarity": 0.5480003356933594,
+        "number_of_unique_documents_represented": 3,
+        "evidence_sentences_per_document": {
+          "6372244": 2,
+          "4465735": 2,
+          "21956124": 2
+        },
+        "relevant_corpus_ids": [
+          "6372244"
+        ],
+        "relevant_document_retrieved": true,
+        "evidence_contains_relevant_doc": true,
+        "relevant_documents_retrieved_but_no_sentence_selected": false,
+        "relevant_document_represented": true,
+        "highest_non_relevant_sentence_outranks_all_relevant_sentences": false,
+        "evidence_from_only_one_document": false,
+        "selected_evidence": [
+          {
+            "corpus_id": "6372244",
+            "sentence": "Antibiotics can have significant and long-lasting effects on the gastrointestinal tract microbiota, reducing colonization resistance against pathogens including Clostridium difficile.",
+            "document_rank": 2,
+            "similarity": 0.8752776384353638
+          },
+          {
+            "corpus_id": "4465735",
+            "sentence": "Among these, Clostridium difficile, a major cause of antibiotic-induced diarrhoea, greatly increases morbidity and mortality in hospitalized patients.",
+            "document_rank": 1,
+            "similarity": 0.78904128074646
+          },
+          {
+            "corpus_id": "4465735",
+            "sentence": "Many antibiotics destroy intestinal microbial communities and increase susceptibility to intestinal pathogens.",
+            "document_rank": 1,
+            "similarity": 0.6833868026733398
+          },
+          {
+            "corpus_id": "6372244",
+            "sentence": "Here we show that antibiotic treatment induces substantial changes in the gut microbial community and in the metabolome of mice susceptible to C.",
+            "document_rank": 2,
+            "similarity": 0.6819196939468384
+          },
+          {
+            "corpus_id": "21956124",
+            "sentence": "RESULTS Three prebiotics, oligofructose, galacto-oligosaccharides and lactulose, clearly alter the balance of the large bowel microbiota by increasing bifidobacteria and Lactobacillus numbers.",
+            "document_rank": 3,
+            "similarity": 0.5512064099311829
+          },
+          {
+            "corpus_id": "21956124",
+            "sentence": "AIM To review published evidence for prebiotic effects on gut function and human health.",
+            "document_rank": 3,
+            "similarity": 0.5480003356933594
+          }
+        ]
+      },
+      {
+        "query_id": "118",
+        "k": 5,
+        "ground_truth": "SUPPORT",
+        "retrieved_corpus_ids": [
+          "4465735",
+          "6372244",
+          "21956124",
+          "32454714",
+          "2604063"
+        ],
+        "number_of_retrieved_documents": 5,
+        "number_of_extracted_evidence_sentences": 6,
+        "average_sentence_similarity": 0.702996701002121,
+        "maximum_sentence_similarity": 0.8752776384353638,
+        "minimum_sentence_similarity": 0.5743798017501831,
+        "number_of_unique_documents_represented": 3,
+        "evidence_sentences_per_document": {
+          "6372244": 2,
+          "4465735": 2,
+          "32454714": 2
+        },
+        "relevant_corpus_ids": [
+          "6372244"
+        ],
+        "relevant_document_retrieved": true,
+        "evidence_contains_relevant_doc": true,
+        "relevant_documents_retrieved_but_no_sentence_selected": false,
+        "relevant_document_represented": true,
+        "highest_non_relevant_sentence_outranks_all_relevant_sentences": false,
+        "evidence_from_only_one_document": false,
+        "selected_evidence": [
+          {
+            "corpus_id": "6372244",
+            "sentence": "Antibiotics can have significant and long-lasting effects on the gastrointestinal tract microbiota, reducing colonization resistance against pathogens including Clostridium difficile.",
+            "document_rank": 2,
+            "similarity": 0.8752776384353638
+          },
+          {
+            "corpus_id": "4465735",
+            "sentence": "Among these, Clostridium difficile, a major cause of antibiotic-induced diarrhoea, greatly increases morbidity and mortality in hospitalized patients.",
+            "document_rank": 1,
+            "similarity": 0.78904128074646
+          },
+          {
+            "corpus_id": "4465735",
+            "sentence": "Many antibiotics destroy intestinal microbial communities and increase susceptibility to intestinal pathogens.",
+            "document_rank": 1,
+            "similarity": 0.6833868026733398
+          },
+          {
+            "corpus_id": "6372244",
+            "sentence": "Here we show that antibiotic treatment induces substantial changes in the gut microbial community and in the metabolome of mice susceptible to C.",
+            "document_rank": 2,
+            "similarity": 0.6819196939468384
+          },
+          {
+            "corpus_id": "32454714",
+            "sentence": "Our data demonstrate that antibiotic modification of gut commensal bacteria can modulate peripheral immune tolerance that can protect against EAE.",
+            "document_rank": 4,
+            "similarity": 0.6139749884605408
+          },
+          {
+            "corpus_id": "32454714",
+            "sentence": "Intraperitoneal antibiotic-treated mice showed no significant decline in the gut microflora and developed EAE similar to untreated mice, suggesting that reduction in disease activity was related to alterations in the gut bacterial population.",
+            "document_rank": 4,
+            "similarity": 0.5743798017501831
+          }
+        ]
+      },
+      {
+        "query_id": "1185",
+        "k": 5,
+        "ground_truth": "SUPPORT",
+        "retrieved_corpus_ids": [
+          "21203899",
+          "21859699",
+          "41774099",
+          "16737210",
+          "7034001"
+        ],
+        "number_of_retrieved_documents": 5,
+        "number_of_extracted_evidence_sentences": 6,
+        "average_sentence_similarity": 0.6521390676498413,
+        "maximum_sentence_similarity": 0.8221142292022705,
+        "minimum_sentence_similarity": 0.5786571502685547,
+        "number_of_unique_documents_represented": 5,
+        "evidence_sentences_per_document": {
+          "16737210": 1,
+          "41774099": 2,
+          "21203899": 1,
+          "7034001": 1,
+          "21859699": 1
+        },
+        "relevant_corpus_ids": [
+          "16737210"
+        ],
+        "relevant_document_retrieved": true,
+        "evidence_contains_relevant_doc": true,
+        "relevant_documents_retrieved_but_no_sentence_selected": false,
+        "relevant_document_represented": true,
+        "highest_non_relevant_sentence_outranks_all_relevant_sentences": false,
+        "evidence_from_only_one_document": false,
+        "selected_evidence": [
+          {
+            "corpus_id": "16737210",
+            "sentence": "Even if only 7% of patients awaiting kidney transplantation participated in an optimized national KPD program, the health care system could save as much as $750 million.",
+            "document_rank": 4,
+            "similarity": 0.8221142292022705
+          },
+          {
+            "corpus_id": "41774099",
+            "sentence": "To expand access to kidney paired donation for more patients, we propose a model to reimburse paired donation expenses analogous to the proven strategy used for over 30 years to pay for deceased donor solid organ transplantation in America.",
+            "document_rank": 3,
+            "similarity": 0.6638853549957275
+          },
+          {
+            "corpus_id": "21203899",
+            "sentence": "Representatives from transplant centers that utilize the National Kidney Registry database to facilitate donor exchange transplants developed a financial model applicable to paired donor exchanges and donor chain transplants.",
+            "document_rank": 1,
+            "similarity": 0.6386206746101379
+          },
+          {
+            "corpus_id": "41774099",
+            "sentence": "We propose a Medicare Demonstration Project to develop a standard acquisition charge for kidney paired donation.",
+            "document_rank": 3,
+            "similarity": 0.6056737899780273
+          },
+          {
+            "corpus_id": "7034001",
+            "sentence": "A computerized algorithm was devised to exchange donor kidney and was tested in a multicenter setting.",
+            "document_rank": 5,
+            "similarity": 0.6038832068443298
+          },
+          {
+            "corpus_id": "21859699",
+            "sentence": "Providing transplantation opportunities for patients with incompatible live donors through kidney paired donation (KPD) is seen as one of the important strategies for easing the crisis in organ availability.",
+            "document_rank": 2,
+            "similarity": 0.5786571502685547
+          }
+        ]
+      },
+      {
+        "query_id": "1320",
+        "k": 3,
+        "ground_truth": "CONTRADICT",
+        "retrieved_corpus_ids": [
+          "14192687",
+          "16284655",
+          "46193388"
+        ],
+        "number_of_retrieved_documents": 3,
+        "number_of_extracted_evidence_sentences": 6,
+        "average_sentence_similarity": 0.630486528078715,
+        "maximum_sentence_similarity": 0.6884859800338745,
+        "minimum_sentence_similarity": 0.5314830541610718,
+        "number_of_unique_documents_represented": 3,
+        "evidence_sentences_per_document": {
+          "14192687": 2,
+          "16284655": 2,
+          "46193388": 2
+        },
+        "relevant_corpus_ids": [
+          "16284655"
+        ],
+        "relevant_document_retrieved": true,
+        "evidence_contains_relevant_doc": true,
+        "relevant_documents_retrieved_but_no_sentence_selected": false,
+        "relevant_document_represented": true,
+        "highest_non_relevant_sentence_outranks_all_relevant_sentences": true,
+        "evidence_from_only_one_document": false,
+        "selected_evidence": [
+          {
+            "corpus_id": "14192687",
+            "sentence": "Upon transplantation into the fetal mouse brain, the cells migrate into various brain regions and differentiate into glia and neurons, including glutamatergic, GABAergic, and catecholaminergic subtypes.",
+            "document_rank": 1,
+            "similarity": 0.6884859800338745
+          },
+          {
+            "corpus_id": "16284655",
+            "sentence": "To assess the cell-autonomous and species-selective properties of human glia, we engrafted human glial progenitor cells (GPCs) into neonatal immunodeficient mice.",
+            "document_rank": 2,
+            "similarity": 0.6736169457435608
+          },
+          {
+            "corpus_id": "46193388",
+            "sentence": "We show that, in a strain of mice incapable of developing cells of the myeloid and lymphoid lineages, transplanted adult bone marrow cells migrated into the brain and differentiated into cells that expressed neuron-specific antigens.",
+            "document_rank": 3,
+            "similarity": 0.6415941715240479
+          },
+          {
+            "corpus_id": "16284655",
+            "sentence": "Upon maturation, the recipient brains exhibited large numbers and high proportions of both human glial progenitors and astrocytes.",
+            "document_rank": 2,
+            "similarity": 0.6312360167503357
+          },
+          {
+            "corpus_id": "14192687",
+            "sentence": "Here, we show that iPS cells can be efficiently differentiated into neural precursor cells, giving rise to neuronal and glial cell types in culture.",
+            "document_rank": 1,
+            "similarity": 0.6165030002593994
+          },
+          {
+            "corpus_id": "46193388",
+            "sentence": "These findings raise the possibility that bone marrow-derived cells may provide an alternative source of neurons in patients with neurodegenerative diseases or central nervous system injury.",
+            "document_rank": 3,
+            "similarity": 0.5314830541610718
+          }
+        ]
+      },
+      {
+        "query_id": "1320",
+        "k": 5,
+        "ground_truth": "CONTRADICT",
+        "retrieved_corpus_ids": [
+          "14192687",
+          "16284655",
+          "46193388",
+          "803312",
+          "2437807"
+        ],
+        "number_of_retrieved_documents": 5,
+        "number_of_extracted_evidence_sentences": 6,
+        "average_sentence_similarity": 0.6453918615976969,
+        "maximum_sentence_similarity": 0.6884859800338745,
+        "minimum_sentence_similarity": 0.6165030002593994,
+        "number_of_unique_documents_represented": 4,
+        "evidence_sentences_per_document": {
+          "14192687": 2,
+          "16284655": 2,
+          "46193388": 1,
+          "2437807": 1
+        },
+        "relevant_corpus_ids": [
+          "16284655"
+        ],
+        "relevant_document_retrieved": true,
+        "evidence_contains_relevant_doc": true,
+        "relevant_documents_retrieved_but_no_sentence_selected": false,
+        "relevant_document_represented": true,
+        "highest_non_relevant_sentence_outranks_all_relevant_sentences": true,
+        "evidence_from_only_one_document": false,
+        "selected_evidence": [
+          {
+            "corpus_id": "14192687",
+            "sentence": "Upon transplantation into the fetal mouse brain, the cells migrate into various brain regions and differentiate into glia and neurons, including glutamatergic, GABAergic, and catecholaminergic subtypes.",
+            "document_rank": 1,
+            "similarity": 0.6884859800338745
+          },
+          {
+            "corpus_id": "16284655",
+            "sentence": "To assess the cell-autonomous and species-selective properties of human glia, we engrafted human glial progenitor cells (GPCs) into neonatal immunodeficient mice.",
+            "document_rank": 2,
+            "similarity": 0.6736169457435608
+          },
+          {
+            "corpus_id": "46193388",
+            "sentence": "We show that, in a strain of mice incapable of developing cells of the myeloid and lymphoid lineages, transplanted adult bone marrow cells migrated into the brain and differentiated into cells that expressed neuron-specific antigens.",
+            "document_rank": 3,
+            "similarity": 0.6415941715240479
+          },
+          {
+            "corpus_id": "16284655",
+            "sentence": "Upon maturation, the recipient brains exhibited large numbers and high proportions of both human glial progenitors and astrocytes.",
+            "document_rank": 2,
+            "similarity": 0.6312360167503357
+          },
+          {
+            "corpus_id": "2437807",
+            "sentence": "These results depict human ES cells as a source of transplantable neural precursors for possible nervous system repair.",
+            "document_rank": 5,
+            "similarity": 0.6209150552749634
+          },
+          {
+            "corpus_id": "14192687",
+            "sentence": "Here, we show that iPS cells can be efficiently differentiated into neural precursor cells, giving rise to neuronal and glial cell types in culture.",
+            "document_rank": 1,
+            "similarity": 0.6165030002593994
+          }
+        ]
+      }
+    ],
+    "C_non_relevant_sentence_outranks_relevant_sentences": [
+      {
+        "query_id": "1320",
+        "k": 3,
+        "ground_truth": "CONTRADICT",
+        "retrieved_corpus_ids": [
+          "14192687",
+          "16284655",
+          "46193388"
+        ],
+        "number_of_retrieved_documents": 3,
+        "number_of_extracted_evidence_sentences": 6,
+        "average_sentence_similarity": 0.630486528078715,
+        "maximum_sentence_similarity": 0.6884859800338745,
+        "minimum_sentence_similarity": 0.5314830541610718,
+        "number_of_unique_documents_represented": 3,
+        "evidence_sentences_per_document": {
+          "14192687": 2,
+          "16284655": 2,
+          "46193388": 2
+        },
+        "relevant_corpus_ids": [
+          "16284655"
+        ],
+        "relevant_document_retrieved": true,
+        "evidence_contains_relevant_doc": true,
+        "relevant_documents_retrieved_but_no_sentence_selected": false,
+        "relevant_document_represented": true,
+        "highest_non_relevant_sentence_outranks_all_relevant_sentences": true,
+        "evidence_from_only_one_document": false,
+        "selected_evidence": [
+          {
+            "corpus_id": "14192687",
+            "sentence": "Upon transplantation into the fetal mouse brain, the cells migrate into various brain regions and differentiate into glia and neurons, including glutamatergic, GABAergic, and catecholaminergic subtypes.",
+            "document_rank": 1,
+            "similarity": 0.6884859800338745
+          },
+          {
+            "corpus_id": "16284655",
+            "sentence": "To assess the cell-autonomous and species-selective properties of human glia, we engrafted human glial progenitor cells (GPCs) into neonatal immunodeficient mice.",
+            "document_rank": 2,
+            "similarity": 0.6736169457435608
+          },
+          {
+            "corpus_id": "46193388",
+            "sentence": "We show that, in a strain of mice incapable of developing cells of the myeloid and lymphoid lineages, transplanted adult bone marrow cells migrated into the brain and differentiated into cells that expressed neuron-specific antigens.",
+            "document_rank": 3,
+            "similarity": 0.6415941715240479
+          },
+          {
+            "corpus_id": "16284655",
+            "sentence": "Upon maturation, the recipient brains exhibited large numbers and high proportions of both human glial progenitors and astrocytes.",
+            "document_rank": 2,
+            "similarity": 0.6312360167503357
+          },
+          {
+            "corpus_id": "14192687",
+            "sentence": "Here, we show that iPS cells can be efficiently differentiated into neural precursor cells, giving rise to neuronal and glial cell types in culture.",
+            "document_rank": 1,
+            "similarity": 0.6165030002593994
+          },
+          {
+            "corpus_id": "46193388",
+            "sentence": "These findings raise the possibility that bone marrow-derived cells may provide an alternative source of neurons in patients with neurodegenerative diseases or central nervous system injury.",
+            "document_rank": 3,
+            "similarity": 0.5314830541610718
+          }
+        ]
+      },
+      {
+        "query_id": "1320",
+        "k": 5,
+        "ground_truth": "CONTRADICT",
+        "retrieved_corpus_ids": [
+          "14192687",
+          "16284655",
+          "46193388",
+          "803312",
+          "2437807"
+        ],
+        "number_of_retrieved_documents": 5,
+        "number_of_extracted_evidence_sentences": 6,
+        "average_sentence_similarity": 0.6453918615976969,
+        "maximum_sentence_similarity": 0.6884859800338745,
+        "minimum_sentence_similarity": 0.6165030002593994,
+        "number_of_unique_documents_represented": 4,
+        "evidence_sentences_per_document": {
+          "14192687": 2,
+          "16284655": 2,
+          "46193388": 1,
+          "2437807": 1
+        },
+        "relevant_corpus_ids": [
+          "16284655"
+        ],
+        "relevant_document_retrieved": true,
+        "evidence_contains_relevant_doc": true,
+        "relevant_documents_retrieved_but_no_sentence_selected": false,
+        "relevant_document_represented": true,
+        "highest_non_relevant_sentence_outranks_all_relevant_sentences": true,
+        "evidence_from_only_one_document": false,
+        "selected_evidence": [
+          {
+            "corpus_id": "14192687",
+            "sentence": "Upon transplantation into the fetal mouse brain, the cells migrate into various brain regions and differentiate into glia and neurons, including glutamatergic, GABAergic, and catecholaminergic subtypes.",
+            "document_rank": 1,
+            "similarity": 0.6884859800338745
+          },
+          {
+            "corpus_id": "16284655",
+            "sentence": "To assess the cell-autonomous and species-selective properties of human glia, we engrafted human glial progenitor cells (GPCs) into neonatal immunodeficient mice.",
+            "document_rank": 2,
+            "similarity": 0.6736169457435608
+          },
+          {
+            "corpus_id": "46193388",
+            "sentence": "We show that, in a strain of mice incapable of developing cells of the myeloid and lymphoid lineages, transplanted adult bone marrow cells migrated into the brain and differentiated into cells that expressed neuron-specific antigens.",
+            "document_rank": 3,
+            "similarity": 0.6415941715240479
+          },
+          {
+            "corpus_id": "16284655",
+            "sentence": "Upon maturation, the recipient brains exhibited large numbers and high proportions of both human glial progenitors and astrocytes.",
+            "document_rank": 2,
+            "similarity": 0.6312360167503357
+          },
+          {
+            "corpus_id": "2437807",
+            "sentence": "These results depict human ES cells as a source of transplantable neural precursors for possible nervous system repair.",
+            "document_rank": 5,
+            "similarity": 0.6209150552749634
+          },
+          {
+            "corpus_id": "14192687",
+            "sentence": "Here, we show that iPS cells can be efficiently differentiated into neural precursor cells, giving rise to neuronal and glial cell types in culture.",
+            "document_rank": 1,
+            "similarity": 0.6165030002593994
+          }
+        ]
+      }
+    ],
+    "D_evidence_from_only_one_document": []
+  },
+  "api_calls_made": 0,
+  "retrieval_calls_made": 0,
+  "reranking_calls_made": 0
+}

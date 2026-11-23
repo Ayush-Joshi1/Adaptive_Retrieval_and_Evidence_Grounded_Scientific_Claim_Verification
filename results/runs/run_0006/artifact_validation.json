@@ -1,0 +1,21 @@
+{
+  "all_aggregates_match_per_query_metrics": true,
+  "all_metrics_match_rankings": true,
+  "candidate_ids_preserved": true,
+  "configuration_count": 12,
+  "duplicate_query_results": false,
+  "max_aggregate_absolute_error": 0.0,
+  "max_metric_absolute_error": 0.0,
+  "missing_query_results": false,
+  "official_test_split_accessed": false,
+  "per_query_metric_rows": 3600,
+  "per_query_ranking_rows": 3600,
+  "query_count_per_configuration": 300,
+  "required_figures": [
+    "candidate_pool_comparison.png",
+    "dense_vs_reranking.png",
+    "hybrid_vs_reranking.png",
+    "quality_vs_latency.png",
+    "statistical_confidence_intervals.png"
+  ]
+}

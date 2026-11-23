@@ -1,0 +1,43 @@
+{
+  "bootstrap_resamples": 10000,
+  "candidate_pools": [
+    10,
+    20,
+    50
+  ],
+  "code_sha256": "a93ad78237ad6c396a434f946ce4c579dadf98924095c883c8950f1ca707988b",
+  "comparison_family_size": 150,
+  "configuration_count": 30,
+  "cross_encoder_inference_rerun": false,
+  "cross_encoder_source": "results/runs/run_0006",
+  "dataset": "BEIR SciFact",
+  "dataset_split": "official SciFact development",
+  "experiment": "Phase 3 Experiment C",
+  "git_commit": "127c69b1e766632224fc569de2be724b48199546",
+  "official_test_claim_file_opened": false,
+  "qrels": "BeIR/scifact-qrels test split mapped to official development",
+  "qrels_selection": "development evaluation only",
+  "query_count": 300,
+  "ranking_conditions": [
+    "original",
+    "cross_encoder",
+    "cross_encoder_lexical",
+    "cross_encoder_scientific",
+    "evidence_aware_full"
+  ],
+  "resumed": true,
+  "retrieval_methods": [
+    "dense",
+    "hybrid"
+  ],
+  "run_id": "run_0009",
+  "seed": 42,
+  "status": "completed",
+  "weights": {
+    "cross_encoder": 0.55,
+    "lexical_overlap": 0.2,
+    "retrieval_rank": 0.1,
+    "retrieval_score": 0.0,
+    "scientific_overlap": 0.15
+  }
+}

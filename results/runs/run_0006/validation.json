@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\admin\\Desktop\\rag project upd\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--ignore=tests/test_dataset_validation.py"
+  ],
+  "excluded_test_file": "tests/test_dataset_validation.py",
+  "exclusion_reason": "That test loads official claims_test.jsonl, which this experiment is prohibited from accessing.",
+  "exit_code": 0,
+  "official_test_split_accessed": false,
+  "status": "passed",
+  "stderr": "",
+  "stdout": "............................                                             [100%]\n28 passed in 47.53s\n",
+  "suite_scope": "All repository tests except tests/test_dataset_validation.py",
+  "test_pass_count": 28
+}

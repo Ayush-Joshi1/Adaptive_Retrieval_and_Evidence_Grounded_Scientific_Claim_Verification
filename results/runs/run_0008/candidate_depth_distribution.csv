@@ -1,0 +1,11 @@
+configuration,average_candidates_retrieved,average_candidates_processed,average_unique_candidates_seen_across_stages,average_candidates_cross_encoder_scored,average_backend_results_returned_across_stages,average_expansion_stages,percentage_stopping_at_10,percentage_stopping_at_20,percentage_stopping_at_50
+dense_fixed_top_10,10.0,10.0,10.0,10.0,10.0,0.0,100.0,0.0,0.0
+dense_fixed_top_20,20.0,20.0,20.0,20.0,20.0,0.0,0.0,100.0,0.0
+dense_fixed_top_50,50.0,50.0,50.0,50.0,50.0,0.0,0.0,0.0,100.0
+dense_score_gap_adaptive,16.933333333333334,16.933333333333334,16.933333333333334,16.933333333333334,22.133333333333333,0.3466666666666667,82.66666666666667,0.0,17.333333333333332
+dense_confidence_adaptive,10.0,10.0,10.0,10.0,10.0,0.0,100.0,0.0,0.0
+hybrid_fixed_top_10,10.0,10.0,10.0,10.0,10.0,0.0,100.0,0.0,0.0
+hybrid_fixed_top_20,20.0,20.0,20.0,20.0,20.0,0.0,0.0,100.0,0.0
+hybrid_fixed_top_50,50.0,50.0,50.0,50.0,50.0,0.0,0.0,0.0,100.0
+hybrid_score_gap_adaptive,36.96666666666667,36.96666666666667,36.96666666666667,36.96666666666667,57.3,1.37,29.333333333333332,4.333333333333333,66.33333333333333
+hybrid_confidence_adaptive,10.0,10.0,10.0,10.0,10.0,0.0,100.0,0.0,0.0

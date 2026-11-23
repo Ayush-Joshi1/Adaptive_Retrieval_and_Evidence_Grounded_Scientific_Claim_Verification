@@ -1,0 +1,24 @@
+{
+  "adaptive_incremental_expansion_verified": true,
+  "aggregate_metrics_match_per_query": true,
+  "candidate_ids_unique": true,
+  "decision_record_count": 3000,
+  "duplicate_query_configuration_records": false,
+  "metric_record_count": 3000,
+  "official_test_claim_file_opened": false,
+  "performance_record_count": 3000,
+  "protected_runs_checked": [
+    "run_0001",
+    "run_0002",
+    "run_0003",
+    "run_0004",
+    "run_0005",
+    "run_0006"
+  ],
+  "query_count": 300,
+  "ranking_record_count": 3000,
+  "statistical_correction_valid": true,
+  "status": "passed",
+  "test_output": "...............................                                          [100%]\n31 passed in 61.35s (0:01:01)",
+  "test_status": "passed"
+}

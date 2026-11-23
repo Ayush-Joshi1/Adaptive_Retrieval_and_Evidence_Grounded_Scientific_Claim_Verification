@@ -1,0 +1,112 @@
+{
+  "dense_confidence_adaptive": {
+    "average_backend_results_returned_across_stages": 10.0,
+    "average_candidates_cross_encoder_scored": 10.0,
+    "average_candidates_processed": 10.0,
+    "average_candidates_retrieved": 10.0,
+    "average_expansion_stages": 0.0,
+    "average_unique_candidates_seen_across_stages": 10.0,
+    "percentage_stopping_at_10": 100.0,
+    "percentage_stopping_at_20": 0.0,
+    "percentage_stopping_at_50": 0.0
+  },
+  "dense_fixed_top_10": {
+    "average_backend_results_returned_across_stages": 10.0,
+    "average_candidates_cross_encoder_scored": 10.0,
+    "average_candidates_processed": 10.0,
+    "average_candidates_retrieved": 10.0,
+    "average_expansion_stages": 0.0,
+    "average_unique_candidates_seen_across_stages": 10.0,
+    "percentage_stopping_at_10": 100.0,
+    "percentage_stopping_at_20": 0.0,
+    "percentage_stopping_at_50": 0.0
+  },
+  "dense_fixed_top_20": {
+    "average_backend_results_returned_across_stages": 20.0,
+    "average_candidates_cross_encoder_scored": 20.0,
+    "average_candidates_processed": 20.0,
+    "average_candidates_retrieved": 20.0,
+    "average_expansion_stages": 0.0,
+    "average_unique_candidates_seen_across_stages": 20.0,
+    "percentage_stopping_at_10": 0.0,
+    "percentage_stopping_at_20": 100.0,
+    "percentage_stopping_at_50": 0.0
+  },
+  "dense_fixed_top_50": {
+    "average_backend_results_returned_across_stages": 50.0,
+    "average_candidates_cross_encoder_scored": 50.0,
+    "average_candidates_processed": 50.0,
+    "average_candidates_retrieved": 50.0,
+    "average_expansion_stages": 0.0,
+    "average_unique_candidates_seen_across_stages": 50.0,
+    "percentage_stopping_at_10": 0.0,
+    "percentage_stopping_at_20": 0.0,
+    "percentage_stopping_at_50": 100.0
+  },
+  "dense_score_gap_adaptive": {
+    "average_backend_results_returned_across_stages": 22.133333333333333,
+    "average_candidates_cross_encoder_scored": 16.933333333333334,
+    "average_candidates_processed": 16.933333333333334,
+    "average_candidates_retrieved": 16.933333333333334,
+    "average_expansion_stages": 0.3466666666666667,
+    "average_unique_candidates_seen_across_stages": 16.933333333333334,
+    "percentage_stopping_at_10": 82.66666666666667,
+    "percentage_stopping_at_20": 0.0,
+    "percentage_stopping_at_50": 17.333333333333332
+  },
+  "hybrid_confidence_adaptive": {
+    "average_backend_results_returned_across_stages": 10.0,
+    "average_candidates_cross_encoder_scored": 10.0,
+    "average_candidates_processed": 10.0,
+    "average_candidates_retrieved": 10.0,
+    "average_expansion_stages": 0.0,
+    "average_unique_candidates_seen_across_stages": 10.0,
+    "percentage_stopping_at_10": 100.0,
+    "percentage_stopping_at_20": 0.0,
+    "percentage_stopping_at_50": 0.0
+  },
+  "hybrid_fixed_top_10": {
+    "average_backend_results_returned_across_stages": 10.0,
+    "average_candidates_cross_encoder_scored": 10.0,
+    "average_candidates_processed": 10.0,
+    "average_candidates_retrieved": 10.0,
+    "average_expansion_stages": 0.0,
+    "average_unique_candidates_seen_across_stages": 10.0,
+    "percentage_stopping_at_10": 100.0,
+    "percentage_stopping_at_20": 0.0,
+    "percentage_stopping_at_50": 0.0
+  },
+  "hybrid_fixed_top_20": {
+    "average_backend_results_returned_across_stages": 20.0,
+    "average_candidates_cross_encoder_scored": 20.0,
+    "average_candidates_processed": 20.0,
+    "average_candidates_retrieved": 20.0,
+    "average_expansion_stages": 0.0,
+    "average_unique_candidates_seen_across_stages": 20.0,
+    "percentage_stopping_at_10": 0.0,
+    "percentage_stopping_at_20": 100.0,
+    "percentage_stopping_at_50": 0.0
+  },
+  "hybrid_fixed_top_50": {
+    "average_backend_results_returned_across_stages": 50.0,
+    "average_candidates_cross_encoder_scored": 50.0,
+    "average_candidates_processed": 50.0,
+    "average_candidates_retrieved": 50.0,
+    "average_expansion_stages": 0.0,
+    "average_unique_candidates_seen_across_stages": 50.0,
+    "percentage_stopping_at_10": 0.0,
+    "percentage_stopping_at_20": 0.0,
+    "percentage_stopping_at_50": 100.0
+  },
+  "hybrid_score_gap_adaptive": {
+    "average_backend_results_returned_across_stages": 57.3,
+    "average_candidates_cross_encoder_scored": 36.96666666666667,
+    "average_candidates_processed": 36.96666666666667,
+    "average_candidates_retrieved": 36.96666666666667,
+    "average_expansion_stages": 1.37,
+    "average_unique_candidates_seen_across_stages": 36.96666666666667,
+    "percentage_stopping_at_10": 29.333333333333332,
+    "percentage_stopping_at_20": 4.333333333333333,
+    "percentage_stopping_at_50": 66.33333333333333
+  }
+}

@@ -1,42 +1,31 @@
-# Virtual environments
-.venv/
-venv/
-env/
-ENV/
-
-# Python cache
+﻿.venv/
 __pycache__/
 *.py[cod]
-*$py.class
-*.pyc
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Testing
-.pytest_cache/
-
-# Mypy
-.mypy_cache/
-
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
-
-# Environment variables
 .env
 .env.*
-
-# IDEs
-.vscode/
-.idea/
-
-# Results and generated files
-results/
-
-# OS files
-.DS_Store
-Thumbs.db
+!.env.example
+.pytest_cache/
+.ipynb_checkpoints/
+models/
+.cache/
+data/raw/
+data/processed/
 data/index/
-data/processed/raw_scifact/
+results/runs/*/checkpoints/
+results/runs/*/evidence_component_scores.json
+results/runs/*/evidence_component_scores.jsonl
+results/runs/*/per_query_rankings.json
+results/runs/*/per_query_rankings.jsonl
+results/runs/*/per_query_metrics.json
+results/runs/*/per_query_metrics.csv
+results/runs/*/performance_measurements.json
+results/runs/*/experiment.log
+results/runs/*/test_output.txt
+results/runs/*/adaptive_retrieval_decisions.json
+results/runs/*/adaptive_retrieval_decisions.jsonl
+results/runs/**/per_query_metrics.json
+results/runs/**/per_query_rankings.json
+results/runs/**/per_query_metrics.csv
+results/runs/run_0010/gold_label_evaluation.json
+results/runs/run_0010/figures/verification_confusion_matrix.png
+results/runs/run_0010/verification_predictions.json

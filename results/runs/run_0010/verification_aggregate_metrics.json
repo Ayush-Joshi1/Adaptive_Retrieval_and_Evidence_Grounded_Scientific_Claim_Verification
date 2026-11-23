@@ -1,0 +1,12 @@
+{
+  "abstention_rate": 0.4666666666666667,
+  "citation_traceability_rate": 1.0,
+  "citation_validity_rate": 1.0,
+  "classification": null,
+  "evidence_sentence_coverage": null,
+  "gold_selected_sentence_matches": 0,
+  "non_abstained_accuracy": null,
+  "non_abstained_count": 160,
+  "query_count": 300,
+  "status": "unavailable_no_official_test_gold_labels"
+}

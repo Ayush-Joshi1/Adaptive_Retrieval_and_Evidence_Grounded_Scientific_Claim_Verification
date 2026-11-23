@@ -1,0 +1,8 @@
+{
+  "comparison": "dense and hybrid per-query baseline metrics at pool 20",
+  "max_absolute_difference": 0.0,
+  "metric_count": 24,
+  "phase2_run": "results/runs/run_0003",
+  "query_count_per_method": 300,
+  "status": "passed"
+}

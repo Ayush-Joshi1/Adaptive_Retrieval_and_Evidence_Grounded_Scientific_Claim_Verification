@@ -1,0 +1,17 @@
+{
+  "aggregate_metrics_match_per_query": true,
+  "candidate_ids_unique": true,
+  "component_score_record_count": 5400,
+  "configuration_count": 30,
+  "duplicate_query_configuration_records": false,
+  "metric_record_count": 9000,
+  "official_test_claim_file_opened": false,
+  "paired_comparison_count": 150,
+  "performance_record_count": 9000,
+  "query_count": 300,
+  "ranking_record_count": 9000,
+  "statistical_correction_valid": true,
+  "status": "passed",
+  "test_output": ".........                                                                [100%]\n9 passed in 26.21s",
+  "test_status": "passed"
+}

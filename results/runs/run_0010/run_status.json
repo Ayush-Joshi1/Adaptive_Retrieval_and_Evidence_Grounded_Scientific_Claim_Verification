@@ -1,0 +1,14 @@
+{
+  "figures": [
+    "controlled_system_latency.png"
+  ],
+  "gold_loaded_after_predictions": true,
+  "historical_runs_unchanged": true,
+  "official_test_claim_file_opened": true,
+  "query_count": 300,
+  "report": "docs/PHASE5_CONTROLLED_EXPERIMENTS_REPORT.md",
+  "run_id": "run_0010",
+  "status": "completed",
+  "system_count": 6,
+  "test_status": "passed"
+}

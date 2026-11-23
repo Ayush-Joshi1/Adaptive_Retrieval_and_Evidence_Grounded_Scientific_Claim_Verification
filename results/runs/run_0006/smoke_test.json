@@ -1,0 +1,86 @@
+{
+  "batch_size": 16,
+  "candidate_scoring": "50 candidates per query/system, batched by the cross-encoder",
+  "device": "cpu",
+  "estimated_full_end_to_end_minutes_with_score_reuse": 103.3611334999993,
+  "estimated_full_run_reranking_minutes_with_50_pool_score_reuse": 100.14861049999733,
+  "mean_pool_50_inference_seconds_per_query_system": 10.012084400000276,
+  "mean_pool_50_reranking_seconds_per_query_system": 10.014861049999732,
+  "mean_retrieval_seconds_per_query_system": 0.32071698333341675,
+  "measurements": [
+    {
+      "candidate_count": 50,
+      "candidate_hydration_seconds": 6.999998731771484e-07,
+      "cross_encoder_inference_seconds_pool_50": 8.981993100000182,
+      "method": "dense",
+      "query_id": "1",
+      "ranking_valid": true,
+      "reranking_seconds_pool_50": 8.992900100000043,
+      "retrieval_seconds": 0.6782922000002145
+    },
+    {
+      "candidate_count": 50,
+      "candidate_hydration_seconds": 0.0012148999994678888,
+      "cross_encoder_inference_seconds_pool_50": 9.258280199999717,
+      "method": "hybrid",
+      "query_id": "1",
+      "ranking_valid": true,
+      "reranking_seconds_pool_50": 9.258789899999101,
+      "retrieval_seconds": 0.4828832000002876
+    },
+    {
+      "candidate_count": 50,
+      "candidate_hydration_seconds": 5.000001692678779e-07,
+      "cross_encoder_inference_seconds_pool_50": 9.536365800000567,
+      "method": "dense",
+      "query_id": "3",
+      "ranking_valid": true,
+      "reranking_seconds_pool_50": 9.53701539999929,
+      "retrieval_seconds": 0.038618399999904796
+    },
+    {
+      "candidate_count": 50,
+      "candidate_hydration_seconds": 0.0009442999999009771,
+      "cross_encoder_inference_seconds_pool_50": 7.661733099999765,
+      "method": "hybrid",
+      "query_id": "3",
+      "ranking_valid": true,
+      "reranking_seconds_pool_50": 7.662375700001576,
+      "retrieval_seconds": 0.41949690000001283
+    },
+    {
+      "candidate_count": 50,
+      "candidate_hydration_seconds": 1.1000010999850929e-06,
+      "cross_encoder_inference_seconds_pool_50": 9.958474400000341,
+      "method": "dense",
+      "query_id": "5",
+      "ranking_valid": true,
+      "reranking_seconds_pool_50": 9.96173219999946,
+      "retrieval_seconds": 0.08662899999944784
+    },
+    {
+      "candidate_count": 50,
+      "candidate_hydration_seconds": 0.0010504000001674285,
+      "cross_encoder_inference_seconds_pool_50": 14.675659800001085,
+      "method": "hybrid",
+      "query_id": "5",
+      "ranking_valid": true,
+      "reranking_seconds_pool_50": 14.676352999998926,
+      "retrieval_seconds": 0.21838220000063302
+    }
+  ],
+  "model_load_seconds": 7.860804799998732,
+  "model_name": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "peak_memory_after_smoke": {
+    "pagefile_usage_bytes": 1549942784,
+    "peak_working_set_bytes": 701542400,
+    "status": "measured via Windows GetProcessMemoryInfo",
+    "working_set_bytes": 389943296
+  },
+  "purpose": "technical smoke test only; no smoke metrics are included in final evaluation",
+  "query_count": 3,
+  "ranking_validation": "candidate IDs preserved, scores descending, contiguous ranks, query IDs preserved",
+  "status": "passed",
+  "system_query_count": 6,
+  "torch_threads": 2
+}

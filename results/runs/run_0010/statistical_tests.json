@@ -1,0 +1,8 @@
+{
+  "bootstrap_resamples_per_comparison": 0,
+  "comparison_family_size": 0,
+  "comparisons": [],
+  "confidence_level": 0.95,
+  "correction": "Holm-Bonferroni",
+  "paired_test": "unavailable"
+}

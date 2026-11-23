@@ -1,0 +1,265 @@
+{
+  "comparison_is_descriptive_only": true,
+  "comparisons": [
+    {
+      "all_metrics_match_within_1e-12": true,
+      "candidate_depth": 10,
+      "metrics": {
+        "hit@10": {
+          "experiment_a_mean": 0.7966666666666666,
+          "experiment_b_mean": 0.7966666666666666,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        },
+        "map@10": {
+          "experiment_a_mean": 0.6443472222222222,
+          "experiment_b_mean": 0.6443472222222222,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        },
+        "mrr@10": {
+          "experiment_a_mean": 0.6570171957671957,
+          "experiment_b_mean": 0.6570171957671957,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        },
+        "ndcg@10": {
+          "experiment_a_mean": 0.683094770841035,
+          "experiment_b_mean": 0.683094770841035,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        },
+        "recall@10": {
+          "experiment_a_mean": 0.7866666666666666,
+          "experiment_b_mean": 0.7866666666666666,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        }
+      },
+      "query_count": 300,
+      "retrieval_method": "dense"
+    },
+    {
+      "all_metrics_match_within_1e-12": true,
+      "candidate_depth": 20,
+      "metrics": {
+        "hit@10": {
+          "experiment_a_mean": 0.82,
+          "experiment_b_mean": 0.82,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        },
+        "map@10": {
+          "experiment_a_mean": 0.6410093915343915,
+          "experiment_b_mean": 0.6410093915343915,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        },
+        "mrr@10": {
+          "experiment_a_mean": 0.6549391534391534,
+          "experiment_b_mean": 0.6549391534391534,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        },
+        "ndcg@10": {
+          "experiment_a_mean": 0.6854014664875142,
+          "experiment_b_mean": 0.6854014664875142,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        },
+        "recall@10": {
+          "experiment_a_mean": 0.8078888888888889,
+          "experiment_b_mean": 0.8078888888888889,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        }
+      },
+      "query_count": 300,
+      "retrieval_method": "dense"
+    },
+    {
+      "all_metrics_match_within_1e-12": true,
+      "candidate_depth": 50,
+      "metrics": {
+        "hit@10": {
+          "experiment_a_mean": 0.83,
+          "experiment_b_mean": 0.83,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        },
+        "map@10": {
+          "experiment_a_mean": 0.6445906084656085,
+          "experiment_b_mean": 0.6445906084656085,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        },
+        "mrr@10": {
+          "experiment_a_mean": 0.6608888888888889,
+          "experiment_b_mean": 0.6608888888888889,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        },
+        "ndcg@10": {
+          "experiment_a_mean": 0.6906476042959006,
+          "experiment_b_mean": 0.6906476042959006,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        },
+        "recall@10": {
+          "experiment_a_mean": 0.8155555555555556,
+          "experiment_b_mean": 0.8155555555555556,
+          "maximum_absolute_per_query_difference": 0.0,
+          "mean_difference_experiment_b_minus_a": 0.0,
+          "per_query_match_within_1e-12": true
+        }
+      },
+      "query_count": 300,
+      "retrieval_method": "dense"
+    },
+    {
+      "all_metrics_match_within_1e-12": false,
+      "candidate_depth": 10,
+      "metrics": {
+        "hit@10": {
+          "experiment_a_mean": 0.8166666666666667,
+          "experiment_b_mean": 0.82,
+          "maximum_absolute_per_query_difference": 1.0,
+          "mean_difference_experiment_b_minus_a": 0.0033333333333333335,
+          "per_query_match_within_1e-12": false
+        },
+        "map@10": {
+          "experiment_a_mean": 0.6384265873015873,
+          "experiment_b_mean": 0.6516183862433862,
+          "maximum_absolute_per_query_difference": 1.0,
+          "mean_difference_experiment_b_minus_a": 0.013191798941798942,
+          "per_query_match_within_1e-12": false
+        },
+        "mrr@10": {
+          "experiment_a_mean": 0.6526507936507937,
+          "experiment_b_mean": 0.6618730158730158,
+          "maximum_absolute_per_query_difference": 1.0,
+          "mean_difference_experiment_b_minus_a": 0.009222222222222222,
+          "per_query_match_within_1e-12": false
+        },
+        "ndcg@10": {
+          "experiment_a_mean": 0.6824346728694004,
+          "experiment_b_mean": 0.6946376650059801,
+          "maximum_absolute_per_query_difference": 1.0,
+          "mean_difference_experiment_b_minus_a": 0.012202992136579749,
+          "per_query_match_within_1e-12": false
+        },
+        "recall@10": {
+          "experiment_a_mean": 0.8011111111111111,
+          "experiment_b_mean": 0.8138888888888889,
+          "maximum_absolute_per_query_difference": 1.0,
+          "mean_difference_experiment_b_minus_a": 0.012777777777777779,
+          "per_query_match_within_1e-12": false
+        }
+      },
+      "query_count": 300,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "all_metrics_match_within_1e-12": false,
+      "candidate_depth": 20,
+      "metrics": {
+        "hit@10": {
+          "experiment_a_mean": 0.8433333333333334,
+          "experiment_b_mean": 0.8666666666666667,
+          "maximum_absolute_per_query_difference": 1.0,
+          "mean_difference_experiment_b_minus_a": 0.023333333333333334,
+          "per_query_match_within_1e-12": false
+        },
+        "map@10": {
+          "experiment_a_mean": 0.6425882936507936,
+          "experiment_b_mean": 0.6631443121693121,
+          "maximum_absolute_per_query_difference": 1.0,
+          "mean_difference_experiment_b_minus_a": 0.02055601851851852,
+          "per_query_match_within_1e-12": false
+        },
+        "mrr@10": {
+          "experiment_a_mean": 0.656718253968254,
+          "experiment_b_mean": 0.6765648148148148,
+          "maximum_absolute_per_query_difference": 1.0,
+          "mean_difference_experiment_b_minus_a": 0.01984656084656085,
+          "per_query_match_within_1e-12": false
+        },
+        "ndcg@10": {
+          "experiment_a_mean": 0.6924196930831786,
+          "experiment_b_mean": 0.714116029881529,
+          "maximum_absolute_per_query_difference": 1.0,
+          "mean_difference_experiment_b_minus_a": 0.021696336798350337,
+          "per_query_match_within_1e-12": false
+        },
+        "recall@10": {
+          "experiment_a_mean": 0.8329444444444445,
+          "experiment_b_mean": 0.8578888888888889,
+          "maximum_absolute_per_query_difference": 1.0,
+          "mean_difference_experiment_b_minus_a": 0.024944444444444446,
+          "per_query_match_within_1e-12": false
+        }
+      },
+      "query_count": 300,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "all_metrics_match_within_1e-12": false,
+      "candidate_depth": 50,
+      "metrics": {
+        "hit@10": {
+          "experiment_a_mean": 0.8366666666666667,
+          "experiment_b_mean": 0.8466666666666667,
+          "maximum_absolute_per_query_difference": 1.0,
+          "mean_difference_experiment_b_minus_a": 0.01,
+          "per_query_match_within_1e-12": false
+        },
+        "map@10": {
+          "experiment_a_mean": 0.6466003968253968,
+          "experiment_b_mean": 0.6483257936507937,
+          "maximum_absolute_per_query_difference": 0.1966666666666667,
+          "mean_difference_experiment_b_minus_a": 0.0017253968253968257,
+          "per_query_match_within_1e-12": false
+        },
+        "mrr@10": {
+          "experiment_a_mean": 0.6608558201058201,
+          "experiment_b_mean": 0.6633478835978835,
+          "maximum_absolute_per_query_difference": 0.5,
+          "mean_difference_experiment_b_minus_a": 0.0024920634920634925,
+          "per_query_match_within_1e-12": false
+        },
+        "ndcg@10": {
+          "experiment_a_mean": 0.6938661903172252,
+          "experiment_b_mean": 0.6973654259446954,
+          "maximum_absolute_per_query_difference": 0.3010299956639812,
+          "mean_difference_experiment_b_minus_a": 0.003499235627470264,
+          "per_query_match_within_1e-12": false
+        },
+        "recall@10": {
+          "experiment_a_mean": 0.8238888888888889,
+          "experiment_b_mean": 0.8338888888888889,
+          "maximum_absolute_per_query_difference": 1.0,
+          "mean_difference_experiment_b_minus_a": 0.01,
+          "per_query_match_within_1e-12": false
+        }
+      },
+      "query_count": 300,
+      "retrieval_method": "hybrid"
+    }
+  ],
+  "experiment_a_run_id": "run_0006",
+  "source": "results/runs/run_0006/per_query_metrics.json"
+}

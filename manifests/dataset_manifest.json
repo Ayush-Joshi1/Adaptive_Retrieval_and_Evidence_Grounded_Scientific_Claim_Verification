@@ -1,0 +1,22 @@
+{
+  "dataset_name": "BEIR SciFact / official SciFact claim splits",
+  "source": "BeIR/scifact, BeIR/scifact-qrels, official SciFact claim JSONL files in data/processed/raw_scifact/data",
+  "split_summary": {
+    "train_claim_count": 809,
+    "dev_claim_count": 300,
+    "test_claim_count": 300,
+    "beir_query_count": 1109,
+    "beir_train_qrel_count": 809,
+    "beir_test_qrel_count": 300
+  },
+  "integrity": {
+    "beir_qrels_train_matches_train_claims": true,
+    "beir_qrels_test_matches_dev_claims": true,
+    "official_test_ids_in_beir_queries": 0,
+    "notes": [
+      "The BEIR test qrels actually align with the official SciFact dev claim set.",
+      "The official SciFact test set has no qrels and must remain untouched for final evaluation.",
+      "Do not use the BEIR test qrels or official test labels for parameter tuning."
+    ]
+  }
+}

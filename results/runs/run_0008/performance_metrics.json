@@ -1,0 +1,349 @@
+{
+  "dense_confidence_adaptive": {
+    "cross_encoder_inference": {
+      "mean_seconds": 1.9946362876666481,
+      "median_seconds": 1.8794101500000124,
+      "p95_seconds": 2.968915899999047,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.5013445339299493,
+      "total_seconds": 598.3908862999945
+    },
+    "end_to_end_latency": {
+      "mean_seconds": 2.021698606666659,
+      "median_seconds": 1.9038348499998392,
+      "p95_seconds": 2.998630800000683,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.4946335703563562,
+      "total_seconds": 606.5095819999976
+    },
+    "reranking_latency": {
+      "mean_seconds": 1.9948289956666432,
+      "median_seconds": 1.8796903500001463,
+      "p95_seconds": 2.969183900000644,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.5012961021582777,
+      "total_seconds": 598.448698699993
+    },
+    "retrieval_latency": {
+      "mean_seconds": 0.026869611000015538,
+      "median_seconds": 0.022901149999370318,
+      "p95_seconds": 0.038330499999574386,
+      "query_count": 300,
+      "throughput_queries_per_second": 37.21676506591114,
+      "total_seconds": 8.060883300004662
+    }
+  },
+  "dense_fixed_top_10": {
+    "cross_encoder_inference": {
+      "mean_seconds": 2.7031679686666683,
+      "median_seconds": 2.4598706000001584,
+      "p95_seconds": 4.141445100000055,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.3699363160526232,
+      "total_seconds": 810.9503906000004
+    },
+    "end_to_end_latency": {
+      "mean_seconds": 2.7367140163333237,
+      "median_seconds": 2.4864948000004006,
+      "p95_seconds": 4.176965899999232,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.36540171681504735,
+      "total_seconds": 821.0142048999971
+    },
+    "reranking_latency": {
+      "mean_seconds": 2.7034300790000105,
+      "median_seconds": 2.460100450000027,
+      "p95_seconds": 4.141613299999335,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.36990044897698876,
+      "total_seconds": 811.0290237000031
+    },
+    "retrieval_latency": {
+      "mean_seconds": 0.03328393733331344,
+      "median_seconds": 0.02850110000008499,
+      "p95_seconds": 0.04552209999928891,
+      "query_count": 300,
+      "throughput_queries_per_second": 30.044522376837723,
+      "total_seconds": 9.985181199994031
+    }
+  },
+  "dense_fixed_top_20": {
+    "cross_encoder_inference": {
+      "mean_seconds": 3.9122947683333837,
+      "median_seconds": 3.633333350000612,
+      "p95_seconds": 5.577432399999452,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.25560446214179167,
+      "total_seconds": 1173.688430500015
+    },
+    "end_to_end_latency": {
+      "mean_seconds": 3.9502933963333513,
+      "median_seconds": 3.6701206499999444,
+      "p95_seconds": 5.625206299999263,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.25314575391493616,
+      "total_seconds": 1185.0880189000054
+    },
+    "reranking_latency": {
+      "mean_seconds": 3.9126263503333356,
+      "median_seconds": 3.633644099999401,
+      "p95_seconds": 5.577757199998814,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.2555828005183283,
+      "total_seconds": 1173.7879051000007
+    },
+    "retrieval_latency": {
+      "mean_seconds": 0.037667046000015796,
+      "median_seconds": 0.029073650000555062,
+      "p95_seconds": 0.07206399999995483,
+      "query_count": 300,
+      "throughput_queries_per_second": 26.54840520277541,
+      "total_seconds": 11.300113800004738
+    }
+  },
+  "dense_fixed_top_50": {
+    "cross_encoder_inference": {
+      "mean_seconds": 8.694831152999939,
+      "median_seconds": 8.131012049999754,
+      "p95_seconds": 12.914322099999936,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.11501085902685694,
+      "total_seconds": 2608.449345899982
+    },
+    "end_to_end_latency": {
+      "mean_seconds": 8.721293473000031,
+      "median_seconds": 8.15470515000061,
+      "p95_seconds": 12.956501900000148,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.11466189081881804,
+      "total_seconds": 2616.3880419000093
+    },
+    "reranking_latency": {
+      "mean_seconds": 8.695512815666675,
+      "median_seconds": 8.131584100000055,
+      "p95_seconds": 12.9153467000001,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.1150018430423452,
+      "total_seconds": 2608.653844700002
+    },
+    "retrieval_latency": {
+      "mean_seconds": 0.02578065733335658,
+      "median_seconds": 0.02403449999997065,
+      "p95_seconds": 0.039455799998904695,
+      "query_count": 300,
+      "throughput_queries_per_second": 38.78877047507005,
+      "total_seconds": 7.7341972000069745
+    }
+  },
+  "dense_score_gap_adaptive": {
+    "cross_encoder_inference": {
+      "mean_seconds": 3.19108922566664,
+      "median_seconds": 1.928104650000023,
+      "p95_seconds": 9.116661199999726,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.3133726227260516,
+      "total_seconds": 957.3267676999919
+    },
+    "end_to_end_latency": {
+      "mean_seconds": 3.2266739406666987,
+      "median_seconds": 1.9472068999996281,
+      "p95_seconds": 9.204445599998508,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.3099166567147404,
+      "total_seconds": 968.0021822000097
+    },
+    "reranking_latency": {
+      "mean_seconds": 3.191377615666675,
+      "median_seconds": 1.9282720499995776,
+      "p95_seconds": 9.117424000000028,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.31334430469491814,
+      "total_seconds": 957.4132847000026
+    },
+    "retrieval_latency": {
+      "mean_seconds": 0.035296325000023596,
+      "median_seconds": 0.02443935000064812,
+      "p95_seconds": 0.08481829999982438,
+      "query_count": 300,
+      "throughput_queries_per_second": 28.331561430243276,
+      "total_seconds": 10.588897500007079
+    }
+  },
+  "hybrid_confidence_adaptive": {
+    "cross_encoder_inference": {
+      "mean_seconds": 2.0756431023333297,
+      "median_seconds": 1.892180250000365,
+      "p95_seconds": 3.051046900000074,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.4817783938268829,
+      "total_seconds": 622.6929306999989
+    },
+    "end_to_end_latency": {
+      "mean_seconds": 2.4176406193333615,
+      "median_seconds": 2.1719344499997533,
+      "p95_seconds": 3.4573006999994504,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.41362640584510835,
+      "total_seconds": 725.2921858000084
+    },
+    "reranking_latency": {
+      "mean_seconds": 2.075868048666685,
+      "median_seconds": 1.8924131499998111,
+      "p95_seconds": 3.0513277999998536,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.4817261870966667,
+      "total_seconds": 622.7604146000056
+    },
+    "retrieval_latency": {
+      "mean_seconds": 0.3417725706666761,
+      "median_seconds": 0.28990090000024793,
+      "p95_seconds": 0.6690229000014369,
+      "query_count": 300,
+      "throughput_queries_per_second": 2.9259223408401605,
+      "total_seconds": 102.53177120000282
+    }
+  },
+  "hybrid_fixed_top_10": {
+    "cross_encoder_inference": {
+      "mean_seconds": 2.086517915333327,
+      "median_seconds": 1.9191169499999887,
+      "p95_seconds": 2.976898799999617,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.4792673921710599,
+      "total_seconds": 625.9553745999981
+    },
+    "end_to_end_latency": {
+      "mean_seconds": 2.423722011333416,
+      "median_seconds": 2.2471889000003102,
+      "p95_seconds": 3.5626600999985385,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.4125885705225113,
+      "total_seconds": 727.1166034000248
+    },
+    "reranking_latency": {
+      "mean_seconds": 2.0867296406667153,
+      "median_seconds": 1.9192665999999008,
+      "p95_seconds": 2.97709980000036,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.47921876438219263,
+      "total_seconds": 626.0188922000145
+    },
+    "retrieval_latency": {
+      "mean_seconds": 0.33699237066670096,
+      "median_seconds": 0.29544415000009394,
+      "p95_seconds": 0.6749459000002389,
+      "query_count": 300,
+      "throughput_queries_per_second": 2.9674262299221024,
+      "total_seconds": 101.09771120001028
+    }
+  },
+  "hybrid_fixed_top_20": {
+    "cross_encoder_inference": {
+      "mean_seconds": 3.896133953666654,
+      "median_seconds": 3.65343340000004,
+      "p95_seconds": 5.538193800000954,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.2566646865565029,
+      "total_seconds": 1168.8401860999961
+    },
+    "end_to_end_latency": {
+      "mean_seconds": 4.231605478666713,
+      "median_seconds": 3.903382949999923,
+      "p95_seconds": 6.091638100000637,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.23631692629225876,
+      "total_seconds": 1269.481643600014
+    },
+    "reranking_latency": {
+      "mean_seconds": 3.8964546440000096,
+      "median_seconds": 3.653687350000382,
+      "p95_seconds": 5.5386546999998245,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.2566435622546919,
+      "total_seconds": 1168.9363932000028
+    },
+    "retrieval_latency": {
+      "mean_seconds": 0.33515083466670376,
+      "median_seconds": 0.2936841500004448,
+      "p95_seconds": 0.6461857000001601,
+      "query_count": 300,
+      "throughput_queries_per_second": 2.983731193730925,
+      "total_seconds": 100.54525040001113
+    }
+  },
+  "hybrid_fixed_top_50": {
+    "cross_encoder_inference": {
+      "mean_seconds": 8.74718128633336,
+      "median_seconds": 8.118053300000156,
+      "p95_seconds": 12.7447329000006,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.1143225420013193,
+      "total_seconds": 2624.1543859000085
+    },
+    "end_to_end_latency": {
+      "mean_seconds": 9.076756085333313,
+      "median_seconds": 8.433567649998622,
+      "p95_seconds": 13.3527909000004,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.11017151839255117,
+      "total_seconds": 2723.0268255999945
+    },
+    "reranking_latency": {
+      "mean_seconds": 8.747896016333279,
+      "median_seconds": 8.118736400000216,
+      "p95_seconds": 12.746068299999024,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.11431320149815345,
+      "total_seconds": 2624.368804899984
+    },
+    "retrieval_latency": {
+      "mean_seconds": 0.3288600690000347,
+      "median_seconds": 0.2901458499995897,
+      "p95_seconds": 0.6229437000001781,
+      "query_count": 300,
+      "throughput_queries_per_second": 3.0408070004993353,
+      "total_seconds": 98.65802070001041
+    }
+  },
+  "hybrid_score_gap_adaptive": {
+    "cross_encoder_inference": {
+      "mean_seconds": 6.720261664333327,
+      "median_seconds": 7.4553547499999695,
+      "p95_seconds": 12.205041700000038,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.1488037296683452,
+      "total_seconds": 2016.0784992999982
+    },
+    "end_to_end_latency": {
+      "mean_seconds": 7.480034806000017,
+      "median_seconds": 8.21835960000044,
+      "p95_seconds": 13.355505800000174,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.13368921748838153,
+      "total_seconds": 2244.010441800005
+    },
+    "reranking_latency": {
+      "mean_seconds": 6.72076336066673,
+      "median_seconds": 7.455957100000887,
+      "p95_seconds": 12.20561009999983,
+      "query_count": 300,
+      "throughput_queries_per_second": 0.14879262166147678,
+      "total_seconds": 2016.229008200019
+    },
+    "retrieval_latency": {
+      "mean_seconds": 0.7592714453332867,
+      "median_seconds": 0.6610266499997124,
+      "p95_seconds": 1.6499634000001606,
+      "query_count": 300,
+      "throughput_queries_per_second": 1.3170520321109191,
+      "total_seconds": 227.78143359998603
+    }
+  },
+  "model_load_seconds": 7.242395900000702,
+  "peak_memory": {
+    "peak_working_set_bytes": null,
+    "status": "unavailable",
+    "working_set_bytes": null
+  },
+  "total_run_wall_time_seconds": 185.42007920000106
+}

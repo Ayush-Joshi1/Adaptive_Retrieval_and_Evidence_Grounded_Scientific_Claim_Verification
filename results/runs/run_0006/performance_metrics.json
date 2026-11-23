@@ -1,0 +1,143 @@
+{
+  "bm25_index_build_seconds": 1.0236253999992186,
+  "cross_encoder_inference_latency_summary": {
+    "mean_seconds": 11.968542420499968,
+    "median_seconds": 11.369040700000369,
+    "p95_seconds": 18.679154400000698,
+    "query_count": 600,
+    "throughput_queries_per_second": 0.08355236292492721,
+    "total_seconds": 7181.125452299981
+  },
+  "cross_encoder_model_load_seconds": 7.860804799998732,
+  "dense_index_load_seconds": 0.15277160000005097,
+  "dense_pool_10_baseline": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189,
+    "query_count": 300,
+    "throughput_queries_per_second": 22.981218499611455,
+    "total_seconds": 13.054138099991178
+  },
+  "dense_pool_10_reranked": {
+    "mean_seconds": 12.028521692999918,
+    "median_seconds": 10.799329149999721,
+    "p95_seconds": 18.80262440000115,
+    "query_count": 300,
+    "throughput_queries_per_second": 0.08313573567248558,
+    "total_seconds": 3608.5565078999753
+  },
+  "dense_pool_20_baseline": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189,
+    "query_count": 300,
+    "throughput_queries_per_second": 22.981218499611455,
+    "total_seconds": 13.054138099991178
+  },
+  "dense_pool_20_reranked": {
+    "mean_seconds": 12.028536345333274,
+    "median_seconds": 10.79935420000129,
+    "p95_seconds": 18.802636000000348,
+    "query_count": 300,
+    "throughput_queries_per_second": 0.08313563440226635,
+    "total_seconds": 3608.5609035999823
+  },
+  "dense_pool_50_baseline": {
+    "mean_seconds": 0.04351379366663726,
+    "median_seconds": 0.036205100000188395,
+    "p95_seconds": 0.07210390000000189,
+    "query_count": 300,
+    "throughput_queries_per_second": 22.981218499611455,
+    "total_seconds": 13.054138099991178
+  },
+  "dense_pool_50_reranked": {
+    "mean_seconds": 12.028582249333189,
+    "median_seconds": 10.799369750000551,
+    "p95_seconds": 18.8026847000001,
+    "query_count": 300,
+    "throughput_queries_per_second": 0.08313531713643439,
+    "total_seconds": 3608.5746747999565
+  },
+  "evaluation_wall_time_seconds": 7346.534879300001,
+  "hybrid_pool_10_baseline": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517,
+    "query_count": 300,
+    "throughput_queries_per_second": 2.2189860726580752,
+    "total_seconds": 135.19688280000628
+  },
+  "hybrid_pool_10_reranked": {
+    "mean_seconds": 12.40501548633339,
+    "median_seconds": 11.93488145000265,
+    "p95_seconds": 19.249224699999104,
+    "query_count": 300,
+    "throughput_queries_per_second": 0.08061255555075288,
+    "total_seconds": 3721.504645900017
+  },
+  "hybrid_pool_20_baseline": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517,
+    "query_count": 300,
+    "throughput_queries_per_second": 2.2189860726580752,
+    "total_seconds": 135.19688280000628
+  },
+  "hybrid_pool_20_reranked": {
+    "mean_seconds": 12.405032929333375,
+    "median_seconds": 11.934888650001085,
+    "p95_seconds": 19.249279599998772,
+    "query_count": 300,
+    "throughput_queries_per_second": 0.08061244219959829,
+    "total_seconds": 3721.5098788000123
+  },
+  "hybrid_pool_50_baseline": {
+    "mean_seconds": 0.45065627600002095,
+    "median_seconds": 0.3936935999990965,
+    "p95_seconds": 0.973800100000517,
+    "query_count": 300,
+    "throughput_queries_per_second": 2.2189860726580752,
+    "total_seconds": 135.19688280000628
+  },
+  "hybrid_pool_50_reranked": {
+    "mean_seconds": 12.405080583000053,
+    "median_seconds": 11.93491085000187,
+    "p95_seconds": 19.249306899999283,
+    "query_count": 300,
+    "throughput_queries_per_second": 0.0806121325298283,
+    "total_seconds": 3721.524174900016
+  },
+  "latency_methodology": {
+    "cross_encoder_inference": "model predict time for one batched 50-candidate scoring pass per query and base system",
+    "end_to_end": "retrieval plus (for reranked conditions) candidate hydration and the measured 50-candidate reranker pass",
+    "pool_specific_latency_caveat": "The 10- and 20-candidate reranked outputs reuse the same 50-candidate score pass; timings are not separate smaller-pool inference runs.",
+    "reranking": "end-to-end reranker call time, including preprocessing, model inference, sorting, and rank assignment",
+    "retrieval": "one retrieval at depth 50 per query and base system; exact prefixes are cached and reused for all candidate pools"
+  },
+  "memory_measurement_scope": "Windows process peak working set and pagefile usage; includes Python, retrieval indexes, and cross-encoder model",
+  "peak_memory": {
+    "pagefile_usage_bytes": 1550200832,
+    "peak_working_set_bytes": 701542400,
+    "status": "measured via Windows GetProcessMemoryInfo",
+    "working_set_bytes": 351211520
+  },
+  "query_count": 300,
+  "reranking_latency_summary": {
+    "mean_seconds": 11.969517148499987,
+    "median_seconds": 11.369577599999502,
+    "p95_seconds": 18.67980119999993,
+    "query_count": 600,
+    "throughput_queries_per_second": 0.08354555890546675,
+    "total_seconds": 7181.710289099992
+  },
+  "retrieval_framework_import_seconds": 24.393675900000744,
+  "retrieval_latency_summary": {
+    "mean_seconds": 0.24708503483332908,
+    "median_seconds": 0.13706079999974463,
+    "p95_seconds": 0.7604848999999376,
+    "query_count": 600,
+    "throughput_queries_per_second": 4.047189667616045,
+    "total_seconds": 148.25102089999746
+  },
+  "total_run_wall_time_seconds": 7600.2358642
+}

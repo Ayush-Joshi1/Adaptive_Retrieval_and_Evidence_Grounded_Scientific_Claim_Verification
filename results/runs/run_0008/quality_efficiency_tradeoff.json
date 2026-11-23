@@ -1,0 +1,72 @@
+{
+  "dense_confidence_adaptive": {
+    "average_candidates_processed": 10.0,
+    "ndcg_at_10": 0.683094770841035,
+    "ndcg_per_cross_encoder_second": 0.3424658295172842,
+    "ndcg_per_end_to_end_second": 0.33788160539285805,
+    "ndcg_per_processed_candidate": 0.0683094770841035
+  },
+  "dense_fixed_top_10": {
+    "average_candidates_processed": 10.0,
+    "ndcg_at_10": 0.683094770841035,
+    "ndcg_per_cross_encoder_second": 0.25270156303974334,
+    "ndcg_per_end_to_end_second": 0.24960400201269553,
+    "ndcg_per_processed_candidate": 0.0683094770841035
+  },
+  "dense_fixed_top_20": {
+    "average_candidates_processed": 20.0,
+    "ndcg_at_10": 0.6854014664875142,
+    "ndcg_per_cross_encoder_second": 0.17519167319273632,
+    "ndcg_per_end_to_end_second": 0.17350647096838465,
+    "ndcg_per_processed_candidate": 0.03427007332437571
+  },
+  "dense_fixed_top_50": {
+    "average_candidates_processed": 50.0,
+    "ndcg_at_10": 0.6906476042959006,
+    "ndcg_per_cross_encoder_second": 0.0794319742549123,
+    "ndcg_per_end_to_end_second": 0.0791909601980548,
+    "ndcg_per_processed_candidate": 0.01381295208591801
+  },
+  "dense_score_gap_adaptive": {
+    "average_candidates_processed": 16.933333333333334,
+    "ndcg_at_10": 0.6906942474237597,
+    "ndcg_per_cross_encoder_second": 0.21644466781698,
+    "ndcg_per_end_to_end_second": 0.21405765197367535,
+    "ndcg_per_processed_candidate": 0.04078903035967085
+  },
+  "hybrid_confidence_adaptive": {
+    "average_candidates_processed": 10.0,
+    "ndcg_at_10": 0.6946376650059801,
+    "ndcg_per_cross_encoder_second": 0.33466141853823744,
+    "ndcg_per_end_to_end_second": 0.2873204807410619,
+    "ndcg_per_processed_candidate": 0.06946376650059802
+  },
+  "hybrid_fixed_top_10": {
+    "average_candidates_processed": 10.0,
+    "ndcg_at_10": 0.6946376650059801,
+    "ndcg_per_cross_encoder_second": 0.3329171822112104,
+    "ndcg_per_end_to_end_second": 0.2865995612359124,
+    "ndcg_per_processed_candidate": 0.06946376650059802
+  },
+  "hybrid_fixed_top_20": {
+    "average_candidates_processed": 20.0,
+    "ndcg_at_10": 0.714116029881529,
+    "ndcg_per_cross_encoder_second": 0.18328836697451686,
+    "ndcg_per_end_to_end_second": 0.16875770519763372,
+    "ndcg_per_processed_candidate": 0.03570580149407645
+  },
+  "hybrid_fixed_top_50": {
+    "average_candidates_processed": 50.0,
+    "ndcg_at_10": 0.6973654259446954,
+    "ndcg_per_cross_encoder_second": 0.07972458819783039,
+    "ndcg_per_end_to_end_second": 0.0768298078507953,
+    "ndcg_per_processed_candidate": 0.013947308518893909
+  },
+  "hybrid_score_gap_adaptive": {
+    "average_candidates_processed": 36.96666666666667,
+    "ndcg_at_10": 0.6966355364297798,
+    "ndcg_per_cross_encoder_second": 0.10366196604025961,
+    "ndcg_per_end_to_end_second": 0.09313265973989616,
+    "ndcg_per_processed_candidate": 0.018844964916946254
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "candidate_depths": {
+    "bm25": 100,
+    "dense": 100,
+    "hybrid": {
+      "bm25": 100,
+      "dense": 100
+    }
+  },
+  "corpus_count": 5183,
+  "dataset": "BEIR SciFact / official SciFact dev claims",
+  "k_values": [
+    1,
+    3,
+    5,
+    10,
+    20
+  ],
+  "qrels_source": "BeIR/scifact-qrels test split",
+  "query_count": 300,
+  "raw_claims_source": "C:\\Users\\admin\\Desktop\\rag project upd\\data\\processed\\raw_scifact\\data\\claims_dev.jsonl",
+  "retrievers": {
+    "bm25": {
+      "b": 0.75,
+      "candidate_depth": 100,
+      "k1": 1.5,
+      "tokenization": "lowercase, simple regex"
+    },
+    "dense": {
+      "dim": 384,
+      "index": "faiss.IndexFlatIP",
+      "model": "sentence-transformers/all-MiniLM-L6-v2"
+    },
+    "hybrid": {
+      "candidate_depths": {
+        "bm25": 100,
+        "dense": 100
+      },
+      "rrf_constant": 60
+    }
+  },
+  "rrf_constant": 60,
+  "run_dir": "C:\\Users\\admin\\Desktop\\rag project upd\\results\\runs\\run_0003",
+  "run_id": "run_0003",
+  "split": "official_dev_for_tuning"
+}
