@@ -22,19 +22,19 @@ The project distinguishes source-provided split organization from BEIR query/qre
 - Reranking adds cross-encoder scores and remapped ranks.
 - Evidence grounding adds sentence indices and exact sentence text.
 
-## Development protocol
+## Study protocol
 
-The canonical Phase 2–5 development work uses 300 official development claims. BEIR `qrels test` is treated as development relevance judgment data because it maps to those claims.
+The development study uses 300 official development claims. BEIR `qrels test` is treated as development relevance judgment data because it maps to those claims.
 
-Development use cases include:
+Evaluation use cases include:
 
 - Retrieval comparison
 - Reranker candidate-pool comparison
 - Adaptive stopping strategy evaluation
 - Evidence-aware reranking ablations
-- Development protocol freeze
+- Controlled protocol freeze
 
-Development relevance judgments are not used by adaptive stopping rules or evidence thresholds in the finalized protocol.
+Study relevance judgments are not used by adaptive stopping rules or evidence thresholds in the finalized protocol.
 
 ## Held-out protocol
 
@@ -53,7 +53,7 @@ Predictions are generated before evaluation gold data are loaded. In this projec
 
 The repository maintains the following controls:
 
-- Development-only claim and qrels loading
+- Study claim and qrels loading
 - Explicit held-out split separation
 - Frozen configuration hashes
 - Timestamped protocol freeze records
@@ -63,7 +63,7 @@ The repository maintains the following controls:
 
 ## Frozen configurations
 
-Phase 5 uses:
+The controlled evaluation uses:
 
 - BM25 baseline
 - Dense baseline

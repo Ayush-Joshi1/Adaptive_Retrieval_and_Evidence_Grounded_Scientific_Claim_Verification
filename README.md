@@ -2,7 +2,7 @@
 
 A CPU-compatible research project evaluating retrieval, reranking, adaptive candidate depth, and document-level evidence grounding on BEIR SciFact.
 
-[Research paper](docs/RESEARCH_PAPER.md) · [Phase 5 report](docs/PHASE5_CONTROLLED_EXPERIMENTS_REPORT.md) · [Reproducibility](docs/REPRODUCIBILITY.md) · [Dataset protocol](docs/DATASET_AND_EXPERIMENTAL_PROTOCOL.md) · [Demo script](docs/PROJECT_DEMONSTRATION_SCRIPT.md)
+[Research paper](docs/RESEARCH_PAPER.md) · [Reproducibility](docs/REPRODUCIBILITY.md) · [Dataset protocol](docs/DATASET_AND_EXPERIMENTAL_PROTOCOL.md) · [Demo script](docs/PROJECT_DEMONSTRATION_SCRIPT.md)
 
 ## Research problem
 
@@ -46,7 +46,7 @@ The implementation uses FAISS `IndexFlatIP`, a normalized MiniLM embedding model
 
 ## Key results
 
-### Phase 2 — 300 official development claims
+### Retrieval comparison — 300 official development claims
 
 | Approach | Hit@10 | Recall@10 | MRR@10 | MAP@10 | nDCG@10 |
 |---|---:|---:|---:|---:|---:|
@@ -56,15 +56,15 @@ The implementation uses FAISS `IndexFlatIP`, a normalized MiniLM embedding model
 
 RRF sensitivity reached Hit@10=0.840 at c=10.
 
-### Phase 3 — reranking and adaptation
+### Reranking and adaptive retrieval
 
 - Cross-encoder reranking produced numerical development improvements, but broad corrected significance was not established.
 - Dense score-gap adaptive retrieval processed 16.93 candidates/query with nDCG@10=0.690694, versus 50 candidates with nDCG@10=0.690648 for Dense fixed Top-50.
 - Dense confidence adaptive retrieval processed 10 candidates/query with nDCG@10=0.683095.
-- Hybrid evidence-aware Pool-50 achieved the highest observed Experiment C development nDCG@10 of 0.704115.
+- Hybrid evidence-aware Pool-50 achieved the highest observed evidence-aware development nDCG@10 of 0.704115.
 - The +0.010249 nDCG@10 advantage over cross-encoder reranking was not statistically significant after the declared correction.
 
-### Phase 4 — evidence grounding
+### Evidence grounding
 
 The pipeline provides:
 
@@ -77,7 +77,7 @@ The pipeline provides:
 
 The relationship mapper is a lexical/rule-based baseline, not a validated entailment model.
 
-### Phase 5 — held-out execution
+### Controlled held-out execution
 
 The frozen run `run_0010` processed 300 official held-out claim texts.
 
@@ -95,11 +95,10 @@ The official held-out `claims_test.jsonl` contains claim text only. It provides 
 | [System architecture](docs/figures/evidence_grounding_architecture.png) | End-to-end verification pipeline |
 | [Retrieval comparison](docs/figures/retrieval_performance_comparison.png) | BM25, Dense, Hybrid at K=10 |
 | [RRF sensitivity](docs/figures/rrf_sensitivity.png) | Hit rates across RRF constants |
-| [Reranking findings](docs/figures/reranking_findings.png) | Experiment A pool-size comparison |
 | [Adaptive efficiency](docs/figures/adaptive_retrieval_efficiency.png) | nDCG versus candidate processing |
 | [Evidence workflow](docs/figures/evidence_grounding_workflow.png) | Sentence selection through abstention |
 | [Evidence-aware findings](docs/figures/evidence_aware_findings.png) | Dense/Hybrid development nDCG |
-| [Phase 5 latency](docs/figures/phase5_latency.png) | Controlled execution latency |
+| [Controlled latency](docs/figures/controlled_evaluation_latency.png) | Controlled execution latency |
 
 ## Repository structure
 
@@ -137,42 +136,42 @@ Run the core suite:
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
-Run focused Phase 4/5 tests:
+Run focused evidence-grounding and controlled-evaluation tests:
 
 ```powershell
-.\.venv\Scripts\python.exe -m pytest -q tests/test_evidence_grounding.py tests/test_phase5_controlled.py
+.\\.venv\Scripts\python.exe -m pytest -q tests/test_evidence_grounding.py tests/test_controlled_evaluation.py
 ```
 
 `tests/test_dataset_validation.py` is excluded from held-out execution because its split loader can inspect every official claim split.
 
 ## Reproduction
 
-Phase 2:
+Retrieval:
 
 ```powershell
 .\.venv\Scripts\python.exe experiments\run_retrieval_comparison.py
-.\.venv\Scripts\python.exe scripts\generate_phase2_figures.py
+.\.venv\Scripts\python.exe scripts\generate_retrieval_figures.py
 ```
 
-Phase 3:
+Reranking and adaptive/evidence-aware experiments:
 
 ```powershell
-.\.venv\Scripts\python.exe experiments\run_experiment_a.py --resume run_0006
-.\.venv\Scripts\python.exe experiments\run_experiment_b.py --resume run_0008
-.\.venv\Scripts\python.exe experiments\run_experiment_c.py --resume run_0009
+.\.venv\Scripts\python.exe experiments\run_reranking_experiment.py --resume run_0006
+.\.venv\Scripts\python.exe experiments\run_adaptive_retrieval_experiment.py --resume run_0008
+.\.venv\Scripts\python.exe experiments\run_evidence_aware_experiment.py --resume run_0009
 ```
 
-Phase 5:
+Controlled evaluation:
 
 ```powershell
-.\.venv\Scripts\python.exe experiments\run_phase5_controlled.py --freeze-only
-.\.venv\Scripts\python.exe experiments\run_phase5_controlled.py --resume run_0010
+.\.venv\Scripts\python.exe experiments\run_controlled_evaluation.py --freeze-only
+.\.venv\Scripts\python.exe experiments\run_controlled_evaluation.py --resume run_0010
 ```
 
-Phase 6 figures:
+Research figures:
 
 ```powershell
-.\.venv\Scripts\python.exe scripts\generate_phase6_figures.py
+.\.venv\Scripts\python.exe scripts\generate_research_figures.py
 ```
 
 ## Documentation
@@ -181,19 +180,10 @@ Phase 6 figures:
 - [Dataset and experimental protocol](docs/DATASET_AND_EXPERIMENTAL_PROTOCOL.md)
 - [Reproducibility guide](docs/REPRODUCIBILITY.md)
 - [Project demonstration script](docs/PROJECT_DEMONSTRATION_SCRIPT.md)
-- [Phase 1 report](docs/PHASE1_REPORT.md)
-- [Phase 2 report](docs/PHASE2_REPORT.md)
-- [Experiment A report](docs/PHASE3_REPORT.md)
-- [Experiment B report](docs/PHASE3_EXPERIMENT_B_REPORT.md)
-- [Experiment C report](docs/PHASE3_EXPERIMENT_C_REPORT.md)
-- [Phase 3 final summary](docs/PHASE3_FINAL_SUMMARY.md)
-- [Phase 3 coverage audit](docs/PHASE3_COVERAGE_AUDIT.md)
-- [Phase 4 report](docs/PHASE4_EVIDENCE_GROUNDING_REPORT.md)
-- [Phase 5 report](docs/PHASE5_CONTROLLED_EXPERIMENTS_REPORT.md)
 
 ## Limitations and future work
 
-- Development findings do not establish held-out superiority.
+- Study findings do not establish held-out superiority.
 - Document-level evidence mapping is not validated entailment.
 - Confidence values are heuristics, not calibrated probabilities.
 - CPU latency is environment-dependent.

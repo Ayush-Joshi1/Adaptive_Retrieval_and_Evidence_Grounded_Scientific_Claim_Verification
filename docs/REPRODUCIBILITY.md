@@ -2,7 +2,7 @@
 
 ## Scope
 
-This guide reproduces development experiments, evidence-grounding tests, and final artifact inspection without rerunning frozen Phase 1–5 experiments.
+This guide reproduces development experiments, evidence-grounding tests, and final artifact inspection without rerunning frozen experimental results.
 
 ## Environment
 
@@ -41,8 +41,8 @@ manifests/
   dataset_manifest.json
 configs/
   research_config.yaml
-  phase4_evidence_grounding.yaml
-  phase5_frozen_config.yaml
+  evidence_grounding.yaml
+  controlled_evaluation.yaml
 ```
 
 The official `claims_test.jsonl` must remain excluded from development tuning and test-label-only evaluation.
@@ -79,44 +79,44 @@ tests/test_dataset_validation.py
 Relevant controlled tests:
 
 ```powershell
-.\.venv\Scripts\python.exe -m pytest -q tests/test_phase5_controlled.py tests/test_evidence_grounding.py
+.\\.venv\Scripts\python.exe -m pytest -q tests/test_controlled_evaluation.py tests/test_evidence_grounding.py
 ```
 
-## Phase 2 canonical reproduction
+## Canonical retrieval reproduction
 
 ```powershell
 .\.venv\Scripts\python.exe experiments\run_retrieval_comparison.py
-.\.venv\Scripts\python.exe scripts\generate_phase2_figures.py
+.\.venv\Scripts\python.exe scripts\generate_retrieval_figures.py
 ```
 
 Do not overwrite existing runs. The run manager allocates a unique run directory.
 
-## Phase 3 runners
+## Reranking and adaptive runners
 
-Experiment A:
-
-```powershell
-.\.venv\Scripts\python.exe experiments\run_experiment_a.py
-.\.venv\Scripts\python.exe experiments\run_experiment_a.py --resume run_0006
-```
-
-Experiment B:
+Reranking experiment:
 
 ```powershell
-.\.venv\Scripts\python.exe experiments\run_experiment_b.py
-.\.venv\Scripts\python.exe experiments\run_experiment_b.py --resume run_0008
+.\.venv\Scripts\python.exe experiments\run_reranking_experiment.py
+.\.venv\Scripts\python.exe experiments\run_reranking_experiment.py --resume run_0006
 ```
 
-Experiment C:
+Adaptive retrieval experiment:
 
 ```powershell
-.\.venv\Scripts\python.exe experiments\run_experiment_c.py
-.\.venv\Scripts\python.exe experiments\run_experiment_c.py --resume run_0009
+.\.venv\Scripts\python.exe experiments\run_adaptive_retrieval_experiment.py
+.\.venv\Scripts\python.exe experiments\run_adaptive_retrieval_experiment.py --resume run_0008
 ```
 
-These are not necessary for Phase 6 portfolio generation. Preserve `run_0006`, `run_0008`, and `run_0009`.
+Evidence-aware experiment:
 
-## Phase 4 API
+```powershell
+.\.venv\Scripts\python.exe experiments\run_evidence_aware_experiment.py
+.\.venv\Scripts\python.exe experiments\run_evidence_aware_experiment.py --resume run_0009
+```
+
+These are not necessary for portfolio generation. Preserve `run_0006`, `run_0008`, and `run_0009`.
+
+## Evidence-grounding API
 
 ```python
 from src.evidence import EvidenceGroundingPipeline
@@ -137,27 +137,27 @@ result = pipeline.process(
 
 `EvidenceGroundingPipeline.process()` returns the final verdict, confidence heuristic, evidence lists, citation validation, retrieval/reranking metadata, and latency fields.
 
-## Phase 5 controlled runner
+## Controlled evaluation runner
 
 Freeze the protocol:
 
 ```powershell
-.\.venv\Scripts\python.exe experiments\run_phase5_controlled.py --freeze-only
+.\.venv\Scripts\python.exe experiments\run_controlled_evaluation.py --freeze-only
 ```
 
 Run or resume the frozen evaluation:
 
 ```powershell
-.\.venv\Scripts\python.exe experiments\run_phase5_controlled.py
-.\.venv\Scripts\python.exe experiments\run_phase5_controlled.py --resume run_0010
+.\.venv\Scripts\python.exe experiments\run_controlled_evaluation.py
+.\.venv\Scripts\python.exe experiments\run_controlled_evaluation.py --resume run_0010
 ```
 
 The freeze record must exist before official held-out claim text is read. Predictions are preserved before gold loading.
 
-## Phase 6 figures
+## Research figures
 
 ```powershell
-.\.venv\Scripts\python.exe scripts\generate_phase6_figures.py
+.\.venv\Scripts\python.exe scripts\generate_research_figures.py
 ```
 
 Figures are generated only from saved development and run artifacts.

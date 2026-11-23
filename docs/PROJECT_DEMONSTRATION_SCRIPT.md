@@ -7,7 +7,7 @@
 3. Retrieval comparison table
 4. Reranking and adaptive-efficiency figures
 5. Evidence-grounding workflow
-6. Phase 5 latency and limitation summary
+6. Controlled-evaluation latency and limitation summary
 
 ## Script
 
@@ -27,7 +27,7 @@ The system therefore separates retrieval relevance from relationship classificat
 
 "The pipeline begins with BM25, Dense, or Hybrid retrieval. Hybrid retrieval uses reciprocal-rank fusion to combine sparse and dense rankings. Candidate depth can be fixed or selected adaptively.
 
-A cross-encoder reranks the candidate set. Phase 4 then extracts claim-relevant sentences, applies a transparent rule-based relationship baseline, validates citations against original corpus text, and classifies the final verdict or abstention."
+A cross-encoder reranks the candidate set. The evidence-grounding module then extracts claim-relevant sentences, applies a transparent rule-based relationship baseline, validates citations against original corpus text, and classifies the final verdict or abstention."
 
 ### Retrieval and reranking — 60 seconds
 
@@ -39,13 +39,13 @@ Adaptive dense score-gap retrieval processed about 16.93 candidates rather than 
 
 ### Evidence grounding — 45 seconds
 
-"Phase 4 is a document-level evidence baseline. The evidence-aware development result reached 0.704115 nDCG@10 for Hybrid Pool-50, the highest observed Experiment C development configuration. Its improvement over cross-encoder reranking was not statistically significant after correction.
+"The evidence-grounding baseline is document-level rather than entailment-based. The evidence-aware development result reached 0.704115 nDCG@10 for Hybrid Pool-50. Its improvement over cross-encoder reranking was not statistically significant after correction.
 
 The system does not claim semantic entailment or sentence-level scientific validation. It validates whether selected text exactly matches a corpus sentence and whether IDs and indices are consistent."
 
-### Phase 5 and limitations — 45 seconds
+### Controlled evaluation and limitations — 45 seconds
 
-"The final Phase 5 run freeze occurred before any official held-out claims were opened. It processed all 300 held-out claim texts through six systems.
+"The final controlled run freeze occurred before any official held-out claims were opened. It processed all 300 held-out claim texts through six systems.
 
 The evidence-grounded system had a 46.67% abstention rate and mean end-to-end latency of about 23.50 seconds per query. Evidence selection added about 12.51 seconds on average.
 
@@ -55,4 +55,4 @@ The held-out file contains claim text but no relevance judgments, evidence annot
 
 "This project demonstrates a reproducible retrieval-to-evidence pipeline and a scientifically conservative evaluation protocol. Its strongest conclusions concern development retrieval behavior, candidate efficiency, citation validity, and abstention. The held-out test data is insufficient for predictive-accuracy claims.
 
-The Phase 6 deliverables make the implementation, configuration, figures, reports, and limitations accessible for academic review and portfolio demonstration."
+The final deliverables make the implementation, configuration, figures, reports, and limitations accessible for academic review and portfolio demonstration."

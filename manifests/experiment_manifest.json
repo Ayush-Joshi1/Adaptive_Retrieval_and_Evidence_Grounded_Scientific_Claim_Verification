@@ -1,11 +1,11 @@
 {
-  "phase": "Phase 1: research foundation and reproducibility",
+  "phase": "research foundation and reproducibility",
   "status": "implementation_only",
   "historical_results_preserved": true,
   "no_generation_experiments_run": true,
   "notes": [
-    "Gemini calls are intentionally excluded from Phase 1.",
+    "Gemini calls are intentionally excluded from the research foundation.",
     "Historical outputs under results/ remain untouched.",
-    "Only deterministic evaluation and metadata tooling are added in this phase."
+    "Only deterministic evaluation and metadata tooling are included."
   ]
 }
